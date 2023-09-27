@@ -3,11 +3,11 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* from Bulma */
@@ -28,17 +28,66 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-family: inherit;
+    font-weight: 900;
+    color: #fff;
     min-width: 260px;
-}
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+  }
+  
+  .shop-now-button:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+  }
+  
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  .shop-now-button:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+  }
+  
+  .shop-now-button:hover::before {
+    filter: blur(20px);
+  }
+  
+  .shop-now-button:active {
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  }
 
-.btn-black {
+
+/* .btn-black {
     background: black;
     color: white;
-}
+} */
 
-.shop-now-button:hover,
+/* .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
@@ -46,7 +95,7 @@ body {
 .btn-black:focus {
     background: #222;
     color: white;
-}
+} */
 
 .text-black {
     color: #000 !important;
@@ -54,6 +103,10 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.bg-black {
+  background: #000 !important;
 }
 
 /* -------------------------------- Media Queries */
