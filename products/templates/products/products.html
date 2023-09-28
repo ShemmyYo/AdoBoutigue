@@ -58,11 +58,11 @@
 
                             <!-- Product Card Image -->
                             {% if product.image %}
-                            <a href="">
+                            <a href="{% url 'product_detail' product.id %}">
                                 <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
                             {% else %}
-                            <a href="">
+                            <a href="{% url 'product_detail' product.id %}">
                                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                             </a>
                             {% endif %}
@@ -84,7 +84,7 @@
                                             <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
                                             <p class="small mt-1 mb-0">
                                             <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                <i class="fas fa-tag mr-1"></i><strong>{{ product.category.name }}</strong>
+                                                <i class="fas fa-tag mr-1"></i><strong>{{ product.category.friendly_name }}</strong>
                                             </a>
                                         </p>
                                         {% endif %}
