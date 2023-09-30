@@ -111,17 +111,17 @@
                                 <!-- Additional Card info TBC-->
                                 <div class=" pb-0 text-black text-center">
                                     <div class="row">
-                                        <div class="col-4 card-info">    
-                                            <i class="fa-duotone fa-user-lock" style="--fa-primary-color: #69101e; --fa-secondary-color: #a42435;"></i>
-                                            <p class="mb-0 text-black text-center">Age {{ product.age }}+</p>
+                                        <div class="col-4 ">    
+                                            <i class="card-info-icon fa-solid fa-user-lock "></i>
+                                            <p class="mb-0 text-black text-center card-info">Age {{ product.age }}+</p>
                                         </div>
-                                        <div class="col-4 card-info">
-                                            <i class="fa-duotone fa-users" style="--fa-primary-color: #69101e; --fa-secondary-color: #a42435;"></i>
-                                            <p class="mb-0 text-black text-center">{{ product.min_players }} {% if product.max_players %} - {{ product.max_players }} Players {% else %} Player {% endif %}</p>
+                                        <div class="col-4 ">
+                                            <i class="card-info-icon fa-solid fa-people-arrows"></i>
+                                            <p class="mb-0 text-black text-center card-info">{{ product.min_players }} {% if product.max_players %} - {{ product.max_players }} Players {% else %} Player {% endif %}</p>
                                         </div>
-                                        <div class="col-4 card-info">
-                                            <i class="fa-duotone fa-clock-rotate-left" style="--fa-primary-color: #69101e; --fa-secondary-color: #69101e;"></i>
-                                            <p class="mb-0 text-black text-center">{{ product.game_play_time }} Min</p>
+                                        <div class="col-4 ">
+                                            <i class="card-info-icon fa-solid fa-clock-rotate-left"></i>
+                                            <p class="mb-0 text-black text-center card-info">{{ product.game_play_time }} Min</p>
                                         </div>
                                     </div>
                                 </div>

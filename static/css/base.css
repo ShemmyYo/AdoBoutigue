@@ -143,8 +143,14 @@ a.category-badge > span.badge:hover {
 
 
 .card-info {
-  font-size: small;
+  font-size: medium;
+  color: #69101E;
 }
+.card-info-icon {
+  font-size: x-large;
+  color: #69101E;
+}
+
 /* Product Card */
 .product-card {
   width: 190px;
