@@ -13,19 +13,20 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
+        <!-- category badge when sorted (at the top of Product page) -->
         <div class="col-12 col-md-8 col-lg-6 text-center mt-3 mx-auto product-heading">
-            <h2>Games on GamerOnBoard:</h2>
+            <h2>Products on GamerOnBoard:</h2>
             {% for c in current_categories %}
-                    <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-white text-black rounded-1 border border-dark">{{ c.name }}</span>
-                    </a>
-                {% endfor %}
+                <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                    <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.name }}</span>
+                </a>
+            {% endfor %}
             <hr class="w-50 mb-1">
         </div>
     </div>
     <div class="row">
         <div class="product-container col-10 offset-1">
-            <!-- <div class="row mt-1 mb-2">
+            <div class="row mt-1 mb-2">
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
@@ -49,7 +50,7 @@
                         {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                     </p>
                 </div>
-            </div> -->
+            </div>
             <div class="row">
                 {% for product in products %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -84,7 +85,7 @@
                                             <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
                                             <p class="small mt-1 mb-0">
                                             <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                <i class="fas fa-tag mr-1"></i><strong>{{ product.category.friendly_name }}</strong>
+                                                <i class="fas fa-tag mr-1"></i><strong>{{ product.category.name }}</strong>
                                             </a>
                                         </p>
                                         {% endif %}
