@@ -127,6 +127,22 @@ a.category-badge > span.badge:hover {
   color: #fff !important;
 }
 
+.product-title{
+  margin-top: 15px;
+  font-size: x-large;
+  font-weight: 600;
+  color: #0F1519;
+}
+
+.badge {
+  font-size: small;
+}
+
+.product-condition-badge {
+  background-color: #A42435;
+  color: #fff;
+}
+
 /* Go to TOP */
 .btt-button {
   height: 42px;

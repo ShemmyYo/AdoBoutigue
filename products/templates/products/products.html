@@ -78,17 +78,27 @@
                             </div>
 
                             <!-- Card Footer -->
-                            <div class="card-footer bg-pink pt-0 border-1 text-center">
+                            <div class="card-footer bg-pink pt-0 border-1 text-left">
                                 <div class="row">
                                     <div class="col">
                                         {% if product.category %}   
-                                            <p class="mb-0">{{ product.name }}</p>             
-                                            <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
+                                            <p class="mb-0 product-title">{{ product.name }} 
+                                                <span class="badge product-condition-badge">{{ product.condition }}</span>
+                                            </p>                                                  
                                             <p class="small mt-1 mb-0">
                                             <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
                                                 <i class="fas fa-tag mr-1"></i><strong>{{ product.category.name }}</strong>
                                             </a>
-                                        </p>
+                                            <hr>
+                                            <p class="lead mb-0 font-weight-bold">€{{ product.price }} 
+                                                {% if product.stock < 1 %}
+                                                    <span class="badge badge-danger">SOLD OUT</span>
+                                                {% elif product.stock > 0 and product.stock < 4 %} 
+                                                    <span class="badge badge-warning">{{ product.stock }} in stock</span>
+                                                {% elif product.stock > 3 %} 
+                                                    <span class="badge badge-info">in stock</span>
+                                                {% endif %}</p>
+                                            </p>
                                         {% endif %}
                                         <br>
                                         {% if product.rating %}
@@ -106,8 +116,6 @@
                                     </div>
                                 </div>
                                 <br>
-
-
                                 <!-- Additional Card info TBC-->
                                 <div class=" pb-0 text-black text-center">
                                     <div class="row">
