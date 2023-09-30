@@ -72,18 +72,17 @@
 
 
                             <!-- Product Card Body -->
-                            <div class="card-body pb-0 text-black">
+                            <div class="card-body pt-0 text-black">
                                 <a href="">
-                                    <p class="mb-0 text-black">{{ product.name }}</p>
                                 </a>
                             </div>
-
 
                             <!-- Card Footer -->
                             <div class="card-footer bg-pink pt-0 border-1 text-center">
                                 <div class="row">
                                     <div class="col">
-                                        {% if product.category %}                
+                                        {% if product.category %}   
+                                            <p class="mb-0">{{ product.name }}</p>             
                                             <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
                                             <p class="small mt-1 mb-0">
                                             <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -91,17 +90,39 @@
                                             </a>
                                         </p>
                                         {% endif %}
+                                        <br>
                                         {% if product.rating %}
                                             <small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                         {% else %}
                                             <small>No Rating</small>
                                         {% endif %}
+                                        <br>
                                         {% if request.user.is_superuser %}
                                             <small class="m1-3">
                                                 <a class="text-black" href="">Edit</a> |
                                                 <a class="text-black border-red" href="">Delete</a>
                                             </small>
                                         {% endif %}
+                                    </div>
+                                </div>
+                                <br>
+
+
+                                <!-- Additional Card info TBC-->
+                                <div class=" pb-0 text-black text-center">
+                                    <div class="row">
+                                        <div class="col-4 card-info">    
+                                            <i class="fa-duotone fa-user-lock" style="--fa-primary-color: #69101e; --fa-secondary-color: #a42435;"></i>
+                                            <p class="mb-0 text-black text-center">Age {{ product.age }}+</p>
+                                        </div>
+                                        <div class="col-4 card-info">
+                                            <i class="fa-duotone fa-users" style="--fa-primary-color: #69101e; --fa-secondary-color: #a42435;"></i>
+                                            <p class="mb-0 text-black text-center">{{ product.min_players }} {% if product.max_players %} - {{ product.max_players }} Players {% else %} Player {% endif %}</p>
+                                        </div>
+                                        <div class="col-4 card-info">
+                                            <i class="fa-duotone fa-clock-rotate-left" style="--fa-primary-color: #69101e; --fa-secondary-color: #69101e;"></i>
+                                            <p class="mb-0 text-black text-center">{{ product.game_play_time }} Min</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

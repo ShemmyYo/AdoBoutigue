@@ -8,7 +8,7 @@ body {
     background: url('/media/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #6A7F91;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -29,18 +29,19 @@ body {
     width: fit-content;
 }
 
+/* Shop Now Button on Main Page */
 .shop-now-button {
     text-decoration: none;
     position: relative;
     border: none;
     font-family: inherit;
     font-weight: 900;
-    color: #fff;
+    color: #69101E;
     min-width: 260px;
     height: 3em;
     line-height: 2em;
     text-align: center;
-    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background: linear-gradient(90deg, #69101E, #A42435,#7A92A5,#6A7F91,  #A42435,#69101E);
     background-size: 300%;
     border-radius: 30px;
     z-index: 1;
@@ -69,7 +70,7 @@ body {
     right: -5px;
     bottom: -5px;
     z-index: -1;
-    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background: linear-gradient(90deg, #7A92A5,#6A7F91, #69101E, #A42435 ,#6A7F91, #7A92A5);
     background-size: 400%;
     border-radius: 35px;
     transition: 1s;
@@ -100,7 +101,7 @@ body {
 } */
 
 .text-black {
-    color: #000 !important;
+    color: #0F1519 !important;
 }
 
 .border-black {
@@ -108,7 +109,7 @@ body {
 }
 
 .bg-black {
-  background: #000 !important;
+  background: #0F1519 !important;
 }
 
 .overlay{
@@ -122,7 +123,7 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-  background: #212529 !important;
+  background: #0F1519 !important;
   color: #fff !important;
 }
 
@@ -139,6 +140,11 @@ a.category-badge > span.badge:hover {
   cursor: pointer;
 }
 
+
+
+.card-info {
+  font-size: small;
+}
 /* Product Card */
 .product-card {
   width: 190px;
@@ -196,8 +202,87 @@ a.category-badge > span.badge:hover {
 }
 
 
+/* Add to Favorites https://uiverse.io/barisdogansutcu/smart-panda-14 */
+label {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 25px 10px 25px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  box-shadow: #69101E33 0px 8px 24px;
+  color: #0F1519;
+ }
+ 
+ input {
+  display: none;
+ }
+ 
+ input:checked + label svg {
+  fill: #A42435;
+  stroke: #A42435;
+  animation: heartButton 1s;
+ }
+ 
+ @keyframes heartButton {
+  0% {
+   transform: scale(1);
+  }
+ 
+  25% {
+   transform: scale(1.3);
+  }
+ 
+  50% {
+   transform: scale(1);
+  }
+ 
+  75% {
+   transform: scale(1.3);
+  }
+ 
+  100% {
+   transform: scale(1);
+  }
+ }
+ 
+ input + label .action {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+ }
+ 
+ input + label .action span {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  transition: all .5s;
+ }
+ 
+ input + label .action span.option-1 {
+  transform: translate(0px,0%);
+  opacity: 1;
+ }
+ 
+ input:checked + label .action span.option-1 {
+  transform: translate(0px,-100%);
+  opacity: 0;
+ }
+ 
+ input + label .action span.option-2 {
+  transform: translate(0px,100%);
+  opacity: 0;
+ }
+ 
+ input:checked + label .action span.option-2 {
+  transform: translate(0px,0%);
+  opacity: 1;
+ }
 
-
+ 
 
 
 
