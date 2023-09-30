@@ -13,31 +13,31 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="games-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Board Games
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Family Games</a>
-                <a href="" class="dropdown-item">Party Games</a>
-                <a href="" class="dropdown-item">Strategy Games</a>
-                <a href="" class="dropdown-item">Kids Games</a>
-                <a href="" class="dropdown-item">Classic Games</a>
-                <a href="" class="dropdown-item">Solo Mode Games</a>
-                <a href="" class="dropdown-item">Role-Playing Games</a>
-                <a href="" class="dropdown-item">All Board Games</a>
+            <div class="dropdown-menu border-0" aria-labelledby="games-link">
+                <a href="{% url 'products' %}?category=Family" class="dropdown-item">Family Games</a>
+                <a href="{% url 'products' %}?category=Party" class="dropdown-item">Party Games</a>
+                <a href="{% url 'products' %}?category=Strategy" class="dropdown-item">Strategy Games</a>
+                <a href="{% url 'products' %}?category=Kids" class="dropdown-item">Kids Games</a>
+                <a href="{% url 'products' %}?category=Classic" class="dropdown-item">Classic Games</a>
+                <a href="{% url 'products' %}?category=Solo_Mode" class="dropdown-item">Solo Mode Games</a>
+                <a href="{% url 'products' %}?category=Role-Playing" class="dropdown-item">Role-Playing Games</a>
+                <a href="{% url 'products' %}?category=Family,Party,Strategy,Kids,Classic,Solo_Mode,Role-Playing" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="games-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Classic Games
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Chess Sets</a>
-                <a href="" class="dropdown-item">Backgammon Games</a>
-                <a href="" class="dropdown-item">Carrom</a>
-                <a href="" class="dropdown-item">Playing Cards</a>
-                <a href="" class="dropdown-item">All Classic Games</a>
+            <div class="dropdown-menu border-0" aria-labelledby="games-link">
+                <a href="{% url 'products' %}?category=Chess_Sets" class="dropdown-item">Chess Sets</a>
+                <a href="{% url 'products' %}?category=Backgammon" class="dropdown-item">Backgammon Games</a>
+                <a href="{% url 'products' %}?category=Carrom" class="dropdown-item">Carrom</a>
+                <a href="{% url 'products' %}?category=Playing_Cards" class="dropdown-item">Playing Cards</a>
+                <a href="{% url 'products' %}?category=Chess_Sets,Backgammon,Carrom,Playing_Cards" class="dropdown-item">All Classic Games</a>
             </div>
         </li>
 
@@ -46,10 +46,10 @@
                 Game Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Dice</a>
-                <a href="" class="dropdown-item">Plush</a>
-                <a href="" class="dropdown-item">Collectables</a>
-                <a href="" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=Dice" class="dropdown-item">Dice</a>
+                <a href="{% url 'products' %}?category=Plush" class="dropdown-item">Plush</a>
+                <a href="{% url 'products' %}?category=Collectables" class="dropdown-item">Collectables</a>
+                <a href="{% url 'products' %}?category=Dice,Plush,Collectables" class="dropdown-item">All Accessories</a>
             </div>
         </li>
 
@@ -58,10 +58,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
