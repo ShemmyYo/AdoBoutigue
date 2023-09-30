@@ -57,34 +57,32 @@
                 {% for product in products %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
-
-
-                            <!-- Product Card Image -->
-                            {% if product.image %}
-                            <a href="{% url 'product_detail' product.id %}">
-                                <img class="card-img-top img-fluid col-sm-10 offset-sm-1 " src="{{ product.image.url }}" alt="{{ product.name }}">
-                            </a>
-                            {% else %}
-                            <a href="{% url 'product_detail' product.id %}">
-                                <img class="card-img-top img-fluid col-sm-10 offset-sm-1 " src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                            </a>
-                            {% endif %}
-
+                            <div class="card2">
 
                             <!-- Product Card Body -->
-                            <div class="card-body pt-0 text-black">
-                                <a href="">
+                            <div class="card-body pt-0 text-center">
+                                <!-- Product Card Image -->
+                                {% if product.image %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="img-fluid img-card mt-3" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
+                                {% else %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="img-fluid img-card mt-3" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
+                                </a>
+                                {% endif %}
                             </div>
 
                             <!-- Card Footer -->
-                            <div class="card-footer bg-pink pt-0 border-1 text-left">
+                            <div class="card-footer pt-0 text-left">
                                 <div class="row">
                                     <div class="col">
-                                        {% if product.category %}   
-                                            <p class="mb-0 product-title">{{ product.name }} 
+                                        <p class="mb-0 product-title">{{ product.name }} 
+                                            {% if product.condition %}
                                                 <span class="badge product-condition-badge">{{ product.condition }}</span>
-                                            </p>                                                  
+                                            {% endif %}
+                                        </p> 
+                                        {% if product.category %}                                                    
                                             <p class="small mt-1 mb-0">
                                             <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
                                                 <i class="fas fa-tag mr-1"></i><strong>{{ product.category.name }}</strong>
@@ -115,14 +113,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                {% if request.user.is_superuser %}
-                                    <small class="m1-3">
-                                        <a class="text-black" href="">Edit</a> |
-                                        <a class="text-black border-red" href="">Delete</a>
-                                    </small>
-                                {% endif %}
-                                                                        
-                                <br>
+
                                 <hr>
                                 <p class="lead mb-0 font-weight-bold product-price">€{{ product.price }} 
                                     {% if product.stock < 1 %}
@@ -133,8 +124,15 @@
                                         <span class="badge badge-info">in stock</span>
                                     {% endif %}</p>
                                 </p>
-                                <br>
+                                {% if request.user.is_superuser %}
+                                <small class="m1-3">
+                                    <a class="text-black" href="">Edit</a> |
+                                    <a class="text-black border-red" href="">Delete</a>
+                                </small>
+                                {% endif %}
                             </div>
+                        
+                        </div>
                         </div>
                     </div>
 

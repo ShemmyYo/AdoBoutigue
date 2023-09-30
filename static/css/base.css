@@ -162,6 +162,11 @@ a.category-badge > span.badge:hover {
 
 
 
+.img-card {
+  min-height: 200px;
+  max-height: 200px;
+}
+
 .card-info {
   font-size: medium;
   color: #69101E;
@@ -171,141 +176,30 @@ a.category-badge > span.badge:hover {
   color: #69101E;
 }
 
+.card-footer {
+  background-color: #fff !important;
+}
+
 /* Product Card */
-.product-card {
-  width: 190px;
-  height: 254px;
-  background: rgb(103, 225, 255);
-  transition: all 0.4s;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
-  font-size: 30px;
-  font-weight: 900;
-}
-
-.product-card:hover {
-  border-radius: 15px;
-  cursor: pointer;
-  transform: scale(1.2);
-  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
-  background: rgb(103, 151, 255);
-}
-
-.first-content {
+.card {
+  background-image: linear-gradient(163deg, #7A92A5 0%, #A42435 100%);
+  border-radius: 20px;
+  transition: all .3s;
+ }
+ 
+ .card2 {
   height: 100%;
-  width: 100%;
-  transition: all 0.4s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  border-radius: 15px;
-}
-
-.product-card:hover .first-content {
-  height: 0px;
-  opacity: 0;
-}
-
-.second-content {
-  height: 0%;
-  width: 100%;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  transition: all 0.4s;
-  font-size: 0px;
-  transform: rotate(90deg) scale(-1);
-}
-
-.product-card:hover .second-content {
-  opacity: 1;
-  height: 100%;
-  font-size: 1.8rem;
-  transform: rotate(0deg);
-}
-
-
-/* Add to Favorites https://uiverse.io/barisdogansutcu/smart-panda-14 */
-label {
   background-color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 10px 25px 10px 25px;
-  cursor: pointer;
-  user-select: none;
-  border-radius: 10px;
-  box-shadow: #69101E33 0px 8px 24px;
-  color: #0F1519;
+  transition: all .2s;
  }
  
- input {
-  display: none;
+ .card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
  }
  
- input:checked + label svg {
-  fill: #A42435;
-  stroke: #A42435;
-  animation: heartButton 1s;
- }
- 
- @keyframes heartButton {
-  0% {
-   transform: scale(1);
-  }
- 
-  25% {
-   transform: scale(1.3);
-  }
- 
-  50% {
-   transform: scale(1);
-  }
- 
-  75% {
-   transform: scale(1.3);
-  }
- 
-  100% {
-   transform: scale(1);
-  }
- }
- 
- input + label .action {
-  position: relative;
-  overflow: hidden;
-  display: grid;
- }
- 
- input + label .action span {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  transition: all .5s;
- }
- 
- input + label .action span.option-1 {
-  transform: translate(0px,0%);
-  opacity: 1;
- }
- 
- input:checked + label .action span.option-1 {
-  transform: translate(0px,-100%);
-  opacity: 0;
- }
- 
- input + label .action span.option-2 {
-  transform: translate(0px,100%);
-  opacity: 0;
- }
- 
- input:checked + label .action span.option-2 {
-  transform: translate(0px,0%);
-  opacity: 1;
+ .card:hover {
+  box-shadow: 0px 0px 30px 1px #69101e4d;
  }
 
  
