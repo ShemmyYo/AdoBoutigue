@@ -89,29 +89,11 @@
                                             <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
                                                 <i class="fas fa-tag mr-1"></i><strong>{{ product.category.name }}</strong>
                                             </a>
-                                            <hr>
-                                            <p class="lead mb-0 font-weight-bold">€{{ product.price }} 
-                                                {% if product.stock < 1 %}
-                                                    <span class="badge badge-danger">SOLD OUT</span>
-                                                {% elif product.stock > 0 and product.stock < 4 %} 
-                                                    <span class="badge badge-warning">{{ product.stock }} in stock</span>
-                                                {% elif product.stock > 3 %} 
-                                                    <span class="badge badge-info">in stock</span>
-                                                {% endif %}</p>
-                                            </p>
                                         {% endif %}
-                                        <br>
                                         {% if product.rating %}
                                             <small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                         {% else %}
                                             <small>No Rating</small>
-                                        {% endif %}
-                                        <br>
-                                        {% if request.user.is_superuser %}
-                                            <small class="m1-3">
-                                                <a class="text-black" href="">Edit</a> |
-                                                <a class="text-black border-red" href="">Delete</a>
-                                            </small>
                                         {% endif %}
                                     </div>
                                 </div>
@@ -133,6 +115,25 @@
                                         </div>
                                     </div>
                                 </div>
+                                {% if request.user.is_superuser %}
+                                    <small class="m1-3">
+                                        <a class="text-black" href="">Edit</a> |
+                                        <a class="text-black border-red" href="">Delete</a>
+                                    </small>
+                                {% endif %}
+                                                                        
+                                <br>
+                                <hr>
+                                <p class="lead mb-0 font-weight-bold product-price">€{{ product.price }} 
+                                    {% if product.stock < 1 %}
+                                        <span class="badge badge-danger">SOLD OUT</span>
+                                    {% elif product.stock > 0 and product.stock < 4 %} 
+                                        <span class="badge badge-warning">{{ product.stock }} in stock</span>
+                                    {% elif product.stock > 3 %} 
+                                        <span class="badge badge-info">in stock</span>
+                                    {% endif %}</p>
+                                </p>
+                                <br>
                             </div>
                         </div>
                     </div>

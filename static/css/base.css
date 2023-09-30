@@ -134,6 +134,10 @@ a.category-badge > span.badge:hover {
   color: #0F1519;
 }
 
+.product-price{
+  font-size: x-large;
+}
+
 .badge {
   font-size: small;
 }
