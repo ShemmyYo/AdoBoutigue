@@ -178,19 +178,18 @@ a.category-badge > span.badge:hover {
 /* Product Card */
 .card {
   background-image: linear-gradient(163deg, #7A92A5 0%, #A42435 100%);
-  border-radius: 20px;
+  border-radius: 8px;
   transition: all .3s;
  }
  
  .card2 {
-  height: 100%;
   background-color: #fff;
   transition: all .2s;
  }
  
  .card2:hover {
   transform: scale(0.98);
-  border-radius: 20px;
+  border-radius: 8px;
  }
  
  .card:hover {
