@@ -143,21 +143,16 @@ a.category-badge > span.badge:hover {
 }
 
 .product-condition-badge {
+  position: absolute;
+  top: 30px;
+  right: 5px;
   background-color: #A42435;
   color: #fff;
 }
 
-/* Go to TOP */
-.btt-button {
-  height: 42px;
-  width: 42px;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
+.card-body{
+  position: relative;
 
-.btt-link {
-  cursor: pointer;
 }
 
 
@@ -204,7 +199,18 @@ a.category-badge > span.badge:hover {
 
  
 
+/* Go to TOP */
+.btt-button {
+  height: 42px;
+  width: 42px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
 
+.btt-link {
+  cursor: pointer;
+}
 
 /* -------------------------------- Media Queries */
 
