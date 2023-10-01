@@ -85,10 +85,10 @@ body {
   }
 
 
-/* .btn-black {
+.btn-black {
     background: black;
     color: white;
-} */
+}
 
 /* .shop-now-button:hover,
 .shop-now-button:active,
@@ -152,7 +152,6 @@ a.category-badge > span.badge:hover {
 
 .card-body{
   position: relative;
-
 }
 
 
