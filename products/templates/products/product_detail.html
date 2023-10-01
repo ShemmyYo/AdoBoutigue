@@ -94,7 +94,7 @@
                             </div>
                             <div class="col-12">
                                 <!-- Keep Shopping link -->
-                                <a href="{% url 'products' %}" class="btn rounded-4 mt-3">
+                                <a href="{% url 'products' %}" class="btn rounded-4 mt-3 text-left">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
@@ -117,7 +117,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">                                    
-                                    <input type="submit" class="btn shop-now-button rounded-4 text-white text-uppercase mt-2" value="Add to Bag">
+                                    <input type="submit" class="btn shop-now-button btn-sm rounded-4 text-white text-uppercase mt-2" value="Add to Bag">
                                 </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             </div>
