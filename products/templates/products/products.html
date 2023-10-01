@@ -13,9 +13,11 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <!-- category badge when sorted (at the top of Product page) -->
-        <div class="col-12 col-md-8 col-lg-6 text-center mt-3 mx-auto product-heading">
+        <div class="col-12 col-md-8 col-lg-6 text-center mx-auto product-heading">
+            <hr>
             <h2>Products on GamerOnBoard:</h2>
+            <hr>
+            <!-- category badge when sorted (at the top of Product page) -->
             {% for c in current_categories %}
                 <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                     <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.name }}</span>
