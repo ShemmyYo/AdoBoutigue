@@ -43,6 +43,7 @@ body {
     text-align: center;
     background: linear-gradient(90deg, #69101E, #A42435,#7A92A5,#6A7F91,  #A42435,#69101E);
     background-size: 300%;
+    border-radius: 4px;
     z-index: 1;
   }
   
@@ -71,6 +72,7 @@ body {
     z-index: -1;
     background: linear-gradient(90deg, #7A92A5,#6A7F91, #69101E, #A42435 ,#6A7F91, #7A92A5);
     background-size: 400%;
+    border-radius: 4px;
     transition: 1s;
   }
   
