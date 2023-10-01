@@ -2,6 +2,11 @@ from decimal import Decimal
 from django.conf import settings
 
 def bag_contents(request):
+    """
+    Handle calculations for adding products to the basket
+    and taking a percentage off the grand total if a discount
+    code has been used
+    """
 
     bag_items = []
     total = 0
