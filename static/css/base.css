@@ -225,15 +225,16 @@ BAG
 
 .btn-pay {
   width: 200px;
+  margin-right: 10px;
   align-items: center;
   justify-content: center;
-  background-color: 0F1519;
+  background-color: black;
   border: none;
   color: white;
   font-weight: 600;
   gap: 8px;
   cursor: pointer;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  box-shadow: 5px 5px 10px #0F1519;
   position: relative;
   overflow: hidden;
   transition-duration: .3s;
@@ -243,6 +244,9 @@ BAG
   padding-left: 15px;
 }
 
+.btn-pay span:first-of-type {
+  color: white;
+}
 
 .btn-pay::before {
   width: calc(100% + 40px);
@@ -258,11 +262,13 @@ BAG
   mix-blend-mode: difference;
 }
 
-.btn-pay:hover::before {
-  transform: translate(0, -50%);
+.btn-pay:hover::before,
+.btn-pay-icon:hover::before {
+  transform: translate(0, -50%); 
 }
 
-.btn-pay:active {
+.btn-pay:active,
+.btn-pay-icon:active {
   transform: translateY(4px);
   transition-duration: .3s;
 }
