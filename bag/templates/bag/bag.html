@@ -37,17 +37,17 @@
 
                             {% for item in bag_items %}
                                 <tr>
-                                    <td class="p-3 w-25">
-                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                    <td class="p-3">
+                                        <img class="img-fluid rounded bag-image" src="{{ item.product.image.url }}">
                                     </td>
-                                    <td class="py-3">
+                                    <td class="py-3 w-50">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">€{{ item.product.price }}</p>
                                     </td>
-                                    <td class="py-3 w-25">
+                                    <td class="py-3">
                                         <p class="my-0">{{ item.quantity }}</p>
                                     </td>
                                     <td class="py-3">
@@ -75,14 +75,10 @@
                                         </span>
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
-                                    <a href="" class="btn btn-black rounded-4 btn-lg">
-                                        <span class="text-uppercase">Secure Checkout </span>
-                                        <span class="icon">
-                                            <i class="fas fa-lock">   </i>   
-                                        </span>
-                                        <span class="icon">
-                                            <i class="fa-brands fa-cc-stripe fa-bounce fa-lg"></i>
-                                        </span>
+
+                                    <a href="" class="btn btn-pay rounded-4 btn-lg">
+                                        <span class="text-uppercase"><i class="fas fa-lock"></i>  Pay  </span>
+                                        <span><i class="fa-brands fa-stripe fa-beat fa-xl btn-pay-icon"></i></span>
                                     </a>
                                 </td>
                             </tr>

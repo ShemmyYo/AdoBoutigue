@@ -211,7 +211,65 @@ a.category-badge > span.badge:hover {
   cursor: pointer;
 }
 
-/* -------------------------------- Media Queries */
+
+
+
+/* 
+BAG
+ */
+
+.bag-image {
+  height: 50px;
+}
+
+
+.btn-pay {
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  background-color: 0F1519;
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.btn-pay-icon {
+  padding-left: 15px;
+}
+
+
+.btn-pay::before {
+  width: calc(100% + 40px);
+  aspect-ratio: 1/1;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -20px;
+  top: 50%;
+  transform: translate(-150%, -50%);
+  transition-duration: .5s;
+  mix-blend-mode: difference;
+}
+
+.btn-pay:hover::before {
+  transform: translate(0, -50%);
+}
+
+.btn-pay:active {
+  transform: translateY(4px);
+  transition-duration: .3s;
+}
+
+
+
+ /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
