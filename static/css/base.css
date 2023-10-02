@@ -146,6 +146,7 @@ a.category-badge > span.badge:hover {
   position: absolute;
   top: 30px;
   right: 5px;
+  height: 40px;
   background-color: #A42435;
   color: #fff;
 }
@@ -173,6 +174,83 @@ a.category-badge > span.badge:hover {
 .card-footer {
   background-color: #fff !important;
 }
+
+/* ------------------------------- 
+Bootstrap toasts 
+-------------------------------*/
+
+.message-container {
+  position: fixed;
+  top: 72px;
+  right: 15px;
+  z-index: 99999999999;
+}
+
+.custom-toast {
+  overflow: visible;
+}
+
+.toast-capper {
+  height: 2px;
+}
+
+/* -------------------------------
+from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ 
+-------------------------------*/
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent; 
+  border-bottom: 10px solid black;
+  position: absolute;
+  top: -10px;
+  right: 36px;
+}
+
+/* -------------------------------
+Convenience classes - colors copied from Bootstrap 
+-------------------------------*/
+.arrow-primary {
+  border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+  border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+  border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+  border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+  border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+  border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+  border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+  border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
 
 /* Product Card */
 .card {
@@ -225,7 +303,6 @@ BAG
 
 
 .btn-pay {
-  width: 200px;
   margin-right: 10px;
   align-items: center;
   justify-content: center;
@@ -239,6 +316,10 @@ BAG
   position: relative;
   overflow: hidden;
   transition-duration: .3s;
+}
+
+.btn-pay-width {
+  width: 200px;
 }
 
 .btn-pay-icon {
