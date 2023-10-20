@@ -19,7 +19,7 @@ You can view the live, deployed to Heroku application here: <a href ='https://ga
 [GameOnBoard](https://gameonboard.herokuapp.com)
 
 ## __Live Web-Page__
-[GameOnBoard](https://shemmylicious.herokuapp.com/)
+[GameOnBoard](https://gameonboard.herokuapp.com/)
 
 ## __GitHub Repository__
 [https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app)
@@ -50,7 +50,7 @@ TBC
 
 ### Colour Scheme
 
-![Colour Scheme](README/readme-files/colormind-colours.png)
+![Colour Scheme](/workspace/game-on-board-p5-ecommerce-app/README/readme-files/colormind-colours.png)
 
 [Back to top &uarr;](#contents)
 
