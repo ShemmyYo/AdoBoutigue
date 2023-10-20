@@ -12,8 +12,8 @@ var stripe = Stripe(stripePublicKey);
 var elements = stripe.elements();
 var style = {
     base: {
-        color: '#000',
-        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+        color: '#aab7c4',
+        fontFamily: '"Montserrat", sans-serif',
         fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {
@@ -22,7 +22,7 @@ var style = {
     },
     invalid: {
         color: '#OF1519',
-        iconColor: '#A42435'
+        iconColor: '#OF1519'
     }
 };
 var card = elements.create('card', {style: style});

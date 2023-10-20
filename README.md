@@ -50,6 +50,8 @@ TBC
 
 ### Colour Scheme
 
+![Colour Scheme](README/readme-files/colormind-colours.png)
+
 [Back to top &uarr;](#contents)
 
 ### Typography
