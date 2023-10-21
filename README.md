@@ -50,7 +50,7 @@ TBC
 
 ### Colour Scheme
 
-![Colour Scheme](/workspace/game-on-board-p5-ecommerce-app/README/readme-files/colormind-colours.png)
+![Colour Scheme](README/readme-files/colormind-colours.png)
 
 [Back to top &uarr;](#contents)
 
