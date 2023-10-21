@@ -1,6 +1,8 @@
 .StripeElement,
-.stripe-style-input {
-  font-family: 'Montserrat', sans-serif;
+.stripe-style-input,
+#id_country {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #6a7f91 !important;
   box-sizing: border-box;
   padding: 10px 12px;
   border: 1px solid transparent;
@@ -15,6 +17,8 @@
 .stripe-style-input:focus,
 .stripe-style-input:active {
   box-shadow: 0 1px 3px 0 #A42435;
+  color: #0f1519;
+  font-weight: 600;
 }
 
 .StripeElement--invalid {
@@ -27,7 +31,9 @@
 
 .stripe-style-input::placeholder {
     color: #6a7f91;
+    font-weight: 300;
 }
+
 
 .fieldset-label {
     position: relative;
@@ -37,8 +43,7 @@
 #payment-form .form-control,
 #card-element {
   font-family: 'Montserrat', sans-serif;
-  color: #0f1519;
-  border: 1px solid #69101e;
+  border: 1px solid #0f1519;
 }
 
 #loading-overlay {
@@ -58,4 +63,16 @@
   justify-content: center;
   margin: 0;
   height: 100%;
+}
+
+select option {
+  color: #0f1519 !important;
+  font-weight: 600;
+}
+
+select,
+select:invalid,
+select option[value=""] {
+  color: #6a7f91 !important;
+  font-weight: 300;
 }
