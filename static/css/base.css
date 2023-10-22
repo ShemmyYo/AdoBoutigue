@@ -104,6 +104,10 @@ body {
     color: #0F1519 !important;
 }
 
+.text-gray {
+  color: #6A7F91 !important;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
@@ -290,7 +294,9 @@ Convenience classes - colors copied from Bootstrap
   cursor: pointer;
 }
 
-
+input[name='q']::placeholder {
+  color: #7a92a5;
+}
 
 
 /* 
@@ -354,6 +360,81 @@ BAG
   transform: translateY(4px);
   transition-duration: .3s;
 }
+
+/* ------------------------------- 
+      AllAuth  
+-------------------------------*/
+.allauth-form-inner-content p {
+  margin-top: 1.5rem;
+  color: #6A7F91;
+}
+
+.allauth-form-inner-content input {
+  border-color: #7a92a5;
+  color: #0f1519; 
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+  display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+  color: #7a92a5;
+}
+
+.btn-aa {
+  width: 15em;
+  position: relative;
+  height: 2.5em;
+  border: 1px ridge #7a92a5;
+  outline: none;
+  background-color: transparent;
+  color: #6A7F91;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-aa a {
+  text-decoration: none;
+}
+
+.btn-aa::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #fff;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.btn-aa::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.btn-aa:hover::before, .btn-aa:hover::after {
+  transform: scale(0)
+}
+
+.btn-aa:hover {
+  box-shadow: inset 0px 0px 25px #7A92A5;
+}
+
+
+
 
 
 
