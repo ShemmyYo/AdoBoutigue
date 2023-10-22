@@ -26,3 +26,8 @@ select option[value=""] {
     color: #6a7f91 !important;
     font-weight: 300;
 }
+
+.order-history {
+  max-height: 416px;
+  overflow-y: auto;
+}
