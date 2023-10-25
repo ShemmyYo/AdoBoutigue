@@ -131,7 +131,7 @@
                                 {% if request.user.is_superuser %}
                                 <small class="m1-3">
                                     <a class="text-black" href="{% url 'edit_product' product.id %}">Edit</a> |
-                                    <a class="text-black border-red" href="">Delete</a>
+                                    <a class="text-black border-red confirm-delete" href="{% url 'delete_product' product.id %}">Delete</a>
                                 </small>
                                 {% endif %}
                             </div>
@@ -206,5 +206,9 @@
                 window.location.replace(currentUrl);
             }
         });
+
+        $(document).on('click', '.confirm-delete', function(){
+            return confirm('Are you sure you want to delete it?');
+        })
     </script>
 {% endblock %}
