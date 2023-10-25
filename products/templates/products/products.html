@@ -130,7 +130,7 @@
                                 </p>
                                 {% if request.user.is_superuser %}
                                 <small class="m1-3">
-                                    <a class="text-black" href="">Edit</a> |
+                                    <a class="text-black" href="{% url 'edit_product' product.id %}">Edit</a> |
                                     <a class="text-black border-red" href="">Delete</a>
                                 </small>
                                 {% endif %}
