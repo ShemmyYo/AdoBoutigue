@@ -30,7 +30,9 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <br>
-                    <button class="btn btn-aa">Update Profile</button>
+                    <div class="text-center">
+                        <button class="btn btn-aa">Update Profile</button>
+                    </div>
                 </form>
 
             </div>
@@ -66,7 +68,7 @@
                                             {% endfor %}
                                         </ul>
                                     </td>
-                                    <td>${{ order.grand_total }}</td>
+                                    <td>€ {{ order.grand_total }}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>

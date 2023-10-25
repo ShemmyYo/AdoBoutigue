@@ -144,10 +144,21 @@ a.category-badge > span.badge:hover {
 
 .badge {
   font-size: small;
+  padding: 5px;
 }
 
 .product-condition-badge {
   position: absolute;
+  padding: 5px;
+  top: 30px;
+  right: 5px;
+  background-color: #A42435;
+  color: #fff;
+}
+
+.product-condition-badge-lg {
+  position: absolute;
+  padding: 5px;
   top: 30px;
   right: 5px;
   height: 40px;

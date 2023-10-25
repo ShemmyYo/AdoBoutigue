@@ -79,7 +79,7 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Product Management</a>
+                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -95,11 +95,11 @@
                                 {% if grand_total %}
                                     <div><i class="fa-solid fa-cash-register fa-lg fa-fade"></i></div>
                                     <p class="my-0">
-                                    ${{ grand_total|floatformat:2 }}
+                                    €{{ grand_total|floatformat:2 }}
                                 {% else %}
                                     <div><i class="fa-solid fa-cash-register fa-lg"></i></div>
                                     <p class="my-0">    
-                                    $0.00
+                                    €0.00
                                 {% endif %}
                                 </p>
                             </div>
