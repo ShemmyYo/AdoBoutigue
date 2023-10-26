@@ -29,9 +29,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'gamer-on-board-6fa9b306b6d7.herokuapp.com',
-    'gamer-on-board.herokuapp.com', 
-    'localhost', 
-    '8000-shemmyyo-gameonboardp5e-icarjpxt1os.ws-eu105.gitpod.io'
     ]
 
 
