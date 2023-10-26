@@ -25,10 +25,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-yfd4dj=04^7#@_i(be08j5y5*c3-9di9df!i*ogd@fs^mqj34k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'gamer-on-board-6fa9b306b6d7.herokuapp.com',
+    '8000-shemmyyo-gameonboardp5e-icarjpxt1os.ws-eu105.gitpod.io',
     ]
 
 
