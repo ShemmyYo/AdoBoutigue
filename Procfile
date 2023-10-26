@@ -1,1 +1,1 @@
-web: gunicorn gameonboard.wsgi:appication
+web: gunicorn gameonboard.wsgi:application
