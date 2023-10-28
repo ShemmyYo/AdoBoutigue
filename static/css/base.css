@@ -338,6 +338,50 @@ input[name='q']::placeholder {
 }
 
 
+/* Card - Add to bag btn */
+.add-to-bag-card-btn {
+  font-size: 17px;
+  color: #6A7F91;
+  font-family: inherit;
+  font-weight: 600;
+ }
+ 
+ .add-to-bag-card-btn:hover {
+  animation: shake3856 0.3s linear infinite both;
+ }
+ 
+ @keyframes shake3856 {
+  0% {
+   -webkit-transform: translate(0);
+   transform: translate(0);
+  }
+ 
+  20% {
+   -webkit-transform: translate(-2px, 2px);
+   transform: translate(-2px, 2px);
+  }
+ 
+  40% {
+   -webkit-transform: translate(-2px, -2px);
+   transform: translate(-2px, -2px);
+  }
+ 
+  60% {
+   -webkit-transform: translate(2px, 2px);
+   transform: translate(2px, 2px);
+  }
+ 
+  80% {
+   -webkit-transform: translate(2px, -2px);
+   transform: translate(2px, -2px);
+  }
+ 
+  100% {
+   -webkit-transform: translate(0);
+   transform: translate(0);
+  }
+ }
+ 
 /* 
 BAG
  */
@@ -473,7 +517,14 @@ BAG
 }
 
 
-
+ /* -------------------------------- 
+        Category Badge 
+ --------------------------------*/
+.cat-badge-icon {
+  height: 24px;
+  width: 24px;
+  margin-bottom: 12px;
+}
 
 
 

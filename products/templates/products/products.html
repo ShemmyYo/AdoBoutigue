@@ -91,13 +91,13 @@
                             <div class="card-footer pt-0 text-left">
                                 <div class="row">
                                     <div class="col">
-                                        <p class="mb-0 product-title">{{ product.name }} 
+                                        <p class="mb-0 text-center product-title">{{ product.name }} 
                                             
                                         </p> 
                                         {% if product.category %}                                                    
                                             <p class="small mt-1 mb-0">
                                             <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                <img src="{% static '{{ product.category.cat_image }}' %}">
+                                                <img src="/static/images/{{ product.category.cat_image }}" class="cat-badge-icon">                                             
                                                 <strong>{{ product.category.friendly_name }}</strong>
                                             </a></p>
                                         {% endif %}
@@ -147,10 +147,10 @@
                                         {% csrf_token %}
                                         <input type="hidden" name="quantity" value="1">
                                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                                        <input type="submit" value="Add to bag" class="btn btn-block text-white">
+                                        <input type="submit" value="Add to bag" class="btn add-to-bag-card-btn btn-block text-white">
                                     </form>
                                 {% else %}
-                                <button class="btn add-to-basket-btn btn-block disabled">Add to basket</button>
+                                <button class="btn text-white btn-block disabled">SOLD OUT</button>
                                 {% endif %}
                             </div>
                         </div>
