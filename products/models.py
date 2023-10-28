@@ -9,6 +9,8 @@ class Category(models.Model):
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    cat_desc = models.CharField(max_length=254, null=True, blank=True)
+    cat_image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -23,6 +25,7 @@ class Condition(models.Model):
         verbose_name_plural = 'Condition'
 
     name = models.CharField(max_length=254)
+    condition_desc = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -34,6 +37,9 @@ class AgeGroup(models.Model):
         verbose_name_plural = 'Age Group'
 
     name = models.CharField(max_length=6)
+    restriction_name = models.CharField(max_length=54, null=True, blank=True)
+    restriction_desc = models.CharField(max_length=254, null=True, blank=True)
+    restriction_image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.name
