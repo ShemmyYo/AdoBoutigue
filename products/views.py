@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, AgeGroup
 from .forms import ProductForm
 
 # Create your views here.
@@ -13,6 +13,7 @@ def all_products(request):
     A view to return all products, product queries and sorting.
     """
     products = Product.objects.all()
+    age = AgeGroup.objects.all()
     query = None
     category = None
     sort = None
@@ -55,6 +56,7 @@ def all_products(request):
         'products': products,
         'search_term': query, 
         'current_categories': category,
+        'age': age,
         'current_sorting': current_sorting,
     }
 
@@ -66,9 +68,11 @@ def product_detail(request, product_id):
     A detailed view of a product
     """
     product = get_object_or_404(Product, pk=product_id)
+    age = get_object_or_404(AgeGroup, pk=product_id)
 
     context = {
         'product': product,
+        'age': age,
     }
 
     return render(request, 'products/product_detail.html', context)
