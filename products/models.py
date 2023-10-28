@@ -51,8 +51,8 @@ class Product(models.Model):
     name = models.CharField(max_length=254)
     description = models.TextField()
     age = models.ForeignKey(
-        'AgeGroup', null=True, blank=True, on_delete=models.SET_NULL)
-    min_players = models.CharField(max_length=1, null=False, blank=False)
+        'AgeGroup', null=True, blank=True, on_delete=models.SET_NULL, default=3)
+    min_players = models.CharField(max_length=1, null=False, blank=False, default=1)
     max_players = models.CharField(max_length=2, null=False, blank=False)
     game_play_time = models.CharField(max_length=3, null=False, blank=False)
     condition = models.ForeignKey(
