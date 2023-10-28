@@ -20,11 +20,19 @@ def add_to_bag(request, item_id):
     bag = request.session.get('bag', {})
 
     if item_id in list(bag.keys()):
-        bag[item_id] += quantity
-        messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+        if product.stock >= bag[item_id] + quantity:
+            bag[item_id] += quantity
+            messages.success(request, f'Updated {product.name} quantity to \
+                            {bag[item_id]}')
+        else: 
+            messages.error(
+                request, f'Sorry! {product.name} has only \
+                {product.stock} units left, you have {bag[item_id]} \
+                    in your bag')
     else:
         bag[item_id] = quantity
-        messages.success(request, f'Added {bag[item_id]} - {product.name} to your bag')
+        messages.success(request, f'Added {bag[item_id]} - \
+                        {product.name} to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -40,11 +48,18 @@ def adjust_bag(request, item_id):
     bag = request.session.get('bag', {})
 
     if quantity > 0:
-        bag[item_id] = quantity
-        messages.info(request, f'Updated {product.name} quantity to {bag[item_id]}')
+        if quantity > product.stock:
+            messages.error(
+                request, f'Sorry. {product.name} has only \
+                {product.stock} units left in stock')
+        else: 
+            bag[item_id] = quantity
+            messages.info(request, f'Updated {product.name} quantity \
+                        to {bag[item_id]}')
     else:
         bag.pop(item_id)
-        messages.info(request, f'Removed {product.name} from your bag')
+        messages.info(request, f'Removed {product.name} from your \
+                    bag')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))

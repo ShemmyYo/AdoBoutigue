@@ -141,7 +141,7 @@
                         
                     
                             <div class="col-12 my-auto justify-content-center">
-                                {% if product.stock > 0 %}
+                                {% if product.stock > 0 or quantity == 1 %}
                                     <form method="POST" action="{% url 'add_to_bag' product.id %}">
                                         {% csrf_token %}
                                         <input type="hidden" name="quantity" value="1">
