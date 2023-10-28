@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
-SECRET_KEY = 'l#l1&or^2mv=436f_ew593mz6d6i7-cy26n2h3x$ba%rj$tfj2'
+# SECRET_KEY = 'l#l1&or^2mv=436f_ew593mz6d6i7-cy26n2h3x$ba%rj$tfj2'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' is os.environ
-DEBUG = True
+DEBUG = 'DEVELOPMENT' is os.environ
+# DEBUG = True
 
 ALLOWED_HOSTS = [
     'gamer-on-board-6fa9b306b6d7.herokuapp.com',
