@@ -73,7 +73,7 @@
                 {% if bag_items %}
                 <div class="table-responsive rounded d-none d-md-block">
                     <table class="table table-sm table-borderless">
-                        <thead class="text-black thead-dark">
+                        <thead class="text-black text-center thead-dark">
                             <tr>
                                 <th scope="col">Product Info</th>
                                 <th scope="col"></th>
@@ -99,7 +99,7 @@
                             <td class="py-3">
                                 <p class="my-0">€{{ item.product.price }}</p>
                             </td>
-                            <td class="py-3">
+                            <td class="py-3 w-50">
                                 <form class="form update-form" method="POST"
                                     action="{% url 'adjust_bag' item.item_id %}">
                                     {% csrf_token %}
