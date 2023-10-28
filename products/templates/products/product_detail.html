@@ -179,7 +179,7 @@
 
     <div class="row">
         <div class="col-2 offset-2">
-            <img src="/static/images/{{ product.category.cat_image }}" class="w-50 text-right" alt="{{ product.category.name }} image">
+            <img src="{{ product.category.cat_image.url }}" class="w-50 text-right" alt="{{ product.category.name }} image">
         </div>
         <div class="col-6 ">
             <p class="text-left text-uppercase text-gray" >Category description:</p>
@@ -189,7 +189,7 @@
 
     <div class="row">
         <div class="col-2 offset-2">
-            <img src="/static/images/pegi/{{ age.restriction_image }}" class="w-50 text-right" alt="{{ age.name }} image">
+            <img src="{{ age.restriction_image.url }}" class="w-50 text-right" alt="{{ age.name }} image">
         </div>
         <div class="col-6">
             <p class="text-left text-uppercase text-gray" >Age Restrictions:</p>
