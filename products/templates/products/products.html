@@ -138,6 +138,20 @@
                                 </p>
                             </div>
                         </div>
+                        
+                    
+                            <div class="col-12 my-auto justify-content-center">
+                                {% if product.stock > 0 %}
+                                    <form method="POST" action="{% url 'add_to_bag' product.id %}">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                        <input type="submit" value="Add to bag" class="btn btn-block text-white">
+                                    </form>
+                                {% else %}
+                                <button class="btn add-to-basket-btn btn-block disabled">Add to basket</button>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
 
