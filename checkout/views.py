@@ -1,7 +1,11 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+    )
+from django.core.mail import send_mail
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
