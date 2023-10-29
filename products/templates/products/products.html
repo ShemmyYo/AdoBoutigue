@@ -15,7 +15,9 @@
     <div class="row">
         <div class="col-12 col-md-8 col-lg-6 text-center mx-auto product-heading">
             <hr>
-            <h2>Products on GamerOnBoard:</h2>
+            <h2>Shop on GamerOnBoard</h2>
+            <p>Explore a World of Strategy Board Games – From Chess to Eurogames. 
+                Upgrade Your Game Night with Our Collection of Engaging Titles!</p>
             <hr>
             <!-- category badge when sorted (at the top of Product page) -->
             {% for c in current_categories %}
@@ -97,7 +99,7 @@
                                         {% if product.category %}                                                    
                                             <p class="small mt-1 mb-0">
                                             <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                <img src="/static/images/{{ product.category.cat_image }}" class="cat-badge-icon">                                             
+                                                <img src="{{ product.category.cat_image.url }}" class="cat-badge-icon">                                          
                                                 <strong>{{ product.category.friendly_name }}</strong>
                                             </a></p>
                                         {% endif %}

@@ -528,6 +528,122 @@ BAG
 
 
 
+ /* -------------------------------- 
+        Footer 
+ --------------------------------*/
+footer {
+  background-color: #fff;
+}
+
+.footer-lg-font{
+  font-size: 1.2rem;
+}
+
+.social-link {
+  color: #6A7F91;
+  line-height: 2;
+  position: relative;
+}
+
+.social-link::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #6A7F91;
+  position: absolute;
+  bottom: -.25rem;
+  left: 0;
+  transition: width .4s;
+}
+
+.social-link:hover::before {
+  width: 100%;
+}
+
+.social-link > a,
+a:hover {
+  color: #6A7F91;
+  text-decoration: none;
+}
+
+/* Social icons/links */
+.social-card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background-color: #fff;
+}
+
+/* social containers */
+.socialContainer {
+  width: 42px;
+  height: 42px;
+  background-color: #A42435;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
  /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -563,8 +679,16 @@ BAG
       height: calc(100vh - 136px);
   }
 
+  .logo-font {
+    font-size: 1.8rem;
+}
+
+  .logo-paragraph {
+    font-size: 1rem;
+  }
+
   .display-4.logo-font.text-black {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .nav-link {
@@ -587,4 +711,14 @@ BAG
   .increment-qty, .decrement-qty {
       padding: .25rem .5rem !important;
   }
+
+  /* Footer font */
+  .footer-lg-font{
+    font-size: 1rem;
+  }
+
+  .footer-social-link {
+    font-size: 0.8rem;
+  }
+
 }

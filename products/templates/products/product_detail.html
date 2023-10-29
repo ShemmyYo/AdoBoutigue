@@ -76,7 +76,8 @@
                 {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                            <img src="{{ product.category.cat_image.url }}" class="cat-badge-icon"> 
+                            {{ product.category.friendly_name }}
                         </a>
                     </p>
                 {% endif %}
@@ -176,23 +177,23 @@
     </div>
     <br>
     <br>
+    <hr>
 
     <div class="row">
-        <div class="col-2 offset-2">
-            <img src="{{ product.category.cat_image.url }}" class="w-50 text-right" alt="{{ product.category.name }} image">
+        <div class=" col-10 offset-1 col-sm-2 offset-sm-2">
+            <img src="{{ product.category.cat_image.url }}" class="w-25 w-md-50 float-right img-thumbnai rounded-4 " alt="{{ product.category.name }} image">
         </div>
-        {{ product.category.cat_image.url }}
-        <div class="col-6 ">
+        <div class="col-10 offset-1 col-sm-6 ">
             <p class="text-left text-uppercase text-gray" >Category description:</p>
             <p class="text-left">{{ product.category.cat_desc }}</p>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-2 offset-2">
-            <img src="{{ age.restriction_image.url }}" class="w-50 text-right" alt="{{ age.name }} image">
+        <div class=" col-10 offset-1 col-sm-2 offset-sm-2">
+            <img src="{{ age.restriction_image.url }}" class="w-25 w-md-50 float-right img-thumbnai rounded-4 " alt="{{ age.name }} image">
         </div>
-        <div class="col-6">
+        <div class="col-10 offset-1 col-sm-6">
             <p class="text-left text-uppercase text-gray" >Age Restrictions:</p>
             <p class="text-left">{{ age.restriction_desc }}</p>
         </div>
@@ -211,6 +212,12 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %} 
+
+<script>
+    $('.btt-link').click(function(e) {
+        window.scrollTo(0,0);
+    });
+</script>
 
 <script type="text/javascript">
     $(document).on('click', '.confirm-delete', function(){
