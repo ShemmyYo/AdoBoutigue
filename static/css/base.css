@@ -1,93 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700;900&display=swap');
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #6A7F91;
-    font-family: 'Montserrat', sans-serif;
+  background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: calc(100vh - 164px);
+  color: #6A7F91;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* from Bulma */
 .icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .logo-font {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .main-logo-link {
-    width: fit-content;
+  width: fit-content;
 }
 
 /* Shop Now Button on Main Page */
 .shop-now-button {
-    text-decoration: none;
-    position: relative;
-    border: none;
-    font-family: inherit;
-    font-weight: 900;
-    color: #69101E;
-    min-width: 200px;
-    height: 3em;
-    line-height: 2em;
-    text-align: center;
-    background: linear-gradient(90deg, #69101E, #A42435,#7A92A5,#6A7F91,  #A42435,#69101E);
-    background-size: 300%;
-    border-radius: 4px;
-    z-index: 1;
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-family: inherit;
+  font-weight: 900;
+  color: #69101E;
+  min-width: 200px;
+  height: 3em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg, #69101E, #A42435, #7A92A5, #6A7F91, #A42435, #69101E);
+  background-size: 300%;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.shop-now-button:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
   }
-  
-  .shop-now-button:hover {
-    animation: ani 8s linear infinite;
-    border: none;
+
+  100% {
+    background-position: 400%;
   }
-  
-  @keyframes ani {
-    0% {
-      background-position: 0%;
-    }
-  
-    100% {
-      background-position: 400%;
-    }
-  }
-  
-  .shop-now-button:before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    z-index: -1;
-    background: linear-gradient(90deg, #7A92A5,#6A7F91, #69101E, #A42435 ,#6A7F91, #7A92A5);
-    background-size: 400%;
-    border-radius: 4px;
-    transition: 1s;
-  }
-  
-  .shop-now-button:hover::before {
-    filter: blur(20px);
-  }
-  
-  .shop-now-button:active {
-    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
-  }
+}
+
+.shop-now-button:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #7A92A5, #6A7F91, #69101E, #A42435, #6A7F91, #7A92A5);
+  background-size: 400%;
+  border-radius: 4px;
+  transition: 1s;
+}
+
+.shop-now-button:hover::before {
+  filter: blur(20px);
+}
+
+.shop-now-button:active {
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
 
 
 .btn-black {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 /* .shop-now-button:hover,
@@ -101,7 +101,7 @@ body {
 } */
 
 .text-black {
-    color: #0F1519 !important;
+  color: #0F1519 !important;
 }
 
 .text-gray {
@@ -109,14 +109,14 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+  border: 1px solid black !important;
 }
 
 .bg-black {
   background: #0F1519 !important;
 }
 
-.overlay{
+.overlay {
   height: 100%;
   width: 100%;
   top: 0;
@@ -126,19 +126,19 @@ body {
   z-index: -1;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
   background: #0F1519 !important;
   color: #fff !important;
 }
 
-.product-title{
+.product-title {
   margin-top: 15px;
   font-size: x-large;
   font-weight: 600;
   color: #0F1519;
 }
 
-.product-price{
+.product-price {
   font-size: x-large;
 }
 
@@ -166,7 +166,7 @@ a.category-badge > span.badge:hover {
   color: #fff;
 }
 
-.card-body{
+.card-body {
   position: relative;
 }
 
@@ -181,6 +181,7 @@ a.category-badge > span.badge:hover {
   font-size: small;
   color: #69101E;
 }
+
 .card-info-icon {
   font-size: x-large;
   color: #69101E;
@@ -213,10 +214,10 @@ Bootstrap toasts
 from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ 
 -------------------------------*/
 .arrow-up {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 4px solid transparent;
-  border-right: 4px solid transparent; 
+  border-right: 4px solid transparent;
   border-bottom: 10px solid black;
   position: absolute;
   top: -10px;
@@ -272,23 +273,40 @@ Convenience classes - colors copied from Bootstrap
   background-image: linear-gradient(163deg, #7A92A5 0%, #A42435 100%);
   border-radius: 8px;
   transition: all .3s;
- }
- 
- .card2 {
+}
+
+.card2 {
   background-color: #fff;
   transition: all .2s;
- }
- 
- .card2:hover {
+}
+
+.card2:hover {
   transform: scale(0.98);
   border-radius: 8px;
- }
- 
- .card:hover {
-  box-shadow: 0px 0px 30px 1px #69101e4d;
- }
+}
 
- 
+.card:hover {
+  box-shadow: 0px 0px 30px 1px #69101e4d;
+}
+
+
+/* Product Carousel */
+.carousel-control {
+  width: 20px;
+  background-color: #0f15190e;
+  border: solid #fff 0;
+  border-radius: 4px;
+}
+
+.carousel-control:hover {
+  background-color: #0f15196c;
+}
+
+.carousel-control-icon,
+.carousel-control-next-icon {
+  color: #0F1519;
+} 
+
 /* Product Form */
 
 .btn-file {
@@ -344,44 +362,44 @@ input[name='q']::placeholder {
   color: #6A7F91;
   font-family: inherit;
   font-weight: 600;
- }
- 
- .add-to-bag-card-btn:hover {
+}
+
+.add-to-bag-card-btn:hover {
   animation: shake3856 0.3s linear infinite both;
- }
- 
- @keyframes shake3856 {
+}
+
+@keyframes shake3856 {
   0% {
-   -webkit-transform: translate(0);
-   transform: translate(0);
+    -webkit-transform: translate(0);
+    transform: translate(0);
   }
- 
+
   20% {
-   -webkit-transform: translate(-2px, 2px);
-   transform: translate(-2px, 2px);
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
   }
- 
+
   40% {
-   -webkit-transform: translate(-2px, -2px);
-   transform: translate(-2px, -2px);
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
   }
- 
+
   60% {
-   -webkit-transform: translate(2px, 2px);
-   transform: translate(2px, 2px);
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
   }
- 
+
   80% {
-   -webkit-transform: translate(2px, -2px);
-   transform: translate(2px, -2px);
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
   }
- 
+
   100% {
-   -webkit-transform: translate(0);
-   transform: translate(0);
+    -webkit-transform: translate(0);
+    transform: translate(0);
   }
- }
- 
+}
+
 /* 
 BAG
  */
@@ -435,7 +453,7 @@ BAG
 
 .btn-pay:hover::before,
 .btn-pay-icon:hover::before {
-  transform: translate(0, -50%); 
+  transform: translate(0, -50%);
 }
 
 .btn-pay:active,
@@ -454,7 +472,7 @@ BAG
 
 .allauth-form-inner-content input {
   border-color: #7a92a5;
-  color: #0f1519; 
+  color: #0f1519;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -508,7 +526,8 @@ BAG
   transition: 0.5s;
 }
 
-.btn-aa:hover::before, .btn-aa:hover::after {
+.btn-aa:hover::before,
+.btn-aa:hover::after {
   transform: scale(0)
 }
 
@@ -517,7 +536,7 @@ BAG
 }
 
 
- /* -------------------------------- 
+/* -------------------------------- 
         Category Badge 
  --------------------------------*/
 .cat-badge-icon {
@@ -528,14 +547,14 @@ BAG
 
 
 
- /* -------------------------------- 
+/* -------------------------------- 
         Footer 
  --------------------------------*/
 footer {
   background-color: #fff;
 }
 
-.footer-lg-font{
+.footer-lg-font {
   font-size: 1.2rem;
 }
 
@@ -561,7 +580,7 @@ footer {
   width: 100%;
 }
 
-.social-link > a,
+.social-link>a,
 a:hover {
   color: #6A7F91;
   text-decoration: none;
@@ -590,21 +609,25 @@ a:hover {
   overflow: hidden;
   transition-duration: .3s;
 }
+
 /* instagram*/
 .containerOne:hover {
   background-color: #d62976;
   transition-duration: .3s;
 }
+
 /* twitter*/
 .containerTwo:hover {
   background-color: #00acee;
   transition-duration: .3s;
 }
+
 /* linkdin*/
 .containerThree:hover {
   background-color: #0072b1;
   transition-duration: .3s;
 }
+
 /* Whatsapp*/
 .containerFour:hover {
   background-color: #128C7E;
@@ -644,7 +667,7 @@ a:hover {
 
 
 
- /* -------------------------------- Media Queries */
+/* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -655,33 +678,33 @@ a:hover {
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
+  .fixed-top-desktop-only {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
 
-    .header-container {
-        padding-top: 164px;
-    }
+  .header-container {
+    padding-top: 164px;
+  }
 }
 
 /* pad top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
 
   .header-container {
-      padding-top: 136px;
+    padding-top: 136px;
   }
 
   body {
-      height: calc(100vh - 136px);
+    height: calc(100vh - 136px);
   }
 
   .logo-font {
     font-size: 1.8rem;
-}
+  }
 
   .logo-paragraph {
     font-size: 1rem;
@@ -692,28 +715,29 @@ a:hover {
   }
 
   .nav-link {
-      padding: 0.15rem;
+    padding: 0.15rem;
   }
 
   .nav-link i.fa-lg {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .navbar-toggler {
-      padding: .6rem .6rem;
-      font-size: 1rem;
+    padding: .6rem .6rem;
+    font-size: 1rem;
   }
 
   #delivery-banner h4 {
-      font-size: .9rem;
+    font-size: .9rem;
   }
 
-  .increment-qty, .decrement-qty {
-      padding: .25rem .5rem !important;
+  .increment-qty,
+  .decrement-qty {
+    padding: .25rem .5rem !important;
   }
 
   /* Footer font */
-  .footer-lg-font{
+  .footer-lg-font {
     font-size: 1rem;
   }
 
