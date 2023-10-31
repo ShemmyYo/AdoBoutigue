@@ -62,6 +62,7 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
     image2 = models.ImageField(null=True, blank=True)
     image3 = models.ImageField(null=True, blank=True)
+    video = models.URLField(null=True, blank=True)
     stock = models.IntegerField(default=1)
 
     def __str__(self):

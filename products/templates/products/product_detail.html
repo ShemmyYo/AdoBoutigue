@@ -38,6 +38,9 @@
                         {% if product.image3 %}
                         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                         {% endif %}
+                        {% if product.video %}
+                        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                        {% endif %}
                     </ol>
                     
                     <div class="carousel-inner">
@@ -64,6 +67,18 @@
                             <a href="{{ product.image3.url }}" target="_blank">
                                 <img class="card-img-top img-fluid" src="{{ product.image3.url }}" alt="{{ product.name }}">
                             </a>
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if product.video %}
+                        <div class="carousel-item">
+                            <iframe width="340" height="280" src="{{ product.video }}?rel=0" 
+                                title="{{ product.name }}" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media;" 
+                                allowfullscreen>
+                            </iframe>
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
@@ -277,10 +292,6 @@
 <script type="text/javascript">
     $(document).on('click', '.confirm-delete', function(){
         return confirm('Are you sure you want to delete it?');
-    })
-
-    $('.carousel').carousel({
-        interval: 4000
     })
 </script>
 
