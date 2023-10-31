@@ -1,6 +1,6 @@
 # Portfolio Project 5 - E-commerce Applications
 
-![GameOnBoard](/workspace/game-on-board-p5-ecommerce-app/README/readme-files/game-on-board-roll-play-win–destination.png)
+![GameOnBoard](README/readme-files/game-on-board-roll-play-win–destination.png)
 ## __Roll, Play, Win – Game On Board is Your Board Game Destination.__
 
 GameOnBoard is a B2C (business-to-consumer) board game web store which aims to audiences, such as families, tabletop gamers, or collectors and specialising in strategic and role-playing board games. We have built a diverse and attractive inventory of board games, including popular titles such as …….. 
@@ -10,16 +10,13 @@ When designing GameOnBoard.ie page, I focused on creating a user-friendly, visua
 TBC
 
 
-You can view the live, deployed to Heroku application here: <a href ='https://gameonboard.herokuapp.com/' target="_blank">Game On Board</a>
+You can view the live, deployed to Heroku application here: <a href ='https://gamer-on-board-6fa9b306b6d7.herokuapp.com/' target="_blank">Game On Board</a>
 
 
-![Mockup](/workspace/game-on-board-p5-ecommerce-app/README/readme-files/am-i-responsive.png)
-
-## __Live Web-Page__
-[GameOnBoard](https://gameonboard.herokuapp.com)
+![Mockup](README/readme-files/am-i-responsive.png)
 
 ## __Live Web-Page__
-[GameOnBoard](https://gameonboard.herokuapp.com/)
+[GameOnBoard](https://gamer-on-board-6fa9b306b6d7.herokuapp.com/)
 
 ## __GitHub Repository__
 [https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app)
