@@ -1,6 +1,9 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_object_or_404
+    )
 from django.contrib import messages
 from products.models import Product
+
 
 def view_bag(request):
     """
@@ -10,10 +13,9 @@ def view_bag(request):
 
 
 def add_to_bag(request, item_id):
-    """ 
-    Add a quantity of the specified product to the shopping bag 
     """
-
+    Add a quantity of the specified product to the shopping bag
+    """
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -24,7 +26,7 @@ def add_to_bag(request, item_id):
             bag[item_id] += quantity
             messages.success(request, f'Updated {product.name} quantity to \
                             {bag[item_id]}')
-        else: 
+        else:
             messages.error(
                 request, f'Sorry! {product.name} has only \
                 {product.stock} units left, you have {bag[item_id]} \
@@ -52,7 +54,7 @@ def adjust_bag(request, item_id):
             messages.error(
                 request, f'Sorry. {product.name} has only \
                 {product.stock} units left in stock')
-        else: 
+        else:
             bag[item_id] = quantity
             messages.info(request, f'Updated {product.name} quantity \
                         to {bag[item_id]}')

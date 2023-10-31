@@ -88,7 +88,8 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth', # required by allauth
+                'django.contrib.auth.context_processors.auth',
+                # above line required by allauth
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
@@ -135,7 +136,8 @@ WSGI_APPLICATION = 'gameonboard.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://ikpqrqdk:fh6bPhsx7Vv7T6vacK3HkqOXBZxwuBA4@tyke.db.elephantsql.com/ikpqrqdk')
+    'default': dj_database_url.parse\
+    ('postgres://ikpqrqdk:fh6bPhsx7Vv7T6vacK3HkqOXBZxwuBA4@tyke.db.elephantsql.com/ikpqrqdk')
 }
 
 # if 'DATABASE_URL' in os.environ:

@@ -93,15 +93,15 @@
                             <div class="card-footer pt-0 text-left">
                                 <div class="row">
                                     <div class="col">
-                                        <p class="mb-0 text-center product-title">{{ product.name }} 
-                                            
-                                        </p> 
+                                        <p class="mb-0 text-center product-title">{{ product.name }}</p> 
                                         {% if product.category %}                                                    
                                             <p class="small mt-1 mb-0">
-                                            <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                <img src="{{ product.category.cat_image.url }}" class="cat-badge-icon">                                          
-                                                <strong>{{ product.category.friendly_name }}</strong>
-                                            </a></p>
+                                                <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                    <img src="{{ product.category.cat_image.url }}" class="cat-badge-icon"
+                                                    alt="{{ product.category.name }}">                                          
+                                                    <strong>{{ product.category.friendly_name }}</strong>
+                                                </a>
+                                            </p>
                                         {% endif %}
                                         {% if product.rating %}
                                             <small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
@@ -137,7 +137,7 @@
                                         <span class="badge badge-warning">{{ product.stock }} in stock</span>
                                     {% elif product.stock > 3 %} 
                                         <span class="badge badge-info">in stock</span>
-                                    {% endif %}</p>
+                                    {% endif %}
                                 </p>
                             </div>
                         </div>
@@ -201,9 +201,7 @@
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0);
 		});
-	</script>
-    
-    <script>
+
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);
@@ -227,6 +225,6 @@
 
         $(document).on('click', '.confirm-delete', function(){
             return confirm('Are you sure you want to delete it?');
-        })
+        });
     </script>
 {% endblock %}

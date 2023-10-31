@@ -29,7 +29,9 @@ body {
   width: fit-content;
 }
 
-/* Shop Now Button on Main Page */
+/*--------------------------------
+ Shop Now Button on Main Page 
+ --------------------------------*/
 .shop-now-button {
   text-decoration: none;
   position: relative;
@@ -84,21 +86,10 @@ body {
   background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
 
-
 .btn-black {
   background: black;
   color: white;
 }
-
-/* .shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
-} */
 
 .text-black {
   color: #0F1519 !important;
@@ -170,8 +161,6 @@ a.category-badge>span.badge:hover {
   position: relative;
 }
 
-
-
 .img-card {
   min-height: 200px;
   max-height: 200px;
@@ -192,9 +181,8 @@ a.category-badge>span.badge:hover {
 }
 
 /* ------------------------------- 
-Bootstrap toasts 
+        Bootstrap toasts 
 -------------------------------*/
-
 .message-container {
   position: fixed;
   top: 72px;
@@ -265,10 +253,9 @@ Convenience classes - colors copied from Bootstrap
   overflow-y: auto;
 }
 
-
-
-
-/* Product Card */
+/* --------------------------------
+          Product Card 
+--------------------------------*/
 .card {
   background-image: linear-gradient(163deg, #7A92A5 0%, #A42435 100%);
   border-radius: 8px;
@@ -289,8 +276,9 @@ Convenience classes - colors copied from Bootstrap
   box-shadow: 0px 0px 30px 1px #69101e4d;
 }
 
-
-/* Product Carousel */
+/* --------------------------------
+        Product Carousel 
+--------------------------------*/
 .carousel-control {
   width: 20px;
   background-color: #0f15190e;
@@ -305,10 +293,11 @@ Convenience classes - colors copied from Bootstrap
 .carousel-control-icon,
 .carousel-control-next-icon {
   color: #0F1519;
-} 
+}
 
-/* Product Form */
-
+/*--------------------------------
+         Product Form 
+--------------------------------*/
 .btn-file {
   position: relative;
   overflow: hidden;
@@ -400,14 +389,12 @@ input[name='q']::placeholder {
   }
 }
 
-/* 
-BAG
- */
-
+/*-------------------------------- 
+        BAG
+--------------------------------*/
 .bag-image {
   height: 50px;
 }
-
 
 .btn-pay {
   margin-right: 10px;
@@ -535,7 +522,6 @@ BAG
   box-shadow: inset 0px 0px 25px #7A92A5;
 }
 
-
 /* -------------------------------- 
         Category Badge 
  --------------------------------*/
@@ -544,8 +530,6 @@ BAG
   width: 24px;
   margin-bottom: 12px;
 }
-
-
 
 /* -------------------------------- 
         Footer 
@@ -610,25 +594,25 @@ a:hover {
   transition-duration: .3s;
 }
 
-/* instagram*/
+/* instagram */
 .containerOne:hover {
   background-color: #d62976;
   transition-duration: .3s;
 }
 
-/* twitter*/
+/* twitter */
 .containerTwo:hover {
   background-color: #00acee;
   transition-duration: .3s;
 }
 
-/* linkdin*/
+/* linkdin */
 .containerThree:hover {
   background-color: #0072b1;
   transition-duration: .3s;
 }
 
-/* Whatsapp*/
+/* Whatsapp */
 .containerFour:hover {
   background-color: #128C7E;
   transition-duration: .3s;
@@ -663,12 +647,9 @@ a:hover {
   }
 }
 
-
-
-
-
-/* -------------------------------- Media Queries */
-
+/* -------------------------------- 
+Media Queries 
+--------------------------------*/
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
@@ -744,5 +725,4 @@ a:hover {
   .footer-social-link {
     font-size: 0.8rem;
   }
-
 }
