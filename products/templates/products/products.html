@@ -120,7 +120,7 @@
                                         </div>
                                         <div class="col-4 ">
                                             <i class="card-info-icon fa-solid fa-people-arrows"></i>
-                                            <p class="mb-0 text-black text-center card-info">{{ product.min_players }} {% if product.max_players %} - {{ product.max_players }} Players {% else %} Player {% endif %}</p>
+                                            <p class="mb-0 text-black text-center card-info">{{ product.min_players }} {% if product.max_players > 1 %}-{{ product.max_players }} Players {% else %} Player {% endif %}</p>
                                         </div>
                                         <div class="col-4 ">
                                             <i class="card-info-icon fa-solid fa-clock-rotate-left"></i>
