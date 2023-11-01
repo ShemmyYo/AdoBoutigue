@@ -94,6 +94,11 @@ body {
 
 .text-black {
   color: #0F1519 !important;
+  font-weight: 400;
+}
+
+.text-bold {
+  font-weight: 700;
 }
 
 .text-gray {
@@ -326,6 +331,34 @@ Convenience classes - colors copied from Bootstrap
   border-radius: 4px;
 }
 
+/* Link */
+.a-link {
+  line-height: 2;
+  position: relative;
+  font-weight: 400;
+  color: #6A7F91;
+}
+
+.a-link::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #6A7F91;
+  position: absolute;
+  bottom: -.25rem;
+  left: 0;
+  transition: width .4s;
+}
+
+.a-link:hover::before {
+  width: 100%;
+}
+
+.a-link>a,
+a:hover {
+  text-decoration: none;
+}
 
 /* Go to TOP */
 .btt-button {
@@ -556,7 +589,7 @@ footer {
   width: 0;
   height: 2px;
   border-radius: 2px;
-  background-color: #0F1519;
+  background-color: #6A7F91;
   position: absolute;
   bottom: -.25rem;
   left: 0;
