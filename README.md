@@ -1,25 +1,21 @@
 # Portfolio Project 5 - E-commerce Applications
 
-![GameOnBoard](README/readme-files/game-on-board-roll-play-win–destination.png)
+![GamerOnBoard](README/readme-files/am-i-responsive.png)
 ## __Roll, Play, Win – Game On Board is Your Board Game Destination.__
 
-GameOnBoard is a B2C (business-to-consumer) board game web store which aims to audiences, such as families, tabletop gamers, or collectors and specialising in strategic and role-playing board games. We have built a diverse and attractive inventory of board games, including popular titles such as …….. 
+GamerOnBoard is a B2C (business-to-consumer) board game web store which aims to audiences, such as families, tabletop gamers, or collectors and specialising in strategic and role-playing board games. We have built a diverse and attractive inventory of board games, including popular titles such as …….. 
 
 When designing GameOnBoard.ie page, I focused on creating a user-friendly, visually appealing e-commerce website with a responsive design and focused on implementing a secure and easy-to-navigate online shopping experience. One of my prorities was also to be able to optimise website for search engines (SEO) to improve organic visibility.
 
 TBC
 
 
-You can view the live, deployed to Heroku application here: <a href ='https://gamer-on-board-6fa9b306b6d7.herokuapp.com/' target="_blank">Game On Board</a>
-
-
-![Mockup](README/readme-files/am-i-responsive.png)
 
 ## __Live Web-Page__
-[GameOnBoard](https://gamer-on-board-6fa9b306b6d7.herokuapp.com/)
+<a href ='https://gamer-on-board-6fa9b306b6d7.herokuapp.com/' target="_blank">GamerOnBoard</a>
 
 ## __GitHub Repository__
-[https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app)
+<a href ='https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app' target="_blank">https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app</a>
 
 ## __Tech Stack__
 
@@ -104,7 +100,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wirefram
 <details>
 <summary>Click to View Wireframes</summary>
 
-![Home Page](README/wireframes/home.png)
+![Home Page](README/readme-files/game-on-board-roll-play-win–destination.png)
 </details>
 
 ***

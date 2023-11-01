@@ -1,0 +1,8 @@
+Hey there GamerOnBoard!
+
+Thank you for signing up to our newsletter!
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Sincerely,
+GamerOnBoard

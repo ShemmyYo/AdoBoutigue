@@ -239,7 +239,7 @@
                 </div>
                 <div class="col-lg-3 d-flex flex-column mt-4 mt-lg-0">
                     <h4 class="text-center text-lg-left footer-lg-font"><strong>Subscribe to our newsletter</strong></h4>
-                    <form class="d-flex justify-content-center flex-wrap" method="POST" action="#">
+                    <form class="d-flex justify-content-center flex-wrap" method="POST" action="{% url 'newsletter' %}">
                         {% csrf_token %}
                         <div class=""><input class="form-control btn-aa m-3" type="email" name="email" placeholder="Your Email"></div>
                         <div class=""><button class="btn btn-aa m-3" type="submit">Subscribe </button></div>
