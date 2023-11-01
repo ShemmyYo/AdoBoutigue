@@ -1,5 +1,7 @@
 # Browser Compatibility
 
+<img height="50" src="README/tests/browser/google_chrome_icon.png"><img height="50" src="README/tests/browser/png-transparent-microsoft-edge-new-icon.png"><img height="50" src="README/tests/browser/safari-icon-hd.png"><img height="50" src="README/tests/browser/firefox-icon.png">
+
 After publishing to Heroku, the site was tested on Google Chrome, Microsoft Edge, Safari and Mozilla Firefox, with no visible issues for the user. 
 
 The site has loaded correctly and had no issues across all browsers.
@@ -501,38 +503,41 @@ app: __main folder__
 
 ***
 
-
-# Manual tests:
+# <img height="50" src="README/tests/manual/manual-testing.png"> Manual tests:
 
 ## __Welcome Screen__
 
 <details><summary> >>> Click for details</summary>
 
-Most features of the Shemmylicious Blog page are restricted to registered users. User is welcomed with animation which invates to registed. Some functions like Add Category, deleting comments or Admin page is restricted to Superusers only.
+Some features of the GamerOnGoard webshop, like storing details or browsing order history, are restricted to registered users. 
+User is welcomed on landing page where it is invited to browse stock by clicking 'Shop Now' button. 
+User is able to create 'Profile' at any stage however, it is possible to make a purchase withough creating one. 
+Some functionality like 'Product Managment'is restricted to Superusers only.
 
 | Verification | Result |
 | :----------------------------------------------------------: | :-------------: |
 | Welcome screen has loaded correctly and as intended | Pass |
 | Verified that the user can click sign-up button when not authenticated | Pass |
 | Verified that the user can click login button when not authenticated | Pass |
-| Verified that the user can click brows recipes button when authenticated | Pass |
-| Verified that the user can click your recipes button when authenticated | Pass |
-| Verified that the user can search recipe when authenticated | Pass |
-| Verified that the user can scroll carousell pictures | Pass |
-| Verified that the user can click each of footer links and all open on a new page | Pass |
-| Verified that the user can click links in navbar and each link opens as intended | Pass |
-| Verified that the user can click recipe link when authenticated | Pass |
-| Verified that the user can click category link when authenticated | Pass |
-| Verified that the user can click blog link when authenticated | Pass |
-| Verified that the user can click user link when authenticated | Pass |
-| Verified that the user can use a drop down link when authenticated | Pass |
-| Verified that the user can choose user profile from user dropdown when authenticated | Pass |
-| Verified that the user can choose user my recipe from user dropdown when authenticated | Pass |
-| Verified that the user can choose user add recipe from user dropdown when authenticated | Pass |
 | Verified that the user can logout from user profile dropdown when authenticated | Pass |
-| Verified that the superuser can add category from user dropdown when authenticated | Pass |
-| Verified that the superuser can go to django admin site from user dropdown when authenticated | Pass |
+| Verified that the user can click browse products by pressing 'Shop Now' button | Pass |
+| Verified that the user gets redirected to home page when logo is clicked  | Pass |
+| Verified that the user gets redirected to 'Shoppin Bag' when 'Bag' icon is clicked  | Pass |
+| Verified that the user can search product (search inludes product name and description) | Pass |
+| Verified that the 'Keep Shopping' link on empty 'Bag' page works as intended  | Pass |
+| Verified that the user can use a drop down links | Pass |
+| Verified that the user can click links in navbar and each link opens as intended | Pass |
+| Verified that the user can choose user add product from 'My Account' dropdown when authenticated | Pass |
+| Verified that the user can choose user profile from 'My Account' dropdown when authenticated | Pass |
+| Verified that the nav search menu works as intended and takes user to particular search | Pass |
+| Verified that the nav filtering menu works as intended and takes user to particular filter  | Pass |
+| Verified that the footer social links work as intended  | Pass |
+| Verified that the user can click each social link and all open on a new page | Pass |
+| Verified that the footer category links work as intended  | Pass |
+| Verified that the footer subscription function work as intended  | Pass |
+| Varified that the user is being updated by quick messages as intended | Pass |
 </details>
+
 
 ## __Sign Up__
 
@@ -541,9 +546,13 @@ Most features of the Shemmylicious Blog page are restricted to registered users.
 | Verification | Result |
 | :----------------------------------------------------------: | :-------------: |
 | Sign Up screen has loaded correctly and as intended | Pass |
+| Varified that the User is edirected to sign up page when 'Register' is clicked in "My Account' nav menu | Pass |
 | Varified that the User must type in correct characters in username, email and passwrods fields | Pass |
 | Varified that the when all required info is provided, User account is created after pressing sign up button | Pass |
-| Varified that after account is created, User menu shows only create profile link | Pass |
+| Varified that a confirmation email is sent to user requesting to confirm email address  | Pass |
+| Varified that after account is created and email confirmed, User can login menu shows only create profile link | Pass |
+| Varified that after account is created and email confirmed, User can update his details | Pass |
+| Varified that the user is being updated by quick messages as intended | Pass |
 </details>
 
 ## __Login__
@@ -560,113 +569,91 @@ Most features of the Shemmylicious Blog page are restricted to registered users.
 | Varified that after login Superuser is redirected to main screen | Pass |
 | Varified that after login Superuser is presented with correct nav links | Pass |
 | Varified that after login Superuser given all superuser rights | Pass |
+| Verified that when User clicks 'Forgot Password' it's being redirected to password reset page | Pass |
+| Varified that the user is being updated by quick messages as intended | Pass |
 </details>
 
-## __Search Recipe__
+## __Search__
 
 <details><summary> >>> Click for details</summary>
 
 | Verification | Result |
 | :----------------------------------------------------------: | :-------------: |
-| Search recipe screen has loaded correctly and as intended | Pass |
-| Varified that the User is allowed to search recipe db when authenticated | Pass |
+| Search product screen has loaded correctly and as intended | Pass |
+| Varified that the User is allowed to search product db when authenticated or not | Pass |
 | Varified that the User is presented with search result page regardles of whether capital or lowercase characters are typed in | Pass |
-| Varified that the User is redirected to search results screen once clicked 'Go'| Pass |
-| Verified that the user can open recipes loaded from search results | Pass |
-| Verified that the user can open author profile by clicking its name | Pass |
-| Verified that the user can open category page by clicking category name | Pass |
-| Verified that the user can go back to recipes page when clicking 'Home' | Pass |
+| Varified that the User is redirected to search results screen once clicked 'Search' | Pass |
+| Verified that the user can open products loaded from search results | Pass |
+| Verified that the user can go back to products page when clicking 'Home' | Pass |
+| Varified that the user is being updated by quick messages as intended | Pass |
 </details>
 
-## __Recipes Screen__
+## __Products Screen__
 
 <details><summary> >>> Click for details</summary>
 
 | Verification | Result |
 | :----------------------------------------------------------: | :-------------: |
-| Recipes screen has loaded correctly and as intended | Pass |
-| Verified that the user can open recipes loaded when authenticated | Pass |
-| Verified that the user can open author profile by clicking its name | Pass |
-| Verified that the user can open category page by clicking category name | Pass |
+| Products screen has loaded correctly and as intended | Pass |
+| Verified that the user can open Products loaded when authenticated or not  | Pass |
+| Verified that the user can sort by category by clicking category name | Pass |
 | Verified that pagination is working as intended | Pass |
+| Verified that 'All Products' link in navbar redirects to 'All Products' page | Pass |
+| Verified that 'All Products' by Price after clicking are being shown sorted as intended  | Pass |
+| Verified that 'All Products' by Age after clicking are being shown sorted as intended  | Pass |
+| Verified that 'All Products' by Rating after clicking are being shown sorted as intended  | Pass |
+| Verified that 'All Products' by Category after clicking are being shown sorted as intended  | Pass |
+| Verified that 'Board Games' link in navbar redirects user to chosen 'Category' as intended  | Pass |
+| Verified that 'Classic Games' link in navbar redirects user to chosen 'Category' as intended | Pass |
+| Verified that 'Game Accessories' link in navbar redirects user to chosen 'Category' as intended  | Pass |
+| Verified that 'Special Offers' link in navbar redirects user to chosen 'Category' as intended   | Pass |
+| Verified that 'Products Home' link on top-left of the page redirects user to chosen 'home' page as intended   | Pass |
+| Verified that Products count on top-left of the page counts products correctly and as intended   | Pass |
+| Verified that product cards are displayed correctly with all links working  | Pass |
+| Verified that product images are displayed correctly with all links working  | Pass |
+| Verified that product details are displayed correctly  | Pass |
+| Verified that product badges are displayed correctly  | Pass |
+| Verified that User can click on Product image to be redirected and view Product details page  | Pass |
+| Verified that User can click on Product category to be redirected and shown all Product in this category  | Pass |
+| Verified that User can click on 'Add to bag' for the product to be added to the bag  | Pass |
+| Verified that User cannot click on 'Add to bag' when product is out of stock  | Pass |
+| Verified that 'Add to bag' is replaced by 'Out of stock" when product is out of stock | Pass |
+| Verified that when logged in as Superuser, edit and delete links are shown | Pass |
+| Verified that when logged in as Superuser and clicked Edit, User is redireced to 'Edit Product' page | Pass |
+| Verified that when logged in as Superuser and clicked Delete, confirmation msg comes up to confirm deletion | Pass |
+| Varified that the user is being updated by quick messages as intended | Pass |
 </details>
 
-## __Recipe Details Screen__ (after clicking recipe title)
+
+## __Product details Screen__
 
 <details><summary> >>> Click for details</summary>
 
 | Verification | Result |
 | :----------------------------------------------------------: | :-------------: |
-| Recipe detail screen has loaded correctly and as intended  | Pass |
-| Verified that the user can like or unlike recipe when authenticated | Pass |
-| Verified that when the user likes/ulikes recipe a relevant message pops up  | Pass |
-| Verified that the user can write a comment when authenticated | Pass |
-| Verified that when the user writes a comment a relevant message pops up  | Pass |
-| Verified that the back to blog & back to recipes buttons work as intended | Pass |
+| Verified that the breadcrumbs have loaded correctly and links are working as intended  | Pass |
+| Verified that the User can scroll carousell pictures | Pass |
+| Verified that the User can play a video | Pass |
+| Verified that the User can see product name, description, age restrictions, number of players, time of play info  | Pass |
+| Verified that product badges are displayed correctly  | Pass |
+| Verified that the User can click on Product category to be redirected and shown all Product in this category  | Pass |
+| Verified that the User can click + button on quantity selector form | Quantity number increases if number + 1 | Pass |
+| Verified that the User can click - button on quantity selector form | Quantity number increases if number - 1 | Pass |
+| Verified that the User is shown a message if added more to the bag then what's in stock | Pass |
+| Verified that the User is shown a message if added more to the bag then what's in stock| Pass |
+| Verified that the User is shown a message if manually enter number greater than product stock in quantity selector form  | Pass |
+| Verified that the User 'Add to bag' button works as intended  | Pass |
+| Verified that when the User clicks on 'Add to bag' button, product is added to the bag  | Pass |
+| Verified that the User 'Keep shipping' link redirects user to Products page and works as intended | Pass |
+| Verified that the User is presented with addditional category description for each category | Pass |
+| Verified that the User is presented with addditional age restriction (PEGI) description for each age category | Pass |
+| Verified that when logged in as Superuser, edit and delete links are shown | Pass |
+| Verified that when logged in as Superuser and clicked Edit, User is redireced to 'Edit Product' page | Pass |
+| Verified that when logged in as Superuser and clicked Delete, confirmation msg comes up to confirm deletion | Pass |
+| Varified that the User is being updated by quick messages as intended | Pass |
 </details>
 
-## __Category Screen__ 
 
-<details><summary> >>> Click for details</summary>
-
-| Verification | Result |
-| :----------------------------------------------------------: | :-------------: |
-| Category screen has loaded correctly and as intended | Pass |
-| Verified that the categories load randomly each time page is reloaded | Pass |
-| Verified that the user can click category name to open a list of recipes in chosen category | Pass |
-| Verified that the list of categoriesed recipes is loading correctly | Pass |
-| Verified that if the category does not contain any recipes, correct message and buttons are shown  | Pass |
-| Verified that when no recipes to be displayed in category view  add recipe buttons is shown  | Pass |
-| Verified that the back to category & back to recipes buttons work as intended | Pass |
-</details>
-
-## __Category details__ (after clicking one of the Categories)
-
-<details><summary> >>> Click for details</summary>
-
-| Verification | Result |
-| :----------------------------------------------------------: | :-------------: |
-| Category detail screen has loaded correctly and as intended | Pass |
-| Varified that the User is presented with all recipes in chosen category | Pass |
-| Varified that the User is presented with a msg if no recipes in chosen category | Pass |
-| Verified that the user can open recipes loaded when authenticated | Pass |
-| Verified that the user can open author profile by clicking its name | Pass |
-| Verified that the user can open category page by clicking category name | Pass |
-| Varified that the User can create a new recipe is no recipes in category | Pass |
-| Verified that the back to blog & back to recipes buttons work as intended | Pass |
-
-</details>
-
-## __Blog Screen__ 
-
-<details><summary> >>> Click for details</summary>
-
-| Verification | Result |
-| :----------------------------------------------------------: | :-------------: |
-| Blog screen has loaded correctly and as intended | Pass |
-| Verified that the User can open Recipe view by clicking its title | Pass |
-| Verified that the User can open Author profile page by clicking 'Author' tag | Pass |
-| Verified that the User can open Category page by clicking 'Category' tag | Pass |
-| Verified that the User can continue reading blog by clicking 'CONTINUE READING' link | Pass |
-| Verified that pagination is working as intended | Pass |
-</details>
-
-## __Blog Details Screen__ (after clicking blog title)
-
-<details><summary> >>> Click for details</summary>
-
-| Verification | Result |
-| :----------------------------------------------------------: | :-------------: |
-| Blog detail screen has loaded correctly and as intended | Pass |
-| Verified that Users comments are display correctly | Pass |
-| Verified that the User pic/deatails display correctly | Pass |
-| Verified that the User can like or unlike Recipe Post as intended | Pass |
-| Verified that the User gets message that the after like/inlike is shown correctly | Pass |
-| Verified that the User can comment Recipe Post as intended | Pass |
-| Verified that the User gets message that the comment has been added and awaits Admin's verfication| Pass |
-| Verified that the Superuser can delete comment from the list of comments as intended | Pass |
-| Verified that the back to blog & back to recipes buttons work as intended | Pass |
-</details>
 
 ## __(Create) Profile Screen__
 
@@ -682,7 +669,8 @@ Most features of the Shemmylicious Blog page are restricted to registered users.
 | Verified that each social media links open correctly | Pass |
 </details>
 
-## __Edit Profile Bio & Social Links Screen__
+
+## __Update Profile Screen__
 
 <details><summary> >>> Click for details</summary>
 
@@ -695,15 +683,6 @@ Most features of the Shemmylicious Blog page are restricted to registered users.
 | Verified that 'Back to Your Profile' button brings user to profile page | Pass |
 </details>
 
-## __Edit Profile Settings Screen__
-
-<details><summary> >>> Click for details</summary>
-
-| Verification | Result |
-| :----------------------------------------------------------: | :-------------: |
-| Edit Profile Settings screen has loaded correctly and as intended | Pass |
-| Verified that the User can update username, first or last name, or email address | Fail |
-</details>
 
 ## __Change Password Screen__
 
@@ -715,7 +694,7 @@ Most features of the Shemmylicious Blog page are restricted to registered users.
 | Verified that the User can update their password | Fail |
 </details>
 
-## __Add Recipe Screen__ 
+## __Add Product Screen__ 
 
 <details><summary> >>> Click for details</summary>
 
@@ -734,20 +713,6 @@ Most features of the Shemmylicious Blog page are restricted to registered users.
 | Verified that 'Back' button brings user to recipes page | Pass |
 </details>
 
-## __Add Category Screen__ (Superuser only)
-
-<details><summary> >>> Click for details</summary>
-
-| Verification | Result |
-| :----------------------------------------------------------: | :-------------: |
-| Add Category screen has loaded correctly and as intended | Pass |
-| Verified that the Superuser is presented with a form to be completed as intended | Pass |
-| Verified that the 'Category Name' field is mandatory | Pass |
-| Verified that the 'Category Comment' field is mandatory | Pass |
-| Verified that the Superuser can add image which is saved in Cloudinary | Pass |
-| Verified that the Superuser is redirected to Category page and is shown a message on succesfull submittion | Pass |
-| Verified that 'Back' button brings user to recipes page | Pass |
-</details>
 
 ## __Admin__ (Superuser only)
 
