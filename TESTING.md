@@ -158,86 +158,90 @@ Performance issued are due mainly to image sizing however, some pages have shown
 
 <details><summary> >>> Click for Home Page Lighthouse Report</summary>
 Desktop 
-
-![Home Dektop ](README/lighthouse/home-desktop.png)
-![Home Dektop Perf](README/lighthouse/home-desktop-perf.png)
+![Lighthouse Desktop](README/tests/lighthouse/main.png)
 
 Mobile
-
-![Home Mobile](README/lighthouse/home-mobile.png)
-![Home Mobile Perf](README/lighthouse/home-mobile-perf.png)
+![Lighthouse Mobile](README/tests/lighthouse/main-mob.png)
+![Lighthouse Mobile](README/tests/lighthouse/main-mob-expl.png)
+![Lighthouse Mobile](README/tests/lighthouse/main-mob-expl2.png)
 </details>
 
 
-<details><summary> >>> Click for Home validation img</summary>
+<details><summary> >>> Click for Product Lighthouse Report img</summary>
 
 Desktop 
+![Lighthouse Desktop](README/tests/lighthouse/product.png)
 Mobile
-![Home](README/tests/html/main.png)
+![Lighthouse Mobile](README/tests/lighthouse/product-mob.png)
+![Lighthouse Mobile](README/tests/lighthouse/product-mob-expl.png)
 </details>
 
 
-<details><summary> >>> Click for Product validation img</summary>
+<details><summary> >>> Click for Product details Lighthouse Report img</summary>
 
 Desktop 
+![Lighthouse Desktop](README/tests/lighthouse/product-details.png)
 Mobile
-![Product](README/tests/html/product.png)
+![Lighthouse Mobile](README/tests/lighthouse/product-details-mob.png)
+![Lighthouse Mobile](README/tests/lighthouse/product-details-mob-expl.png)
 </details>
 
 
-<details><summary> >>> Click for Product detaills validation img</summary>
+<details><summary> >>> Click for Add Product Lighthouse Report img</summary>
 
 Desktop 
+![Lighthouse Desktop](README/tests/lighthouse/add-product.png)
 Mobile
-![Product detaills](README/tests/html/product-details.png)
+![Lighthouse Mobile](README/tests/lighthouse/add-product-mob.png)
 </details>
 
 
-<details><summary> >>> Click for Add Product validation img</summary>
+<details><summary> >>> Click for Edit Product Lighthouse Report img</summary>
 
 Desktop 
+![Lighthouse Desktop](README/tests/lighthouse/edit-product.png)
 Mobile
-![Add Product](README/tests/html/product-add.png)
+![Lighthouse Mobile](README/tests/lighthouse/edit-product-mob.png)
 </details>
 
 
-<details><summary> >>> Click for Edit Product validation img</summary>
+<details><summary> >>> Click for Profile UpdateLighthouse Report img</summary>
 
 Desktop 
+![Lighthouse Desktop](README/tests/lighthouse/profile.png)
 Mobile
-![Edit Product](README/tests/html/product-edit.png)
+![Lighthouse Mobile](README/tests/lighthouse/profile-mob.png)
+![Lighthouse Mobile](README/tests/lighthouse/sign-in-mob-expl.png)
 </details>
 
 
-<details><summary> >>> Click for Profile Update validation img</summary>
+<details><summary> >>> Click for Register Profile Lighthouse Report img</summary>
 
 Desktop 
+![Lighthouse Desktop](README/tests/lighthouse/sign-up.png)
 Mobile
-![Profile Update]()
+![Lighthouse Mobile](README/tests/lighthouse/sign-up-mob.png)
+
 </details>
 
 
-<details><summary> >>> Click for Register Profile validation img</summary>
+<details><summary> >>> Click for Profile Login Lighthouse Report img</summary>
 
 Desktop 
+![Lighthouse Desktop](README/tests/lighthouse/sign-in.png)
 Mobile
-![Register](README/tests/html/sign-up.png)
+![Lighthouse Mobile](README/tests/lighthouse/sign-in-mob.png)
+![Lighthouse Mobile](README/tests/lighthouse/sign-in-mob-expl.png)
 </details>
 
 
-<details><summary> >>> Click for Profile Login validation img</summary>
+<details><summary> >>> Click for Profile Logout Lighthouse Report img</summary>
 
-Desktop 
+Desktop
+![Lighthouse Desktop](README/tests/lighthouse/sign-out.png)
 Mobile
-![Login](README/tests/html/sign-in.png)
-</details>
-
-
-<details><summary> >>> Click for Profile Logout validation img</summary>
-
-Desktop 
-Mobile
-![Logout](README/tests/html/logout.png)
+![Lighthouse Mobile](README/tests/lighthouse/sign-out-mob.png)
+![Lighthouse Mobile](README/tests/lighthouse/sign-out-mob-expl.png)
 </details>
 
 [Back to top &uarr;](#browser-compatibility)
