@@ -8,7 +8,7 @@ The site has loaded correctly and had no issues across all browsers.
 
 # __Validation__
 
-## __HTML__
+## <img height="50" src="README/readme-files/html.png"> __HTML__
 
 All pages were run through the [W3C Markup Validator](https://validator.w3.org/nu/). 
 
@@ -75,7 +75,7 @@ Initially, there were some errors however all errors have been rectified.
 
 
 
-## __CSS__
+## <img height="50" src="README/readme-files/css.png"> __CSS__
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the site's CSS code.
 
 All issued rectified.
@@ -104,7 +104,7 @@ All issued rectified.
 
 
 
-## __JS__
+## <img height="50" src="README/readme-files/js.png"> __JS__
 
 [JSHint](https://jshint.com/) was used to validate the Javascript code used in the project. 
 
@@ -149,8 +149,7 @@ No issues to report.
 
 ***
 
-
-## __Lighthouse__
+## <img height="50" src="README/tests/lighthouse/google-lighthouse-featured-image.png"> __Lighthouse__
 
 Every page of the site was passed through the Lighthouse via the Chrome Dev Tools.
 
@@ -158,9 +157,11 @@ Performance issued are due mainly to image sizing however, some pages have shown
 
 <details><summary> >>> Click for Home Page Lighthouse Report</summary>
 Desktop 
+
 ![Lighthouse Desktop](README/tests/lighthouse/main.png)
 
 Mobile
+
 ![Lighthouse Mobile](README/tests/lighthouse/main-mob.png)
 ![Lighthouse Mobile](README/tests/lighthouse/main-mob-expl.png)
 ![Lighthouse Mobile](README/tests/lighthouse/main-mob-expl2.png)
@@ -170,8 +171,11 @@ Mobile
 <details><summary> >>> Click for Product Lighthouse Report img</summary>
 
 Desktop 
+
 ![Lighthouse Desktop](README/tests/lighthouse/product.png)
+
 Mobile
+
 ![Lighthouse Mobile](README/tests/lighthouse/product-mob.png)
 ![Lighthouse Mobile](README/tests/lighthouse/product-mob-expl.png)
 </details>
@@ -180,8 +184,11 @@ Mobile
 <details><summary> >>> Click for Product details Lighthouse Report img</summary>
 
 Desktop 
+
 ![Lighthouse Desktop](README/tests/lighthouse/product-details.png)
+
 Mobile
+
 ![Lighthouse Mobile](README/tests/lighthouse/product-details-mob.png)
 ![Lighthouse Mobile](README/tests/lighthouse/product-details-mob-expl.png)
 </details>
@@ -190,8 +197,11 @@ Mobile
 <details><summary> >>> Click for Add Product Lighthouse Report img</summary>
 
 Desktop 
+
 ![Lighthouse Desktop](README/tests/lighthouse/add-product.png)
+
 Mobile
+
 ![Lighthouse Mobile](README/tests/lighthouse/add-product-mob.png)
 </details>
 
@@ -199,8 +209,11 @@ Mobile
 <details><summary> >>> Click for Edit Product Lighthouse Report img</summary>
 
 Desktop 
+
 ![Lighthouse Desktop](README/tests/lighthouse/edit-product.png)
+
 Mobile
+
 ![Lighthouse Mobile](README/tests/lighthouse/edit-product-mob.png)
 </details>
 
@@ -208,8 +221,11 @@ Mobile
 <details><summary> >>> Click for Profile UpdateLighthouse Report img</summary>
 
 Desktop 
+
 ![Lighthouse Desktop](README/tests/lighthouse/profile.png)
+
 Mobile
+
 ![Lighthouse Mobile](README/tests/lighthouse/profile-mob.png)
 ![Lighthouse Mobile](README/tests/lighthouse/sign-in-mob-expl.png)
 </details>
@@ -218,8 +234,11 @@ Mobile
 <details><summary> >>> Click for Register Profile Lighthouse Report img</summary>
 
 Desktop 
+
 ![Lighthouse Desktop](README/tests/lighthouse/sign-up.png)
+
 Mobile
+
 ![Lighthouse Mobile](README/tests/lighthouse/sign-up-mob.png)
 
 </details>
@@ -228,8 +247,11 @@ Mobile
 <details><summary> >>> Click for Profile Login Lighthouse Report img</summary>
 
 Desktop 
+
 ![Lighthouse Desktop](README/tests/lighthouse/sign-in.png)
+
 Mobile
+
 ![Lighthouse Mobile](README/tests/lighthouse/sign-in-mob.png)
 ![Lighthouse Mobile](README/tests/lighthouse/sign-in-mob-expl.png)
 </details>
@@ -238,8 +260,11 @@ Mobile
 <details><summary> >>> Click for Profile Logout Lighthouse Report img</summary>
 
 Desktop
+
 ![Lighthouse Desktop](README/tests/lighthouse/sign-out.png)
+
 Mobile
+
 ![Lighthouse Mobile](README/tests/lighthouse/sign-out-mob.png)
 ![Lighthouse Mobile](README/tests/lighthouse/sign-out-mob-expl.png)
 </details>
@@ -249,74 +274,233 @@ Mobile
 ***
 
 
-## __PEP8 CI Validation__
+## <img height="50" src="README/tests/python/pep8-images.jpeg"> __PEP8 CI Validation__
 
 The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the python code used throughout the project. The results are outlined in below:
 
 ***
 
-app: __shemmylicious__
+app: __gameronboard__
 
 <details><summary> >>> Click for urls.py validation img</summary>
 
-![urls](README/pep8/shemmylicious/urls.png)
+![Alt text](README/tests/python/gameonboard-urls.png)
+</details>
+
+***
+
+app: __home__
+
+<details><summary> >>> Click for urls.py validation img</summary>
+
+![Alt text](README/tests/python/home-urls.png)
+</details>
+
+<details><summary> >>> Click for views.py validation img</summary>
+
+![Alt text](README/tests/python/home-views.png)
+</details>
+
+<details><summary> >>> Click for apps.py validation img</summary>
+
+![Alt text](README/tests/python/home-apps.png)
 </details>
 
 [Back to top &uarr;](#browser-compatibility)
 
 ***
 
-app: __members__
+app: __bag__
 
 <details><summary> >>> Click for urls.py validation img</summary>
 
-![urls](README/pep8/members/urls.png)
+![Alt text](README/tests/python/bag-urls.png) 
 </details>
 
 <details><summary> >>> Click for views.py validation img</summary>
 
-![views](README/pep8/members/views.png)
+![Alt text](README/tests/python/bag-views.png)
 </details>
 
-<details><summary> >>> Click for forms.py validation img</summary>
+<details><summary> >>> Click for apps.py validation img</summary>
 
-![Forms](README/pep8/members/forms.png)
+![Alt text](README/tests/python/bag-apps.png)
+</details>
+
+<details><summary> >>> Click for context.py validation img</summary>
+
+![Alt text](README/tests/python/bag-context.png) 
+</details>
+
+<details><summary> >>> Click for bag_tools.py validation img</summary>
+
+![Alt text](README/tests/python/bag-tools.png) 
 </details>
 
 [Back to top &uarr;](#browser-compatibility)
 
 ***
 
-app: __blog__
+app: __checkout__
 
 <details><summary> >>> Click for urls.py validation img</summary>
 
-![urls](README/pep8/blog/urls.png)
+![Alt text](README/tests/python/checkout-URLS.png)
 </details>
 
 <details><summary> >>> Click for views.py validation img</summary>
 
-![views](README/pep8/blog/views.png)
+![Alt text](README/tests/python/checkout-views.png)
 </details>
 
 <details><summary> >>> Click for forms.py validation img</summary>
 
-![forms](README/pep8/blog/forms.png)
+![Alt text](README/tests/python/checkout-forms.png)
 </details>
 
 <details><summary> >>> Click for models.py validation img</summary>
 
-![models](README/pep8/blog/models.png)
+![Alt text](README/tests/python/checkout-models.png)
+</details>
+
+<details><summary> >>> Click for signals.py validation img</summary>
+
+![Alt text](README/tests/python/checkout-signals.png)
 </details>
 
 <details><summary> >>> Click for admin.py validation img</summary>
 
-![admin](README/pep8/blog/admin.png)
+![Alt text](README/tests/python/checkout-admin.png)
+</details>
+
+<details><summary> >>> Click for apps.py validation img</summary>
+
+![Alt text](README/tests/python/checkout-apps.png)
+</details>
+
+<details><summary> >>> Click for webhook.py validation img</summary>
+
+![Alt text](README/tests/python/webhoocks.png)
+</details>
+
+<details><summary> >>> Click for webhook_handler.py validation img</summary>
+
+![Alt text](README/tests/python/webhook-handler.png)
 </details>
 
 [Back to top &uarr;](#browser-compatibility)
 
 ***
+
+app: __newsletter__
+
+<details><summary> >>> Click for urls.py validation img</summary>
+
+![Alt text](README/tests/python/newsletter-urls.png)
+</details>
+
+<details><summary> >>> Click for views.py validation img</summary>
+
+![Alt text](README/tests/python/newsletter-views.png)
+</details>
+
+<details><summary> >>> Click for forms.py validation img</summary>
+
+![Alt text](README/tests/python/newsletter-forms.png)
+</details>
+
+<details><summary> >>> Click for admin.py validation img</summary>
+
+![Alt text](README/tests/python/newsletter-admin.png)
+</details>
+
+[Back to top &uarr;](#browser-compatibility)
+
+***
+
+app: __product__
+
+<details><summary> >>> Click for urls.py validation img</summary>
+
+![Alt text](README/tests/python/product-urls.png)
+</details>
+
+<details><summary> >>> Click for views.py validation img</summary>
+
+![Alt text](README/tests/python/product-views.png)
+</details>
+
+<details><summary> >>> Click for forms.py validation img</summary>
+
+![Alt text](README/tests/python/product-forms.png)
+</details>
+
+<details><summary> >>> Click for models.py validation img</summary>
+
+![Alt text](README/tests/python/product-models.png)
+</details>
+
+<details><summary> >>> Click for apps.py validation img</summary>
+
+![Alt text](README/tests/python/product-apps.png)
+</details>
+
+<details><summary> >>> Click for widgets.py validation img</summary>
+
+![Alt text](README/tests/python/product-widgets.png)
+</details>
+
+[Back to top &uarr;](#browser-compatibility)
+
+***
+
+app: __profile__
+
+<details><summary> >>> Click for urls.py validation img</summary>
+
+![Alt text](README/tests/python/profile-urls.png)
+</details>
+
+<details><summary> >>> Click for views.py validation img</summary>
+
+![Alt text](README/tests/python/profile-views.png)
+</details>
+
+<details><summary> >>> Click for models.py validation img</summary>
+
+![Alt text](README/tests/python/profile-models.png)
+</details>
+
+<details><summary> >>> Click for forms.py validation img</summary>
+
+![Alt text](README/tests/python/profile-forms.png)
+</details>
+
+<details><summary> >>> Click for apps.py validation img</summary>
+
+![Alt text](README/tests/python/profile-apps.png)
+</details>
+
+[Back to top &uarr;](#browser-compatibility)
+
+***
+
+app: __main folder__
+
+<details><summary> >>> Click for manage.py validation img</summary>
+
+![Alt text](README/tests/python/manage-py.png)
+</details>
+
+<details><summary> >>> Click for custom_storages.py validation img</summary>
+
+![Alt text](README/tests/python/custom-storages.png)
+</details>
+
+[Back to top &uarr;](#browser-compatibility)
+
+***
+
 
 # Manual tests:
 
