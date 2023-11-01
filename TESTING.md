@@ -49,6 +49,12 @@
 ![Alt text](README/tests/python/product-widgets.png) 
 ![Alt text](README/tests/python/webhoocks.png) 
 ![Alt text](README/tests/python/webhook-handler.png)
+![Alt text](README/tests/python/newsletter-admin.png) 
+![Alt text](README/tests/python/newsletter-forms.png) 
+![Alt text](README/tests/python/newsletter-model.png) 
+![Alt text](README/tests/python/newsletter-urls.png) 
+![Alt text](README/tests/python/newsletter-views.png)
+
 
 
 ![Alt text](README/tests/manual/confirm-email-test.png) 

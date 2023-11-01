@@ -8,14 +8,15 @@ from .forms import NewsletterForm
 
 
 def newsletter(request):
-    """ 
-    Newsletter mailing list 
+    """
+    Newsletter mailing list
     """
     if request.method == 'POST':
         form = NewsletterForm(request.POST)
         if form.is_valid():
             member = form.save()
-            messages.info(request, 'You have successfully joined GamerOnBoard mailing list!')
+            messages.info(request, 'You have successfully joined GamerOnBoard \
+                          mailing list!')
 
             user_email = get_object_or_404(NewsletterSignup,
                                            email=member.email)
@@ -34,8 +35,9 @@ def newsletter(request):
 
             return redirect(request.META.get('HTTP_REFERER', '/'))
         else:
-            messages.error(request, 'Sorry, there was a glitch! Please ensure the \
-            form is valid or you are not already signed up!')
+            messages.error(request, 'Sorry, there was a glitch! \
+                           Please ensure the form is valid or you \
+                           are not already signed up!')
 
     context = {
             'newsletter_form': form,
