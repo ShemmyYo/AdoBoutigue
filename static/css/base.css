@@ -8,8 +8,9 @@ body {
   background: url('/media/homepage_background.jpg') no-repeat center center fixed;
   background-size: cover;
   height: calc(100vh - 164px);
-  color: #6A7F91;
+  color: #0F1519;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 /* from Bulma */
@@ -167,7 +168,8 @@ a.category-badge>span.badge:hover {
 }
 
 .card-info {
-  font-size: small;
+  font-size: x-small;
+  font-weight: 700;
   color: #69101E;
 }
 
@@ -546,6 +548,7 @@ footer {
   color: #6A7F91;
   line-height: 2;
   position: relative;
+  font-weight: 600;
 }
 
 .social-link::before {
@@ -553,7 +556,7 @@ footer {
   width: 0;
   height: 2px;
   border-radius: 2px;
-  background-color: #6A7F91;
+  background-color: #0F1519;
   position: absolute;
   bottom: -.25rem;
   left: 0;
