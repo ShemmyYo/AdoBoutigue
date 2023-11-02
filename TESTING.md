@@ -2,9 +2,9 @@ Back to [README.md](README.md) file.
 
 # Browser Compatibility
 
-<img height="50" src="README/tests/browser/google_chrome_icon.png"><img height="50" src="README/tests/browser/png-transparent-microsoft-edge-new-icon.png"><img height="50" src="README/tests/browser/safari-icon-hd.png"><img height="50" src="README/tests/browser/firefox-icon.png">
+<img height="50" src="README/tests/browser/google_chrome_icon.png"><img height="50" src="README/tests/browser/png-transparent-microsoft-edge-new-icon.png"><img height="50" src="README/tests/browser/firefox-icon.png">
 
-After publishing to Heroku, the site was tested on Google Chrome, Microsoft Edge, Safari and Mozilla Firefox, with no visible issues for the user. 
+After publishing to Heroku, the site was tested on Google Chrome, Microsoft Edge and Mozilla Firefox, with no visible issues for the user. 
 
 The site has loaded correctly and had no issues across all browsers.
 
@@ -507,14 +507,14 @@ app: __main folder__
 
 # <img height="50" src="README/tests/manual/manual-testing.png"> Manual tests:
 
-## __Welcome Screen__
-
-<details><summary> >>> Click for details</summary>
-
 Some features of the GamerOnGoard webshop, like storing details or browsing order history, are restricted to registered users. 
 User is welcomed on landing page where it is invited to browse stock by clicking 'Shop Now' button. 
 User is able to create 'Profile' at any stage however, it is possible to make a purchase withough creating one. 
 Some functionality like 'Product Managment'is restricted to Superusers only.
+
+## __Welcome Screen__
+
+<details><summary> >>> Click for details</summary>
 
 | Verification | Result |
 | :----------------------------------------------------------: | :-------------: |
@@ -539,7 +539,6 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | Verified that the footer subscription function work as intended  | Pass |
 | Varified that the user is being updated by quick messages as intended | Pass |
 </details>
-
 
 ## __Sign Up__
 
@@ -574,7 +573,6 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | Verified that when User clicks 'Forgot Password' it's being redirected to password reset page | Pass |
 | Varified that the user is being updated by quick messages as intended | Pass |
 </details>
-
 
 ## __Update Profile Screen__
 
@@ -659,7 +657,6 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | Varified that the user is being updated by quick messages as intended | Pass |
 </details>
 
-
 ## __Product details Screen__
 
 <details><summary> >>> Click for details</summary>
@@ -672,8 +669,8 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | Verified that the User can see product name, description, age restrictions, number of players, time of play info  | Pass |
 | Verified that product badges are displayed correctly  | Pass |
 | Verified that the User can click on Product category to be redirected and shown all Product in this category  | Pass |
-| Verified that the User can click + button on quantity selector form | Quantity number increases if number + 1 | Pass |
-| Verified that the User can click - button on quantity selector form | Quantity number increases if number - 1 | Pass |
+| Verified that the User can click + button on quantity selector form to increases number + 1 | Pass |
+| Verified that the User can click - button on quantity selector form to decreases number - 1 | Pass |
 | Verified that the User is shown a message if added more to the bag then what's in stock | Pass |
 | Verified that the User is shown a message if added more to the bag then what's in stock| Pass |
 | Verified that the User is shown a message if manually enter number greater than product stock in quantity selector form  | Pass |
@@ -687,11 +684,6 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | Verified that when logged in as Superuser and clicked Delete, confirmation msg comes up to confirm deletion | Pass |
 | Varified that the User is being updated by quick messages as intended | Pass |
 </details>
-
-
-
-
-
 
 ## __Admin__ (Superuser only)
 
@@ -711,9 +703,126 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | Varified that the User can logout by clicking Logout in User manu quick link | Pass |
 | Varified that the User is shown confirmation page before logout | Pass |
 | Varified that the User is logout after confirmation | Pass |
-| Varified that the User logout page shows user profile pin and username | Pass |
-| Verified that 'Back to Blog' button brings user to blog page | Pass |
-| Verified that 'Back to Recipes' button brings user to recipes page | Pass |
+| Varified that the User logout page redirects user to 'All Products' | Pass |
+| Varified that the User is being updated by quick messages as intended | Pass |
+</details>
+
+## __Bag__
+
+<details><summary> >>> Click for details</summary>
+
+| Verification | Result |
+| :----------------------------------------------------------: | :-------------: |
+| Verified that Checkout screen has loaded correctly and as intended | Pass |
+| Verified that Cash Register icon in main nav redirects user to bag page | Pass |
+| Verified that + button on quantity selector form increases product by + 1 if it is less than or equal to product's stock | Pass |
+| Verified that - button on quantity selector form decreases product by -1 if it is greater than one | Pass |
+| Verified that update button under quantity selector form updates quantity of product in Bag to number in quantity select form | Pass |
+| Verified that remove button under quantity selector form removes product from Bag completely | Pass |
+| Verified that manually entered number greater than product stock in quantity selector form shows stock availabity error message | Pass |
+| Verified that removing item from basket brings total to below €50 and changes delivery from FREE to 10% | Pass |
+| Verified that 'Keep Shopping' button redirects to 'All Products' page | Pass |
+| Verified that 'Pay Stripe' button redirects to checkout page | Pass |
+| Varified that the User is being updated by quick messages as intended | Pass |
+</details>
+
+## __Checkout__
+
+<details><summary> >>> Click for details</summary>
+
+| Verification | Result |
+| :----------------------------------------------------------: | :-------------: |
+| Checkout screen has loaded correctly and as intended | Pass |
+| Verified that 'Pay Stripe' button redirects to checkout page | Pass |
+| Click 'Complete Order' button without all required fields filled out shows error message | Pass |
+| Checked 'Save delivery information to profile' button causes information to save data to profile if logged in | Pass |
+| Verified that clicking 'Create Account' link, redirects to sign up page | Pass |
+| Verified tha clicking 'Login' in nav, redirects to sign in page | Pass |
+| Varified that clicking 'Complete Order' button without card details filled out shows error message | Pass |
+| Verified that clicking 'Complete Order' button with all details filled out loads spinner and order is processed | Pass |
+| Varified that 'Order completed' status sends confirmation email, updates stock levels and redirects to checkout success page | Pass | 
+| Verified that the User is being updated by quick messages as intended | Pass |
+</details>
+
+## __Checkout Success Page__
+
+<details><summary> >>> Click for details</summary>
+
+| Verification | Result |
+| :----------------------------------------------------------: | :-------------: |
+| Checkout success screen has loaded correctly and as intended | Pass |
+| Varified that Order completed redirects to checkout success page | Pass |
+| Varified that clicking 'Checkout latest deals' button redirects user to all products page | Pass |
+| Varified that clicking Back to profile button button redirects user to their profile | Pass | 
+| Varified that the User is being updated by quick messages as intended | Pass |
+</details>
+ 
+## __Add Product Page__
+
+<details><summary> >>> Click for details</summary>
+
+| Verification | Result |
+| :----------------------------------------------------------: | :-------------: |
+| Add Product screen has loaded correctly and as intended | Pass |
+| Varified that clicking 'Add Product' link from Admin dropdown redirects admin to 'Add product' page | Pass | 
+| Varified that clicking 'Cancel' button redirects admin to all products page | Pass | 
+| Varified that clicking 'Add Product' button with form filled correctly creates a new product | Pass | 
+| Varified that clicking 'Add Product' button with form filled incorrectly shows error message | Pass | 
+| Varified that set product's stock to be less than 1 creates product which is shown as sold out | Pass | 
+| Varified that clicking 'Add Product' button with no image set displayes product with default product image | Pass | 
+| Verified that forcing the URL to add a new product if not Admin  does not work | Pass | 
+| Varified that the User is being updated by quick messages as intended | Pass |
+</details>
+
+## __Edit Product Page__
+
+<details><summary> >>> Click for details</summary>
+
+| Verification | Result |
+| :----------------------------------------------------------: | :-------------: |
+| 'Edit Product' screen has loaded correctly and as intended | Pass |
+| Verified that clicking edit link on product card redirects user to Edit Product page | Pass |
+| Verified that clicking 'Cancel' button Redirects Admin to 'All Products' page | Pass |
+| Verified that clicking 'Update' Product button with form filled correctly updates product correctly | Pass |
+| Verified that clicking 'Update' Product button with form filled incorrectly shows error message | Pass |
+| Verified that setting product's stock to be less than 1 shows product as 'sold out' with add to basket button disabled | Pass |
+| Verified that setting product's stock to be less than 3 shows product as limited availability | Pass |
+| Verified that setting product's stock to be more than 3 shows product as 'in stock' | Pass |
+| Varified that the User is being updated by quick messages as intended | Pass |
+</details>
+
+## __Delete Product__
+
+<details><summary> >>> Click for details</summary>
+
+| Verification | Result |
+| :----------------------------------------------------------: | :-------------: |
+| Verified that clicking 'delete' link on product causes a popup message to appear | Pass | 
+| Varified that if the User clickes ok on popup message, product is deleted | Pass |
+| Varified that forcing the URL to delete a product if not an admin does not work | Pass |
+| Varified that the User is being updated by quick messages as intended | Pass |
+</details>
+
+## __Footer__
+
+<details><summary> >>> Click for details</summary>
+
+| Verification | Result |
+| :----------------------------------------------------------: | :-------------: |
+| screen has loaded correctly and as intended | Pass |
+| Verified that clicking social media icons in footer opens social media site clicked in a new tab | Pass |
+| Verified that clicking on Classic Games link in footer redirects to Classic category products page | Pass | 
+| Verified that clicking on Chess Games link in footer redirectr to Chess category products page | Pass | 
+| Verified that clicking on Strategy Games link in footer redirectr to Strategy category products page | Pass | 
+| Verified that clicking on RPG's Games link in footer redirects to RPG category products page | Pass | 
+| Verified that clicking on for One category link in footer redirects to products page by category | Pass |
+| Verified that clicking on for Kids category link in footer redirects to products page by category | Pass |
+| Verified that clicking on for Families category link in footer redirects to products page by category | Pass |
+| Verified that clicking on for Parties category link in footer redirects to products page by category | Pass |
+| Verified that clicking on Subscribe button on blank newsletter form shows error message | Pass |
+| Verified that clicking on Subscribe button on filled newsletter form shows alert message | Pass |
+| Verified that clicking subscribe to newsletter with already subscribed email address shows error message | Pass |
+| Varified that the User is being updated by quick messages as intended | Pass |
 </details>
 
 [Back to top &uarr;](#browser-compatibility)
@@ -724,7 +833,70 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 
 |     |                                   Story                      | Result |
 | --- | :----------------------------------------------------------: | :-------------: |
-| ADMIN STORY | As an Admin I ...  MUST HAVE | Pass |
+| [EPIC 1](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/1) | Django & Project Basic Setup | Completed |
+| ADMIN STORY | Setup Django Env, Project and App `MUST HAVE` | Pass | 
+| ADMIN STORY | Create 'HOME' App `MUST HAVE` | Pass | 
+| ADMIN STORY | Heroku Deployment `MUST HAVE` | Pass | 
+| USER STORY | Home Page `MUST HAVE`  | Pass | 
+
+
+|     |                                   Story                      | Result |
+| --- | :----------------------------------------------------------: | :-------------: |
+| [EPIC 2](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/3) | User Authentication & Page Admin | Completed |
+| ADMIN STORY | AllAuth Setup  `MUST HAVE` | Pass | 
+| ADMIN STORY | AllAuth Login Templates `MUST HAVE`  | Pass |
+| ADMIN STORY | Connect Google Social Account to AllAuth `COULD HAVE ` | Failed |
+| USER STORY | Account Registration `SHOULD HAVE`  | Pass | 
+| USER STORY | Personalised User Profile `SHOULD HAVE`  | Pass | 
+| USER STORY | Login and Logout `SHOULD HAVE`  | Pass | 
+| USER STORY | Email Confirmation after Registration `SHOULD HAVE`  | Pass | 
+
+
+|     |                                   Story                      | Result |
+| --- | :----------------------------------------------------------: | :-------------: |
+| [EPIC 3](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/2) | Product App | Completed |
+| ADMIN STORY | Add Product  `MUST HAVE` | Pass | 
+| ADMIN STORY | Edit/Update Product  `MUST HAVE` | Pass | 
+| USER STORY | Special Offers `MUST HAVE` | Pass | 
+| USER STORY | View a list of Products `MUST HAVE` | Pass | 
+| USER STORY | View Product Details `MUST HAVE` | Pass | 
+| USER STORY | Search Bar `SHOULD HAVE` | Pass | 
+| USER STORY | View Product by Category `MUST HAVE` | Pass | 
+| USER STORY | Sorting Products `MUST HAVE` | Pass | 
+| USER STORY | Product Card details `COULD HAVE` | Pass | 
+| USER STORY | Carousel on home page `COULD HAVE` | Pass | 
+
+
+|     |                                   Story                      | Result |
+| --- | :----------------------------------------------------------: | :-------------: |
+| [EPIC 4](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/4) | Bag, Checkout and Payment | Completed |
+| USER STORY | Bag `MUST HAVE`  | Pass | 
+| USER STORY | View total of my purchase `MUST HAVE`  | Pass | 
+| USER STORY | Product Quantity `MUST HAVE`  | Pass | 
+| USER STORY | View Bag `MUST HAVE`  | Pass | 
+| USER STORY | Payment `MUST HAVE`  | Pass | 
+| USER STORY | Safe and Secure Payment `MUST HAVE`  | Pass | 
+| USER STORY | Email Confirmation after Purchase `MUST HAVE`  | Pass | 
+| USER STORY | Discount `WONT HAVE` | Failed | 
+
+
+|     |                                   Story                      | Result |
+| --- | :----------------------------------------------------------: | :-------------: |
+| [EPIC 5](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/5) | Subscriptions | Completed |
+| USER STORY | Subscribtion to newsletter `SHOULD HAVE`  | Pass |
+
+
+|     |                                   Story                      | Result |
+| --- | :----------------------------------------------------------: | :-------------: |
+| [EPIC 6](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/6) | Reviews and Blog | Not Completed |
+
+
+|     |                                   Story                      | Result |
+| --- | :----------------------------------------------------------: | :-------------: |
+| [EPIC 7](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/7) | Marketing and Search Engine Optimalisation | Not Completed |
+| ADMIN STORY | Marketing `MUST HAVE`  | Pass | 
+| ADMIN STORY | Social Media `MUST HAVE`  | Pass | 
+| ADMIN STORY | Social Media Extra `SHOULD HAVE`  | Pass | 
 
 
 [Back to top &uarr;](#browser-compatibility)
@@ -733,7 +905,15 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 
 # <img height="50" src="README/tests/error/bugs.png"> __Bugs:__
 
+![Alt text](README/tests/error/atribute-error-oject-has-no-attribute-original_bag-error-fixed.png) 
 
+![Alt text](README/tests/error/atribute-error-oject-has-no-attribute-original_bag.png) 
+
+![Alt text](README/tests/error/atribute-error-oject-has-no-attribute-original_bag-error-found.png) 
+
+*** 
+
+![Alt text](README/tests/error/billing-info-not-showing-charges.png)
 
 [Back to top &uarr;](#browser-compatibility)
 
@@ -742,8 +922,28 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 # <img height="50" src="README/tests/error/bugs.png"> __Known Bugs__
 
 
-
 [Back to top &uarr;](#browser-compatibility)
 
 ***
+
+# <img height="50" src="README/tests/automated/test_python_icon.png"> __Python Unit Testing__
+
+I have used Django's built-in unit testing framework to test the application functionality.
+
+In order to run the tests, I ran the following command in the terminal each time:
+
+`python3 manage.py test `
+
+| No | Test | Results |
+| :---: | :---: | :---: |
+| 1 | 
+| 2 | 
+| 3 | 
+| 4 | 
+| 5 | 
+| 6 | 
+| 7 | 
+| 8 | 
+| 9 | 
+
 Back to [README.md](README.md) file.

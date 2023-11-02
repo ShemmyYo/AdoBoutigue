@@ -1,14 +1,28 @@
 # Portfolio Project 5 - E-commerce Applications
 
 ![GamerOnBoard](README/readme-files/am-i-responsive.png)
-## __Roll, Play, Win – Game On Board is Your Board Game Destination.__
+## __Roll, Play, Win – GamerOnBoard is Your Board Game Destination.__
 
-GamerOnBoard is a B2C (business-to-consumer) board game web store which aims to audiences, such as families, tabletop gamers, or collectors and specialising in strategic and role-playing board games. We have built a diverse and attractive inventory of board games, including popular titles such as …….. 
+GamerOnBoard is a B2C (business-to-consumer) board game web store which aims to audiences, such as families, tabletop gamers, or collectors and specialising in strategic and role-playing board games. We have built a diverse and attractive inventory of board games, including popular titles such as Catan, Ticket to Ride, Chess, Monopoly and many many more... 
 
-When designing GameOnBoard.ie page, I focused on creating a user-friendly, visually appealing e-commerce website with a responsive design and focused on implementing a secure and easy-to-navigate online shopping experience. One of my prorities was also to be able to optimise website for search engines (SEO) to improve organic visibility.
+When designing GamerOnBoard store, I focused on creating a user-friendly, visually appealing e-commerce website with a responsive design and focused on implementing a secure and easy-to-navigate online shopping experience. One of my prorities was also to be able to optimise website for search engines (SEO) to improve organic visibility.
 
-TBC
+I ensured to include high-quality backlinks from reputable websites in the board game industry, gaming communities, and related niches.
+The Customer is encourage to leave reviews and ratings, which can enhance GamerOnBoard visibility in local and product-specific search results.
 
+# Project Goal
+
+The goal of this project was to build a Full-Stack site based on business logic used to control a centrally-owned dataset. 
+Page will have to have an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service. It is also a goal to implement SEO and create a dummy social media product page.
+
+***
+
+## __Tech Stack__
+
+<img height="50" src="README/readme-files/python-django.png">  <img height="50" src="README/readme-files/elephantsql.png">   <img height="50" src="README/readme-files/html.png">  <img height="50" src="README/readme-files/css.png">  <img height="50" src="README/readme-files/js.png"> <img height="50" src="README/readme-files/stripe.png"> 
+
+
+<img height="50" src="README/readme-files/gitpod.png">  <img height="50" src="README/readme-files/github.png">  <img height="50" src="README/readme-files/bootstrap.png"> 
 
 
 ## __Live Web-Page__
@@ -17,12 +31,6 @@ TBC
 ## __GitHub Repository__
 <a href ='https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app' target="_blank">https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app</a>
 
-## __Tech Stack__
-
-<img height="50" src="README/readme-files/python-django.png">  <img height="50" src="README/readme-files/elephantsql.png">   <img height="50" src="README/readme-files/html.png">  <img height="50" src="README/readme-files/css.png">  <img height="50" src="README/readme-files/js.png"> <img height="50" src="README/readme-files/stripe.png"> 
-
-
-<img height="50" src="README/readme-files/gitpod.png">  <img height="50" src="README/readme-files/github.png">  <img height="50" src="README/readme-files/bootstrap.png">  <img height="50" src="README/readme-files/cloudinary.png">
 
 ***
 
@@ -33,42 +41,174 @@ TBC
 
 ***
 
-# Project Goal
-
-***
-
 # UX User Experiance
+
+**Creating a user-friendly e-commerce web store is essential to attract and retain customers hencethe below are some ofthe key UX (User Experience) characteristics I ensured to be used:** 
+
+- **Intuitive Navigation:** Ensured that the website has a clear and logical navigation structure. Users should be able to easily find product categories, search for specific items, and navigate to their shopping cart or checkout page without confusion.
+
+- **Responsive Design:** My e-commerce site is fully responsive, meaning it adapts seamlessly to various screen sizes and devices, including smartphones and tablets.
+
+- **Fast Loading Speed:** I optimised store's performance to ensure fast load times by i.e.: compressing images.
+
+- **Clear Product Presentation:** I used high-quality images and provided product descriptions. Include pricing, product specifications, and availability information as well as age group suitability and other.
+
+- **User-Friendly Search:** I implemented a search feature which allow users to refine their search results by price, category, age, and other relevant criteria.
+
+- **User Reviews and Ratings:** I includes user-generated reviews and ratings for products which builds trust and helps shoppers make informed decisions.
+
+- **Shopping Cart and Checkout Optimization:** I made it easy for users to add items to their cart and proceed to checkout. I provided a clear and concise checkout process with Stripe payment option and guest checkout for convenience.
+
+- **Security and Trust:** Displayed trust indicators such as secure payment logo.
+
+- **Personalization:** Implement features like product recommendations based on user behavior and purchase history. Personalization enhances the shopping experience and can increase sales.
+
+- **User Account Management:** Users are allowed to create accounts, save their address and view order history. AllAuth offers easy password recovery and account management options.
+
+- **Error Handling:** Clear error messages and guidance when users encounter issues, such as out-of-stock products or incorrectly filled-out forms.
+
+- **Accessibility:** I ensured that website is accessible to all users, including those with disabilities. 
+
 
 ## Design
 
 ### Colour Scheme
 
+I opted for a very minimalistic aesthetic and only apllied 3 colours (2 with additional shades) to this project.
+
+```css
+root {
+    TBC
+}
+```
+
+To provide a better user experience, I went for a light and neutral theme with an hints of red to add spice to the site. 
+The colours have been implemented across the site and are included in the buttons/links and their hover effects.
+
+I used <img height="14" src="README/readme-files/colormind-logo.png"> [Colormind](http://colormind.io/) colour scheme for this project:
+
 ![Colour Scheme](README/readme-files/colormind-colours.png)
+
 
 [Back to top &uarr;](#contents)
 
 ### Typography
+
+'Montserrat' has been used as a main font:
+
+The old posters and signs in the traditional Montserrat neighborhood of Buenos Aires inspired Julieta Ulanovsky to design this typeface and rescue the beauty of urban typography that emerged in the first half of the twentieth century. As urban development changes that place, it will never return to its original form and loses forever the designs that are so special and unique. 
+
+![Alt text](README/readme-files/montserrat-font.png)
+
+'sans-serif' as a addtional
+
 ***
 
 ### Imaginary
+
+I designed a GamerOnBoard logo with <img height="20" src="README/readme-files/figma-logo.png"> [Figma](https://www.figma.com/)
+
+same logo has then been used to create [Favicon](https://favicon.io/) icons.
+
+<img height="150" src="README/readme-files/game-on-board-logo.jpg">
+
 ***
 
 ## Agile 
 
 ### The Ideal User/Persona
 
+**Garry GameGeek**
+
+- **Age:** 28
+- **Gender:** Male
+- **Occupation:** Software Developer
+- **Hobbies:** Board games, video games, and attending gaming conventions
+- **Location:** Urban area, lives in a small apartment
+- **Income:** Middle-class
+- **Marital Status:** Single
+- **Education:** Bachelor's degree in Computer Science
+
+**Tech-savvy:** Gary is comfortable using technology, especially when it comes to shopping online.
+Social Gamer: He enjoys board games because they provide a great way to socialize with friends, either in-person or online.
+Value Shopper: Gary is price-conscious and looks for good deals or discounts.
+Game Collector: He is an avid board game collector and is always on the lookout for the latest and greatest titles.
+Research-Oriented: Gary does extensive research before buying a game, reading reviews, and watching video tutorials.
+Minimalist Lifestyle: Due to limited space in his apartment, Gary prefers games that are compact and versatile.
+Environmental Consciousness: He cares about the environment and appreciates eco-friendly or sustainable game options.
+
+**Goals:**
+Discover new and exciting board games.
+Get the best value for his money.
+Stay up-to-date with the latest board game releases.
+Find games suitable for various group sizes and occasions.
+
+**Pain Points:**
+Limited storage space for board games.
+Worries about the environmental impact of buying new games.
+Struggles to find time to attend physical board game events or conventions.
+How the Online Board Game Shop Can Appeal to GameGeek Gary:
+
 ***
 ### Epics & Admin/User Stories
 
-7 Epics (milestones) were created which were then further developed into XX User Stories. 
+7 Epics (milestones) were created which were then further developed into 36 User Stories. 
 
-__EPIC: [Initial Django Setup](https://github.com/ShemmyYo/...)__
+ __EPIC:[EPIC 1](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/1)  Django & Project Basic Setup__
+ As an ADMIN, I want to be able to - Setup Django Env, Project and App `MUST HAVE`  
+ As an ADMIN, I want to be able to - Create 'HOME' App `MUST HAVE`  
+ As an ADMIN, I want to be able to - Heroku Deployment `MUST HAVE`  
+ As a USER, I want to be able to - Home Page `MUST HAVE`   
+
+
+ __EPIC:[EPIC 2](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/3)  User Authentication & Page Admin__
+ As an ADMIN, I want to be able to - AllAuth Setup  `MUST HAVE`  
+ As an ADMIN, I want to be able to - AllAuth Login Templates `MUST HAVE`  
+ As an ADMIN, I want to be able to - Connect Google Social Account to AllAuth `COULD HAVE ` 
+ As a USER, I want to be able to - Account Registration `SHOULD HAVE`   
+ As a USER, I want to be able to - Personalised User Profile `SHOULD HAVE`   
+ As a USER, I want to be able to - Login and Logout `SHOULD HAVE`   
+ As a USER, I want to be able to - Email Confirmation after Registration `SHOULD HAVE`   
+
+
+ __EPIC:[EPIC 3](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/2)  Product App__
+ As an ADMIN, I want to be able to - Add Product  `MUST HAVE`  
+ As an ADMIN, I want to be able to - Edit/Update Product  `MUST HAVE`  
+ As a USER, I want to be able to - Special Offers `MUST HAVE`  
+ As a USER, I want to be able to - View a list of Products `MUST HAVE`  
+ As a USER, I want to be able to - View Product Details `MUST HAVE`  
+ As a USER, I want to be able to - Search Bar `SHOULD HAVE`  
+ As a USER, I want to be able to - View Product by Category `MUST HAVE`  
+ As a USER, I want to be able to - Sorting Products `MUST HAVE`  
+ As a USER, I want to be able to - Product Card details `COULD HAVE`  
+ As a USER, I want to be able to - Carousel on home page `COULD HAVE`  
+
+
+ __EPIC:[EPIC 4](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/4)  Bag, Checkout and Payment__
+ As a USER, I want to be able to - Bag `MUST HAVE`   
+ As a USER, I want to be able to - View total of my purchase `MUST HAVE`   
+ As a USER, I want to be able to - Product Quantity `MUST HAVE`   
+ As a USER, I want to be able to - View Bag `MUST HAVE`   
+ As a USER, I want to be able to - Payment `MUST HAVE`   
+ As a USER, I want to be able to - Safe and Secure Payment `MUST HAVE`   
+ As a USER, I want to be able to - Email Confirmation after Purchase `MUST HAVE`   
+ As a USER, I want to be able to - Discount `WONT HAVE`  
+
+
+ __EPIC:[EPIC 5](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/5)  Subscriptions__
+ As a USER, I want to be able to - Subscribtion to newsletter `SHOULD HAVE`  
+
+
+ __EPIC:[EPIC 6](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/6)  Reviews and Blog__
+
+
+ __EPIC:[EPIC 7](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/7)  Marketing and Search Engine Optimalisation__
+ As an ADMIN, I want to be able to - Marketing `MUST HAVE`   
+ As an ADMIN, I want to be able to - Social Media `MUST HAVE`   
+ As an ADMIN, I want to be able to - Social Media Extra `SHOULD HAVE` 
 
 
 [Back to top &uarr;](#contents)
-
-TBC
-
 
 ***
 ### MoSCoW Prioritization
