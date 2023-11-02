@@ -2,7 +2,10 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Verify Your Email Address" %}{% endblock %}
+<hr>
+<h2 class="text-center text-black logo-font mb-4">{% block head_title %}{% trans "Verify Your Email Address" %}{% endblock %}</h2>
+<hr>
+
 
 {% block inner_content %}
 <h1>{% trans "Verify Your Email Address" %}</h1>
@@ -19,5 +22,9 @@ contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
 
 <p>{% blocktrans %}<strong>Note:</strong> you can still <a href="{{ email_url }}">change your email address</a>.{% endblocktrans %}</p>
 
+<br>
+<div class="text-center">
+    <a href="{% url 'home' %}" class="btn btn-aa text-gray">Home</a>
+</div>
 
 {% endblock %}

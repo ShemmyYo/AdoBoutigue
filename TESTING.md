@@ -575,6 +575,29 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | Varified that the user is being updated by quick messages as intended | Pass |
 </details>
 
+
+## __Update Profile Screen__
+
+<details><summary> >>> Click for details</summary>
+
+| Verification | Result |
+| :----------------------------------------------------------: | :-------------: |
+| 'My Profile' link has opened and loaded correctly and as intended | Pass |
+| Verified that the User can update Phone number | Pass |
+| Verified that the User can update Street Address 1 | Pass |
+| Verified that the User can update Street Address 2 | Pass |
+| Verified that the User can update Town or City | Pass |
+| Verified that the User can update County | Pass |
+| Verified that the User can update Postal Code | Pass |
+| Verified that the User can update Phone number | Pass |
+| Verified that the User can update Country | Pass |
+| Verified that the Country list API is working as intended  | Pass |
+| Verified that 'Update Profile' button updates data | Pass |
+| Verified that User is shown 'Order History'  | Pass |
+| Verified that User can open any saved 'Order History' and view details  | Pass |
+| Varified that the user is being updated by quick messages as intended | Pass |
+</details>
+
 ## __Search__
 
 <details><summary> >>> Click for details</summary>
@@ -653,36 +676,6 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | Verified that when logged in as Superuser and clicked Edit, User is redireced to 'Edit Product' page | Pass |
 | Verified that when logged in as Superuser and clicked Delete, confirmation msg comes up to confirm deletion | Pass |
 | Varified that the User is being updated by quick messages as intended | Pass |
-</details>
-
-
-
-## __(Create) Profile Screen__
-
-<details><summary> >>> Click for details</summary>
-
-| Verification | Result |
-| :----------------------------------------------------------: | :-------------: |
-| My Profile screen has loaded correctly and as intended | Pass |
-| Verified that 'Edit Bio & Social Links' button brings user to edit page | Pass |
-| Verified that 'Edit Profile Settings' button brings user to edit page | Pass |
-| Verified that 'Back to Your Recipes' button brings user to my recipes page | Pass |
-| Verified that 'Back to Blog' button brings user to blog page | Pass |
-| Verified that each social media links open correctly | Pass |
-</details>
-
-
-## __Update Profile Screen__
-
-<details><summary> >>> Click for details</summary>
-
-| Verification | Result |
-| :----------------------------------------------------------: | :-------------: |
-| Edit Profile Bio & Social Links screen has loaded correctly and as intended | Pass |
-| Verified that the User can update Bio | Pass |
-| Verified that the User can update Profile pic | Pass |
-| Verified that the User can update All Social Links | Pass |
-| Verified that 'Back to Your Profile' button brings user to profile page | Pass |
 </details>
 
 

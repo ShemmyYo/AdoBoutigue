@@ -29,16 +29,20 @@
                 <form class="logo-font mt-3 " action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <br>
-                    <div class="text-center">
-                        <button class="btn btn-aa">Update Profile</button>
+                    <div class="text-right">
+                        <a href="{% url 'account_reset_password' %}" class="text-muted small a-link text-gray">Reset Password</a>
                     </div>
+                    <br>
+                    <div class="text-center d-md-flex d-block">
+                        <button class="btn btn-aa mx-auto mr-0 mr-md-3">Update Profile</button>
+                        <button class="btn btn-aa mx-auto">
+                            <a href="{% url 'home' %}"></a>Home</button>
+                    </div>
+                    <br>
                 </form>
                 <br>
                 <br>
-
             </div>
-
             <div class="col-12 col-lg-6">
                 <p class="text-muted text-black">Order History</p>
                 <div class="order-history table-responsive">
