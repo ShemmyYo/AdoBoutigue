@@ -20,6 +20,10 @@
     {% endblock %}
 
     {% block extra_meta %}
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon_io/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon_io/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon_io/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/favicon_io/site.webmanifest' %}">
     {% endblock %}
 
     {% block corecss %}
@@ -61,7 +65,7 @@
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-5 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img src="media/game-on-board-logo.jpg" alt="" class="logo-icon float-left">                    
+                    <img src="{% static 'images/game-on-board-logo.jpg' %}" alt="" class="logo-icon float-left">                    
                     <h2 class="col-7 offset-1 logo-font text-black my-0">
                         <strong>Gamer</strong>OnBoard</h2>
                 </a>
