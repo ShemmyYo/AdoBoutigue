@@ -26,6 +26,10 @@ body {
   text-transform: uppercase;
 }
 
+.logo-icon {
+  max-height: 38px;
+}
+
 .main-logo-link {
   width: fit-content;
 }
@@ -103,6 +107,11 @@ body {
 
 .text-gray {
   color: #6A7F91 !important;
+}
+
+.text-xsmall {
+  font-size: 0.8rem;
+  color: #0F1519;
 }
 
 .border-black {

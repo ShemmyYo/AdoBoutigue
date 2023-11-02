@@ -30,13 +30,12 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="text-right">
-                        <a href="{% url 'account_reset_password' %}" class="text-muted small a-link text-gray">Reset Password</a>
+                        <a href="{% url 'account_reset_password' %}" class="text-muted text-xsmall a-link text-gray">Reset Password</a>
                     </div>
                     <br>
                     <div class="text-center d-md-flex d-block">
                         <button class="btn btn-aa mx-auto mr-0 mr-md-3">Update Profile</button>
-                        <button class="btn btn-aa mx-auto">
-                            <a href="{% url 'home' %}"></a>Home</button>
+                        <a href="{% url 'home' %}" class="btn btn-aa mx-auto">Home</a>
                     </div>
                     <br>
                 </form>

@@ -598,6 +598,16 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | Varified that the user is being updated by quick messages as intended | Pass |
 </details>
 
+## __Change Password Screen__
+
+<details><summary> >>> Click for details</summary>
+
+| Verification | Result |
+| :----------------------------------------------------------: | :-------------: |
+| Change password screen has loaded correctly and as intended | Pass |
+| Verified that the User can update their password via email| Fail |
+</details>
+
 ## __Search__
 
 <details><summary> >>> Click for details</summary>
@@ -679,34 +689,8 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 </details>
 
 
-## __Change Password Screen__
 
-<details><summary> >>> Click for details</summary>
 
-| Verification | Result |
-| :----------------------------------------------------------: | :-------------: |
-| Change password screen has loaded correctly and as intended | Pass |
-| Verified that the User can update their password | Fail |
-</details>
-
-## __Add Product Screen__ 
-
-<details><summary> >>> Click for details</summary>
-
-| Verification | Result |
-| :----------------------------------------------------------: | :-------------: |
-| Add Recipe screen has loaded correctly and as intended | Pass |
-| Verified that the User is presented with a form to be completed as intended | Pass |
-| Verified that the 'Recipe' Title field is mandatory | Pass |
-| Verified that the 'Category' field is mandatory | Pass |
-| Verified that the 'Category' field is pulls data from Category model as intended | Pass |
-| Verified that the 'Feature Comment' field is mandatory | Pass |
-| Verified that the 'Recipe ingridients' & 'Recipe instructions' fields are shown as Summernote fields | Pass |
-| Verified that the User can add additionl information in Excerpt field (not mandatory) | Pass |
-| Verified that the User can add image which is saved in Cloudinary | Pass |
-| Verified that the User is shown page and message on succesfull submittion | Pass |
-| Verified that 'Back' button brings user to recipes page | Pass |
-</details>
 
 
 ## __Admin__ (Superuser only)

@@ -59,12 +59,14 @@
 <body>
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+            <div class="col-12 col-lg-5 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="col-7 logo-font text-black my-0"><strong>Gamer</strong>OnBoard</h2>
+                    <img src="media/game-on-board-logo.jpg" alt="" class="logo-icon float-left">                    
+                    <h2 class="col-7 offset-1 logo-font text-black my-0">
+                        <strong>Gamer</strong>OnBoard</h2>
                 </a>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-4" type="text" name="q"
@@ -99,6 +101,7 @@
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            <a href="https://gamer-on-board-6fa9b306b6d7.herokuapp.com/admin" class="dropdown-item">Admin Panel</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
