@@ -15,8 +15,6 @@ The Customer is encourage to leave reviews and ratings, which can enhance GamerO
 The goal of this project was to build a Full-Stack site based on business logic used to control a centrally-owned dataset. 
 Page will have to have an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service. It is also a goal to implement SEO and create a dummy social media product page.
 
-***
-
 ## __Tech Stack__
 
 <img height="50" src="README/readme-files/python-django.png">  <img height="50" src="README/readme-files/elephantsql.png">   <img height="50" src="README/readme-files/html.png">  <img height="50" src="README/readme-files/css.png">  <img height="50" src="README/readme-files/js.png"> <img height="50" src="README/readme-files/stripe.png"> 
@@ -24,13 +22,11 @@ Page will have to have an authentication mechanism and provide paid access to th
 
 <img height="50" src="README/readme-files/gitpod.png">  <img height="50" src="README/readme-files/github.png">  <img height="50" src="README/readme-files/bootstrap.png"> 
 
-
 ## __Live Web-Page__
 <a href ='https://gamer-on-board-6fa9b306b6d7.herokuapp.com/' target="_blank">GamerOnBoard</a>
 
 ## __GitHub Repository__
 <a href ='https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app' target="_blank">https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app</a>
-
 
 ***
 
@@ -154,55 +150,63 @@ How the Online Board Game Shop Can Appeal to GameGeek Gary:
 
 7 Epics (milestones) were created which were then further developed into 36 User Stories. 
 
- __EPIC:[EPIC 1](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/1)  Django & Project Basic Setup__
- As an ADMIN, I want to be able to - Setup Django Env, Project and App `MUST HAVE`  
- As an ADMIN, I want to be able to - Create 'HOME' App `MUST HAVE`  
- As an ADMIN, I want to be able to - Heroku Deployment `MUST HAVE`  
- As a USER, I want to be able to - Home Page `MUST HAVE`   
+ __[EPIC 1](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/1)  Django & Project Basic Setup__
+
+ As an ADMIN, I want to **setup Django app** so that I can start building my web store `MUST HAVE`  
+ As an ADMIN,  I want to **create 'home' app** so that I can start creating base templates `MUST HAVE`  
+ As an ADMIN, I want to be able to **configure and deploy to Heroku** so that my page is available for everyone to view `MUST HAVE`  
+ As a USER, I want to be able to **clearly see the site's purpose** is so that I can decide whether or not to continue browsing it `MUST HAVE`   
 
 
- __EPIC:[EPIC 2](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/3)  User Authentication & Page Admin__
- As an ADMIN, I want to be able to - AllAuth Setup  `MUST HAVE`  
- As an ADMIN, I want to be able to - AllAuth Login Templates `MUST HAVE`  
- As an ADMIN, I want to be able to - Connect Google Social Account to AllAuth `COULD HAVE ` 
- As a USER, I want to be able to - Account Registration `SHOULD HAVE`   
- As a USER, I want to be able to - Personalised User Profile `SHOULD HAVE`   
- As a USER, I want to be able to - Login and Logout `SHOULD HAVE`   
- As a USER, I want to be able to - Email Confirmation after Registration `SHOULD HAVE`   
+ __[EPIC 2](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/3)  User Authentication & Page Admin__
+
+ As an ADMIN, I want **setup AllAuth** so that I can manage users from the Admin Panel  `MUST HAVE`  
+ As an ADMIN, I will **make copies of allauth templates** so that I can adjust them to my user needs `MUST HAVE`  
+ As a USER, I want to be able to **register my account** so that I can view my profile `SHOULD HAVE`   
+ As a USER, I want to be able to **create a personalised user profile** so that I can re-use my details easily and view order history `SHOULD HAVE`   
+ As a USER, I want to be able to **login and logout** so that I can access my account info `SHOULD HAVE`   
+ As a USER, I want to be able to **get a confirmation email after registration** so that I can verify my account has been successfully registered `SHOULD HAVE`  
+ As an Admin I want to be able **let users sign in with SSO** so that *they can log in easily and securely**  `WONT HAVE` 
 
 
- __EPIC:[EPIC 3](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/2)  Product App__
- As an ADMIN, I want to be able to - Add Product  `MUST HAVE`  
- As an ADMIN, I want to be able to - Edit/Update Product  `MUST HAVE`  
- As a USER, I want to be able to - Special Offers `MUST HAVE`  
- As a USER, I want to be able to - View a list of Products `MUST HAVE`  
- As a USER, I want to be able to - View Product Details `MUST HAVE`  
- As a USER, I want to be able to - Search Bar `SHOULD HAVE`  
- As a USER, I want to be able to - View Product by Category `MUST HAVE`  
- As a USER, I want to be able to - Sorting Products `MUST HAVE`  
- As a USER, I want to be able to - Product Card details `COULD HAVE`  
- As a USER, I want to be able to - Carousel on home page `COULD HAVE`  
+ __[EPIC 3](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/2)  Product App__
+
+ As an ADMIN/Product Owner, I want to be able to **add product** so that I add or increase stock  `MUST HAVE`  
+ As an ADMIN/Product Owner, I want to be able to **edit or update product** so that change product price, description etc.  `MUST HAVE`  
+ As an ADMIN/Product Owner, I want to be able to **delete product** so that I can remove it if it's not for sale `MUST HAVE`  
+ As a USER, I want to be able to **identify deals, clearance areas and special offers** so that ** I can take advantage of special offers** `MUST HAVE`  
+ As a USER, I want to be able to **view a list of products** so that I can browse and shop easily `MUST HAVE`  
+ As a USER, I want to be able to **see a detailed view of the product** so that I can read details of the product. `MUST HAVE`  
+ As a USER, I want to be able to **search the webpage** so that I can find specific products and check if it's in stock `SHOULD HAVE`  
+ As a USER, I want to be able to **view product by category** so that find product I'm looking for quickly and easily `MUST HAVE`  
+ As a USER, I want to be able to **sort available products** so that easily identify the best rated, best priced and by category products `MUST HAVE`  
+ As a USER, I want to be able to **view additional details** such as age group, play time and number of players so that I am fully aware of benefits of the product I want to buy `COULD HAVE`  
+ As a USER, I want to be able to **view a carousel of images** on the home page so that I feel engaged and enticed straight away `COULD HAVE`  
 
 
- __EPIC:[EPIC 4](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/4)  Bag, Checkout and Payment__
- As a USER, I want to be able to - Bag `MUST HAVE`   
- As a USER, I want to be able to - View total of my purchase `MUST HAVE`   
- As a USER, I want to be able to - Product Quantity `MUST HAVE`   
- As a USER, I want to be able to - View Bag `MUST HAVE`   
- As a USER, I want to be able to - Payment `MUST HAVE`   
- As a USER, I want to be able to - Safe and Secure Payment `MUST HAVE`   
- As a USER, I want to be able to - Email Confirmation after Purchase `MUST HAVE`   
- As a USER, I want to be able to - Discount `WONT HAVE`  
+ __[EPIC 4](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/4)  Bag, Checkout and Payment__
+
+ As a USER, I want to be able to **add products to a bag** so that I can purchase products i want `MUST HAVE`   
+ As a USER, I want to be able to **view the total of my purchas**e so that I'm in full control of what I am buying `MUST HAVE`   
+ As a USER, I want to be able to **add/remove product quantity** so that I am in full control of how many items I am buying `MUST HAVE`   
+ As a USER, I want to be able to **view my bag** so that view product info, quantity and price of my purchase `MUST HAVE`   
+ As a USER, I want to be able to **enter payment info** so that I can check out easily `MUST HAVE`   
+ As a USER, I want to feel that my **payment is safe and secure** so that I feel confident to provide my card details `MUST HAVE`   
+ As a USER, I want to get **an email confirmation after my purchase** so that I keep a record of what I've purchased `MUST HAVE`   
+ As a USER, I want to be able to type in a **discount code** so that I can avail of a shop promo `WONT HAVE`  
 
 
- __EPIC:[EPIC 5](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/5)  Subscriptions__
- As a USER, I want to be able to - Subscribtion to newsletter `SHOULD HAVE`  
+ __[EPIC 5](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/5)  Subscriptions__
+
+ As a USER,  I want to be able to **subscribe to a newsletter** so that I'm being kept up to date with all things new at GamerOnBoard `SHOULD HAVE`  
 
 
- __EPIC:[EPIC 6](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/6)  Reviews and Blog__
+ __[EPIC 6](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/6)  Reviews and Blog__
 
 
- __EPIC:[EPIC 7](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/7)  Marketing and Search Engine Optimalisation__
+
+ __[EPIC 7](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/7)  Marketing and Search Engine Optimalisation__
+
  As an ADMIN, I want to be able to - Marketing `MUST HAVE`   
  As an ADMIN, I want to be able to - Social Media `MUST HAVE`   
  As an ADMIN, I want to be able to - Social Media Extra `SHOULD HAVE` 
