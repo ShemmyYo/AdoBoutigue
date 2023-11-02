@@ -1,3 +1,5 @@
+Back to [README.md](README.md) file.
+
 # Browser Compatibility
 
 <img height="50" src="README/tests/browser/google_chrome_icon.png"><img height="50" src="README/tests/browser/png-transparent-microsoft-edge-new-icon.png"><img height="50" src="README/tests/browser/safari-icon-hd.png"><img height="50" src="README/tests/browser/firefox-icon.png">
@@ -741,195 +743,30 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 
 ***
 
-# Tests based on user stories
+# <img height="50" src="README/tests/user/user-stories.png"> Tests based on user stories
 
 |     |                                   Story                      | Result |
 | --- | :----------------------------------------------------------: | :-------------: |
-| ADMIN STORY | As an Admin I will set up Django and install the supporting libraries predicted to be needed so that I am ready to start development MUST HAVE | Pass |
-| ADMIN STORY | As an Admin I need to create the env.py and add to .gitignore so that I can securely deploy the site without exposing the developer MUST HAVE | Pass |
-| ADMIN STORY | As an Admin I can deploy the site to Heroku early so that I can confirm everything works before the development of the site and to enable continuous testing within the production environment MUST HAVE | Pass |
-| USER STORY | As a User, I would like to view the site on my different devices so that I can view the site on the go MUST HAVE | Pass |
-| USER STORY | As a User I want to see a clear way of navigating the site so that I can find the information relative to my needs MUST HAVE | Pass |
-| USER STORY | As a User, I want to be shown an interesting, inviting index page so that I know exactly what is the page about and it gives me an enhanced experience MUST HAVE | Pass |
-| USER STORY | As a User, I want to be able to get in touch with the Developer so that I can enquire about issues/suggestions I may have MUST HAVE | Pass |
-| ADMIN STORY | As an Admin I want to install and import the AllAuth library to the project so that I can use it to manage users MUST HAVE | Pass |
-| ADMIN STORY | As an Admin I want to add functionality to verify email and reset the password so that the user has better security over their email being used and can reset the password if they forget it COUNLD HAVE | Pass |
-| USER STORY | As a User, I want to be able to signup/login/logout securely so that I can view/edit my profile COULD HAVE | Pass |
-| USER Story | As a User, I would like to access my profile so that I can upload an image or alter my bio, social media links etc. SHOULD HAVE | Pass |
-| USER STORY | As a User, I would like to access my profile with single sign login so that I can login quicker and more securely WONT HAVE | Pass |
-| USER STORY | As a User, I want to view the recipe details so that I can read the ingredients, instructions etc. MUST HAVE | Pass |
-| ADMIN STORY | As an Admin I want to build a page to display recipes for the users so that they have a clear overview and can find the information they look for MUST HAVE | Pass |
-| USER STORY | As a User, I want to view my recipes listed on my page so that I can edit recipe details (e.g.ingredients, instructions etc.) or delete my recipe MUST HAVE | Pass |
-| ADMIN STORY | As an Admin I want to create a Recipe model so that the recipe details can be viewed/edited and added to the database MUST HAVE | Pass |
-| USER STORY | As a user, I want to be able to click on a recipe so that I can read the full-text MUST HAVE | Pass |
-| USER STORY | As a User, I want to be able to view my recipes so that I can edit or delete them MUST HAVE | Pass |
-| ADMIN STORY | As an Admin, I want to be able to login to Admin Panel so that I can CRUD manage data MUST HAVE | Pass |
-| USER STORY | As a User, I want to have a section where I can search for a Recipe so that I can easily find it access it and comment/like it SHOULD HAVE | Pass |
-| ADMIN STORY | As an Admin I want to create the recipe search url, view & template so that the User can search db SHOULD HAVE | Pass |
-| USER STORY | As a User, I want to be able to view the recipes by category so that I can easily find what I'm interested in SHOULD HAVE | Pass |
-| ADMIN STORY | As an Admin I want to build a page to display recipes by category for the users so that they have a clear overview and can find the information they look for SHOULD HAVE | Pass |
-| USER STORY | As a User, I want to have access to my Profile so that I can upload an image or change my bio or social media urls SHOULD HAVE | Pass |
-| ADMIN STORY | As an Admin I will create a User Profile page so that they can update their details and setting SHOULD HAVE | Pass |
-| USER STORY | As a User, I want the ability to like or comment on recipes so that I can share my thoughts and feel included in the community MUST HAVE | Pass |
-| USER STORY | As a User, I want the ability to view all comments for the recipe so that I can see what my fellow commenters think of a recipe MUST HAVE | Pass |
-| ADMIN STORY | As an Admin I will provide commenting/like functionality for the User so that they have an enjoyable experience reviewing/liking recipes MUST HAVE | Pass |
-| ADMIN STORY | As an Admin I want to have the ability to delete any comment so that I can manage comments effectively MUST HAVE | Pass |
-| ADMIN STORY | As an Admin I will implement a 400 bad request page to redirect the user to the home page COULD HAVE | Pass |
-| ADMIN STORY | As an Admin I will implement a 403 error page to redirect the user to the home page COULD HAVE | Pass |
-| ADMIN STORY | As an Admin I will implement a 404 error page so that I can alert users when they have accessed a page that doesn't exist and redirect the user to the home page COULD HAVE | Pass |
-| ADMIN STORY | As an Admin I will implement a 500 error page so that I can alert users when an internal server error occurs and redirect the user to the home page COULD HAVE | Pass |
+| ADMIN STORY | As an Admin I ...  MUST HAVE | Pass |
+
 
 [Back to top &uarr;](#browser-compatibility)
 
 ***
 
-# __Bugs:__
+# <img height="50" src="README/tests/error/bugs.png"> __Bugs:__
 
 
-The below Type Error has showed up as I have forgotten to add .as_view() in urls - RESOLVED
-![Type Error](README/errors/type_error.png)
-
----
-
-Heroku deloyment failed: JS (GSAP) animation in home screen started acting up as soon as I moved to production and deployed to Heroku.
-
-    -----> Building on the Heroku-22 stack
-    -----> Using buildpack: heroku/python
-    -----> Python app detected
-    -----> No Python version was specified. Using the same version as the last build: python-3.11.2
-    To use a different version, see: https://devcenter.heroku.com/articles/python-runtimes
-    !
-    ! A Python security update is available! Upgrade as soon as possible to: python-3.11.3
-    ! See: https://devcenter.heroku.com/articles/python-runtimes
-    !
-    -----> No change in requirements detected, installing from cache
-    -----> Using cached install of python-3.11.2
-    -----> Installing pip 23.1.2, setuptools 67.7.2 and wheel 0.40.0
-    -----> Installing SQLite3
-    -----> Installing requirements with pip
-    -----> $ python manage.py collectstatic --noinput
-    Traceback (most recent call last):
-    File "/tmp/build_bfd91198/manage.py", line 22, in <module>
-    main()
-    File "/tmp/build_bfd91198/manage.py", line 18, in main
-    execute_from_command_line(sys.argv)
-    File "/app/.heroku/python/lib/python3.11/site-packages/django/core/management/__init__.py", line 419, in execute_from_command_line
-    utility.execute()
-    File "/app/.heroku/python/lib/python3.11/site-packages/django/core/management/__init__.py", line 413, in execute
-    self.fetch_command(subcommand).run_from_argv(self.argv)
-    File "/app/.heroku/python/lib/python3.11/site-packages/django/core/management/base.py", line 354, in run_from_argv
-    self.execute(*args, **cmd_options)
-    File "/app/.heroku/python/lib/python3.11/site-packages/django/core/management/base.py", line 398, in execute
-    output = self.handle(*args, **options)
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "/app/.heroku/python/lib/python3.11/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 187, in handle
-    collected = self.collect()
-    ^^^^^^^^^^^^^^
-    File "/app/.heroku/python/lib/python3.11/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 114, in collect
-    handler(path, prefixed_path, storage)
-    File "/app/.heroku/python/lib/python3.11/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 348, in copy_file
-    self.storage.save(prefixed_path, source_file)
-    File "/app/.heroku/python/lib/python3.11/site-packages/django/core/files/storage.py", line 54, in save
-    name = self._save(name, content)
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "/app/.heroku/python/lib/python3.11/site-packages/cloudinary_storage/storage.py", line 252, in _save
-    if not self._exists_with_etag(name, content):
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "/app/.heroku/python/lib/python3.11/site-packages/cloudinary_storage/storage.py", line 241, in _exists_with_etag
-    etag = response.headers["ETAG"].split('"')[1]
-    ~~~~~~~~~~~~~~~~^^^^^^^^
-    File "/app/.heroku/python/lib/python3.11/site-packages/requests/structures.py", line 52, in __getitem__
-    return self._store[key.lower()][1]
-    ~~~~~~~~~~~^^^^^^^^^^^^^
-    KeyError: 'etag'
-    ! Error while running '$ python manage.py collectstatic --noinput'.
-    See traceback above for details.
-    You may need to update application code to resolve this error.
-    Or, you can disable collectstatic for this application:
-    $ heroku config:set DISABLE_COLLECTSTATIC=1
-    https://devcenter.heroku.com/articles/django-assets
-    ! Push rejected, failed to compile Python app.
-    ! Push failed
-
-I have used a tutor seesion to resolve this issue:
-the 'etag' error pops up sometimes when using cloudinary and can be a tricky one to troubleshoot as there doesn't seem to be a consistent solution. Can you try creating a copy of one of your static files, with a different name? You can just select the file here, and use Ctrl+C, then Ctrl+V - RESOLVED 
-
----
-
-After DEBUG=FALSE and Heroku deployment, index page could not load.
-I discovered that that I have typed in incorrect {%%} url in the body of index.html - RESOLVED
-![Error on load](README/errors/error-server.png)
 
 [Back to top &uarr;](#browser-compatibility)
 
 ***
 
-# __Known Bugs__
+# <img height="50" src="README/tests/error/bugs.png"> __Known Bugs__
 
-GSAP Warnings
 
-![GSAP Warnings](README/validators/warnings.png)
-
----
-
-Profile Edit does not update username, first or last name or email address.
-
----
-
-Password change does not update user password
 
 [Back to top &uarr;](#browser-compatibility)
 
 ***
 Back to [README.md](README.md) file.
-
-
-
-
-
-
-
-
-
-![Alt text](README/tests/python/bag-apps.png) 
-![Alt text](README/tests/python/bag-context.png) 
-![Alt text](README/tests/python/bag-tools.png) 
-![Alt text](README/tests/python/bag-urls.png) 
-![Alt text](README/tests/python/bag-views.png) 
-![Alt text](README/tests/python/checkout-admin.png) 
-![Alt text](README/tests/python/checkout-apps.png) 
-![Alt text](README/tests/python/checkout-forms.png) 
-![Alt text](README/tests/python/checkout-models.png) 
-![Alt text](README/tests/python/checkout-signals.png) 
-![Alt text](README/tests/python/checkout-URLS.png) 
-![Alt text](README/tests/python/checkout-views.png) 
-![Alt text](README/tests/python/custom-storages.png) 
-![Alt text](README/tests/python/gameonboard-urls.png) 
-![Alt text](README/tests/python/gameonboard-wsgi.png) 
-![Alt text](README/tests/python/home-apps.png) 
-![Alt text](README/tests/python/home-urls.png) 
-![Alt text](README/tests/python/home-views.png) 
-![Alt text](README/tests/python/manage-py.png) 
-![Alt text](README/tests/python/product-apps.png) 
-![Alt text](README/tests/python/product-forms.png) 
-![Alt text](README/tests/python/product-models.png) 
-![Alt text](README/tests/python/product-urls.png) 
-![Alt text](README/tests/python/product-views.png) 
-![Alt text](README/tests/python/product-widgets.png) 
-![Alt text](README/tests/python/webhoocks.png) 
-![Alt text](README/tests/python/webhook-handler.png)
-![Alt text](README/tests/python/newsletter-admin.png) 
-![Alt text](README/tests/python/newsletter-forms.png) 
-![Alt text](README/tests/python/newsletter-model.png) 
-![Alt text](README/tests/python/newsletter-urls.png) 
-![Alt text](README/tests/python/newsletter-views.png)
-
-
-
-![Alt text](README/tests/manual/confirm-email-test.png) 
-![Alt text](README/tests/manual/login-email-test.png) 
-![Alt text](README/tests/manual/logout-email-test.png) 
-![Alt text](README/tests/manual/order-email-confirm.png) 
-![Alt text](README/tests/manual/signup-email-test.png) 
-![Alt text](README/tests/manual/verify-email-test-confirm.png) 
-![Alt text](README/tests/manual/verify-email-test.png)
