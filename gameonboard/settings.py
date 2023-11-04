@@ -142,23 +142,23 @@ WSGI_APPLICATION = 'gameonboard.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': dj_database_url.parse\
-    ('postgres://ikpqrqdk:fh6bPhsx7Vv7T6vacK3HkqOXBZxwuBA4@tyke.db.elephantsql.com/ikpqrqdk')
-}
+# DATABASES = {
+#     'default': dj_database_url.parse\
+#     ('postgres://ikpqrqdk:fh6bPhsx7Vv7T6vacK3HkqOXBZxwuBA4@tyke.db.elephantsql.com/ikpqrqdk')
+# }
 
-# if 'DATABASE_URL' in os.environ:
-#     DATABASES = {
-#         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-#     }
-#     print("Connected")
-# else:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
-#     }
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+    print("Connected")
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
