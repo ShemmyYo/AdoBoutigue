@@ -1,6 +1,6 @@
 # Portfolio Project 5 - E-commerce Applications
 
-![GamerOnBoard](README/readme-files/am-i-responsive.png)
+![GamerOnBoard](README/readme-files/am-i-responsive-2.png)
 ## __Roll, Play, Win – GamerOnBoard is Your Board Game Destination.__
 
 GamerOnBoard is a B2C (business-to-consumer) board game web store which aims to audiences, such as families, tabletop gamers, or collectors and specialising in strategic and role-playing board games. We have built a diverse and attractive inventory of board games, including popular titles such as Catan, Ticket to Ride, Chess, Monopoly and many many more... 
@@ -436,10 +436,10 @@ Use header tags (H1, H2, H3, etc.) to structure your content and make it more re
 #### Sitemap
 
 I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
-This was generated using my deployed site URL: https://gamer-on-board-6fa9b306b6d7.herokuapp.com/
+File generated using deployed site URL: https://gamer-on-board-6fa9b306b6d7.herokuapp.com/
 
 After it finished crawling the entire site, it created a
-[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
+[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository's root dir.
 
 #### Robots
 
@@ -449,18 +449,8 @@ Inside, I've included the default settings:
 ```
 User-agent: *
 Disallow:
-Sitemap: https://retro-reboot.herokuapp.com/sitemap.xml
+Sitemap: https://gamer-on-board-6fa9b306b6d7.herokuapp.com/sitemap.xml
 ```
-
-Further links for future implementation:
-- [Google search console](https://search.google.com/search-console)
-- [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
-- [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
-- [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
-
-
-
-
 
 [Back to top &uarr;](#contents)
 
@@ -468,14 +458,19 @@ Further links for future implementation:
 
 ### Social Media Marketing
 
-Creating a strong social base (with participation) and linking that to the business site can help drive sales.
-Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
+Social marketing in the context of online business refers to the use of social media platforms and strategies to promote products or services, build brand awareness, engage with customers, and ultimately drive sales and business growth. It's an essential component of digital marketing that leverages the vast reach and influence of social media to connect with potential customers. 
 
-I've created a mockup Facebook business account using the
-[Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
-provided by Code Institute.
+Common platforms include Facebook, Instagram, Twitter, LinkedIn, Pinterest, and TikTok.
 
-![screenshot](documentation/facebook-mockup.png)
+Social marketing in online business is an ongoing effort that requires a deep understanding of your target audience and the ability to adapt to the ever-changing landscape of social media. It's essential to maintain a strategic and customer-focused approach to maximize your online business's success through social media channels.
+
+I've started this journey by creating a Facebook account
+
+![FB](README/readme-files/fb-marketing.png)
+
+[Back to top &uarr;](#contents)
+
+***
 
 ### Newsletter Marketing
 
@@ -490,19 +485,26 @@ Newsletter model:
 class NewsletterSignup(models.Model):
     email = models.EmailField(unique=True, null=False, blank=False)
 
-def __str__(self):
-    return self.email
+    def __str__(self):
+        return self.email
 ```
 
-I set the email address to be unique to avoid users signing up multiple times with the same email address. If a user tries to sign up twice with the same address they will be shown a message letting them know they've already signed up.
+I set the email address to be unique to avoid users signing up multiple times with the same email address. 
+If a user tries to sign up twice with the same address they will be shown a message letting them know they've already signed up.
 
 Once a user signs up, I used the `send_mail()` functionality in the `webhook_handler.py` file to trigger a welcome email for the user to acknowledge that they've successfully signed up for the newsletter.
 
-In this welcome newsletter, I've included a special discount code to entice sign ups to purchase on the site.
+[Back to top &uarr;](#contents)
+
+***
 
 ## Testing
 
-For all testing, please refer to the [TESTING.md](TESTING.md) file.
+[TESTING.md](TESTING.md) file.
+
+[Back to top &uarr;](#contents)
+
+***
 
 ## Tools & technologies used
 
@@ -520,7 +522,6 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 - [Bootstrap](https://blog.getbootstrap.com/) used for page layout and spacing
 - [PostgreSQL](https://www.postgresql.org) used for database management
 - [ElephantSQL](https://www.elephantsql.com/) used for production database
-- [Cloudinary](https://cloudinary.com/) used to store static files and images
 - [Heroku](https://dashboard.heroku.com/apps) used to deploy application
 - [Gitpod](https://www.gitpod.io/) used to create and host the website
 - [Github](https://github.com/) used to deploy the website 
@@ -529,7 +530,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 - [CI Python Linter](https://pep8ci.herokuapp.com/) used as Python code validator
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
 - [Grammarly](https://www.grammarly.com/) used to check typography
-- [Technisini](https://techsini.com/multi-mockup/index.php) mockup image of the home page on various devices 
+- [Am I Responsive](https://amiresponsive.co.uk/) mockup image of the home page on various devices 
 
 ### Imported Libraries and Packages
 
