@@ -373,6 +373,8 @@ updates to business hours, notifications of events, and much more!
 
 ### Search Engine Optimization (SEO)
 
+Keyword research is the process of finding and analyzing search terms that people enter into search engines, with the goal of using that data for SEO or general web marketing.
+
 #### Keywords
 
 Keywords have been identified to align with my site, that should help users
@@ -380,24 +382,33 @@ when searching online to find my page easily from a search engine.
 This included a series of the following keyword types
 
 - Short-tail (head terms) keywords
-- Long-tail keywords
+These short-tail keywords can serve as the foundation for your SEO strategy. However, keep in mind that competition for these keywords can be high, so it's also essential to consider long-tail keywords and specific game titles to reach a more targeted audience. Additionally, regularly updating your website with fresh and relevant content, optimizing your site's structure, and acquiring backlinks from reputable sources can help improve your search engine rankings.
 
-META: 
-Board games
-Tabletop games
-Card games
-Strategy games
-Family board games
-Classic board games
-Board game store
-Board game shop
-Game night
-Board game collection
-Party games
-Role-playing games (RPGs)
-Board game accessories
-Board game reviews
-Board game recommendations
+
+| Long-tail keywords |    |              |
+| ---------- | ---------- | ------------ |
+| "Best board games" | "Board game collection" | "Top Game store" |
+| "Tabletop games" | "Board game store" | "Board game retailer" |
+| "Board game store near me" | "Buy board games" | "Tabletop game shop" |
+| "Game board shop" | "Board games online" | "Best board games" |
+| "Board games for sale" | "Game store online" | "Board games for adults" |
+| "Board games for kids" | "Popular board games" | "Board games to buy" |
+|  |  |  |
+
+
+#### External Link
+
+Included links to:
+
+- [The Boardgame Players Association](https://www.boardgamers.org/)
+`The Boardgame Players Association started in 1991. The gaming convention which would eventually evolve into the present WBC got its start in 1991 as Avaloncon when years of campaigning for it by Don Greenwood finally convinced Avalon Hill management that a “return to basics” gaming convention emphasizing competitive play of the games was the best way for The Avalon Hill Game Company to reverse its flagging fortunes. Having started the Origins gaming convention two decades earlier—with all of 13 tournaments—Avalon Hill had freely relinquished control of that annual gaming fest to the fledgling Game Manufacturer’s Association to concentrate on the production of its own games.`
+
+- [The Irish Games Association](https://iga.ie/)
+`The Irish Games Association CLG is dedicated to promoting gaming in Ireland, by running, supporting and publicising gaming events, while seeking to communicate and cooperate with others that do likewise. The IGA engages in a number of activities designed to further its stated aim of promoting gaming in Ireland and has evolved substantially over its lifespan. Originally, the IGA was a group composed of different gaming interests from around the country who came together to organise an event known as Convention: Gaelcon. Since that time, a number of changes have taken place, and the IGA has expanded into other fields. The goal of the IGA is to help the gaming community in whatever way possible, be it by organising events, providing information, or offering what assistance it can to others who are working on behalf of the gaming community in Ireland. If you are running an event and need some assistance or some friendly advice please don’t hesitate to reach out to us.`
+
+
+
+
 
 
 For the Homepage:
@@ -416,7 +427,7 @@ For a Blog Post (e.g., "Top 10 Board Games for Family Game Night"):
 #### Sitemap
 
 I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
-This was generated using my deployed site URL: https://retro-reboot.herokuapp.com
+This was generated using my deployed site URL: https://gamer-on-board-6fa9b306b6d7.herokuapp.com/
 
 After it finished crawling the entire site, it created a
 [sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
