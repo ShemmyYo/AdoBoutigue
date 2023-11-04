@@ -20,7 +20,7 @@ Page will have to have an authentication mechanism and provide paid access to th
 <img height="50" src="README/readme-files/python-django.png">  <img height="50" src="README/readme-files/elephantsql.png">   <img height="50" src="README/readme-files/html.png">  <img height="50" src="README/readme-files/css.png">  <img height="50" src="README/readme-files/js.png"> <img height="50" src="README/readme-files/stripe.png"> 
 
 
-<img height="50" src="README/readme-files/gitpod.png">  <img height="50" src="README/readme-files/github.png">  <img height="50" src="README/readme-files/bootstrap.png"> 
+<img height="50" src="README/readme-files/gitpod.png">  <img height="50" src="README/readme-files/github.png">  <img height="50" src="README/readme-files/bootstrap.png">  <img height="50" src="README/readme-files/aws_images.png"> 
 
 ## __Live Web-Page__
 <a href ='https://gamer-on-board-6fa9b306b6d7.herokuapp.com/' target="_blank">GamerOnBoard</a>
@@ -253,6 +253,7 @@ A few `COULD HAVE` user stories have been implemented before project due date i.
 [Back to top &uarr;](#contents)
 
 ***
+
 ## Wireframes
 
 I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wireframes.
@@ -264,7 +265,18 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wirefram
 ![Home Page](README/readme-files/game-on-board-roll-play-win–destination.png)
 </details>
 
+[Back to top &uarr;](#contents)
+
 ***
+
+### Data Model
+
+TBC
+
+[Back to top &uarr;](#contents)
+
+***
+
 ### Sign Up Page Wireframes
 <details>
 <summary>Click to View Wireframes</summary>
@@ -272,19 +284,16 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wirefram
 ![Signup Page](README/wireframes/signup.png)
 </details>
 
+[Back to top &uarr;](#contents)
 
 ***
+
 ### Login Page Wireframes
 <details>
 <summary>Click to View Wireframes</summary>
 
 ![Login](README/wireframes/login.png)
 </details>
-
-
-
-
-
 
 [Back to top &uarr;](#contents)
 
@@ -293,14 +302,10 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wirefram
 
 ### Existing Features
 
-
-
-
-
-
 [Back to top &uarr;](#contents)
 
 ***
+
 __Error Pages__
 
 - 404 Page not found
@@ -328,6 +333,7 @@ A 500 error page has been displayed to alert users when an internal server error
 [Back to top &uarr;](#contents)
 
 ***
+
 ### Future Features
 
 
@@ -523,6 +529,7 @@ Once a user signs up, I used the `send_mail()` functionality in the `webhook_han
 - [PostgreSQL](https://www.postgresql.org) used for database management
 - [ElephantSQL](https://www.elephantsql.com/) used for production database
 - [Heroku](https://dashboard.heroku.com/apps) used to deploy application
+- [AWS](https://aws.amazon.com/s3/) used for online static file storage
 - [Gitpod](https://www.gitpod.io/) used to create and host the website
 - [Github](https://github.com/) used to deploy the website 
 - [Balsamiq](https://balsamiq.com/) used to create page wireframes
@@ -544,23 +551,14 @@ Once a user signs up, I used the `send_mail()` functionality in the `webhook_han
 
 [Back to top &uarr;](#contents)
 
-### Data Model
-
-
-
-[Back to top &uarr;](#contents)
-
-## Testing
-
-For all testing, please refer to the [TESTING.md](TESTING.md) file.
-
-
 ***
+
 ## Deployment
 
-The live deployed application can be found deployed on [Heroku](https://shemmylicious.herokuapp.com).
+The live deployed application can be found deployed on [Heroku](https://gamer-on-board-6fa9b306b6d7.herokuapp.com/).
 
 ***
+
 ### ElephantSQL Database
 
 This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
@@ -576,19 +574,188 @@ To obtain your own Postgres Database, sign-up with your GitHub account, then fol
 [Back to top &uarr;](#contents)
 
 ***
-### Cloudinary API
 
-This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
+### Amazon AWS
 
-To obtain your own Cloudinary API key, create an account and log in.
-- For *Primary interest*, you can choose *Programmable Media for image and video API*.
-- Optional: *edit your assigned cloud name to something more memorable*.
-- On your Cloudinary Dashboard, you can copy your **API Environment Variable**.
-- Be sure to remove the `CLOUDINARY_URL=` as part of the API **value**; this is the **key**.
+This project uses [AWS](https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
+
+Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
+Make sure you're on the **AWS Management Console** page.
+
+#### S3 Bucket
+
+- Search for **S3**.
+- Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
+- Uncheck **Block all public access**, and acknowledge that the bucket will be public (required for it to work on Heroku).
+- From **Object Ownership**, make sure to have **ACLs enabled**, and **Bucket owner preferred** selected.
+- From the **Properties** tab, turn on static website hosting, and type `index.html` and `error.html` in their respective fields, then click **Save**.
+- From the **Permissions** tab, paste in the following CORS configuration:
+
+	```shell
+	[
+		{
+			"AllowedHeaders": [
+				"Authorization"
+			],
+			"AllowedMethods": [
+				"GET"
+			],
+			"AllowedOrigins": [
+				"*"
+			],
+			"ExposeHeaders": []
+		}
+	]
+	```
+
+- Copy your **ARN** string.
+- From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
+	- Policy Type: **S3 Bucket Policy**
+	- Effect: **Allow**
+	- Principal: `*`
+	- Actions: **GetObject**
+	- Amazon Resource Name (ARN): **paste-your-ARN-here**
+	- Click **Add Statement**
+	- Click **Generate Policy**
+	- Copy the entire Policy, and paste it into the **Bucket Policy Editor**
+
+		```shell
+		{
+			"Id": "Policy1234567890",
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Sid": "Stmt1234567890",
+					"Action": [
+						"s3:GetObject"
+					],
+					"Effect": "Allow",
+					"Resource": "arn:aws:s3:::your-bucket-name/*"
+					"Principal": "*",
+				}
+			]
+		}
+		```
+
+	- Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
+	- Click **Save**.
+- From the **Access Control List (ACL)** section, click "Edit" and enable **List** for **Everyone (public access)**, and accept the warning box.
+	- If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
+
+#### IAM
+
+Back on the AWS Services Menu, search for and open **IAM** (Identity and Access Management).
+Once on the IAM page, follow these steps:
+
+- From **User Groups**, click **Create New Group**.
+	- Suggested Name: `gamer-on-board` (group + the project name)
+- Tags are optional, but you must click it to get to the **review policy** page.
+- From **User Groups**, select your newly created group, and go to the **Permissions** tab.
+- Open the **Add Permissions** dropdown, and click **Attach Policies**.
+- Select the policy, then click **Add Permissions** at the bottom when finished.
+- From the **JSON** tab, select the **Import Managed Policy** link.
+	- Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
+	- You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
+
+		```shell
+		{
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Effect": "Allow",
+					"Action": "s3:*",
+					"Resource": [
+						"arn:aws:s3:::gamer-on-board",
+						"arn:aws:s3:::gamer-on-board/*"
+					]
+				}
+			]
+		}
+		```
+	
+	- Click **Review Policy**.
+	- Suggested Name: `gamer-on-board` (policy + the project name)
+	- Provide a description:
+		- "Access to S3 Bucket for gamer-on-board static files."
+	- Click **Create Policy**.
+- From **User Groups**, click your "gamer-on-board".
+- Click **Attach Policy**.
+- Search for the policy you've just created ("gamer-on-board") and select it, then **Attach Policy**.
+- From **User Groups**, click **Add User**.
+	- Suggested Name: `gamer-on-board` (user + the project name)
+- For "Select AWS Access Type", select **Programmatic Access**.
+- Select the group to add your new user to: `gamer-on-board`
+- Tags are optional, but you must click it to get to the **review user** page.
+- Click **Create User** once done.
+- You should see a button to **Download .csv**, so click it to save a copy on your system.
+	- **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
+	- This contains the user's **Access key ID** and **Secret access key**.
+	- `AWS_ACCESS_KEY_ID` = **Access key ID**
+	- `AWS_SECRET_ACCESS_KEY` = **Secret access key**
+
+#### Final AWS Setup
+
+- If Heroku Config Vars has `DISABLE_COLLECTSTATIC` still, this can be removed now, so that AWS will handle the static files.
+- Back within **S3**, create a new folder called: `media`.
+- Select any existing media images for your project to prepare them for being uploaded into the new folder.
+- Under **Manage Public Permissions**, select **Grant public read access to this object(s)**.
+- No further settings are required, so click **Upload**.
 
 [Back to top &uarr;](#contents)
 
 ***
+
+### Stripe API
+
+This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
+
+Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
+
+- From your Stripe dashboard, click to expand the "Get your test API keys".
+- You'll have two keys here:
+	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
+
+As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
+
+- From your Stripe dashboard, click **Developers**, and select **Webhooks**.
+- From there, click **Add Endpoint**.
+	- `https://gamer-on-board-6fa9b306b6d7.herokuapp.com/checkout/wh/`
+- Click **receive all events**.
+- Click **Add Endpoint** to complete the process.
+- You'll have a new key here:
+	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
+
+[Back to top &uarr;](#contents)
+
+***
+
+### Gmail API
+
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
+
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+	- Any custom name, such as "Django" or gamer-on-board
+- You'll be provided with a 16-character password (API key).
+	- Save this somewhere locally, as you cannot access this key again later!
+	- `EMAIL_HOST_PASS` = user's 16-character API key
+	- `EMAIL_HOST_USER` = user's own personal Gmail email address
+
+[Back to top &uarr;](#contents)
+
+***
+
 ### Heroku Deployment
 
 [Setting up basic Django Project and Deploying to Heroku CI Doc](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/edit)
@@ -604,11 +771,18 @@ Deployment steps are as follows, after account setup:
 1. From the new app *Settings*, click *Reveal Config Vars*, and set your environment variables.
 
     
-    - CLOUNDINARY_URL: (Enter Cloudinary API URL)
-    - DATABASE_URL: (Enter the database URL from ElephantSQL)
-    - PORT: 8000
-    - DISABLE_COLLECTSTATIC: 1 (must be removed before final deployment)
-    - SECRET_KEY: (Enter your secret key)
+    -  Key Value
+    -  `AWS_ACCESS_KEY_ID`
+    -  `AWS_SECRET_ACCESS_KEY`
+    -  `DATABASE_URL`
+    -  `DISABLE_COLLECTSTATIC`
+    -  `EMAIL_HOST_PASS`
+    -  `EMAIL_HOST_USER`
+    -  `SECRET_KEY`
+    -  `STRIPE_PUBLIC_KEY`
+    -  `STRIPE_SECRET_KEY`
+    -  `STRIPE_WH_SECRET`
+    -  `USE_AWS`
 
 Heroku needs two additional files in order to deploy properly.
 - requirements.txt
@@ -640,6 +814,7 @@ The project should now be connected and deployed to Heroku!
 [Back to top &uarr;](#contents)
 
 ***
+
 ### Local Deployment
 
 This project can be cloned or forked in order to make a local copy on your own system.
@@ -655,9 +830,15 @@ Sample `env.py` file:
 ```python
 import os
 
-os.environ.setdefault("CLOUDINARY_URL", "insert your own Cloudinary API key here")
-os.environ.setdefault("DATABASE_URL", "insert your own ElephantSQL database URL here")
-os.environ.setdefault("SECRET_KEY", "this can be any random secret key")
+os.environ.setdefault("AWS_ACCESS_KEY_ID", `HEROKU CONFIG VARS`)
+os.environ.setdefault("AWS_SECRET_ACCESS_KEY", `HEROKU CONFIG VARS`)
+os.environ.setdefault("DATABASE_URL", `HEROKU CONFIG VARS`)
+os.environ.setdefault("EMAIL_HOST_PASS", `HEROKU CONFIG VARS`)
+os.environ.setdefault("EMAIL_HOST_USER", `HEROKU CONFIG VARS`)
+os.environ.setdefault("SECRET_KEY", `HEROKU CONFIG VARS`)
+os.environ.setdefault("STRIPE_PUBLIC_KEY", `HEROKU CONFIG VARS`)
+os.environ.setdefault("STRIPE_SECRET_KEY", `HEROKU CONFIG VARS`)
+os.environ.setdefault("STRIPE_WH_SECRET", `HEROKU CONFIG VARS`)
 
 # local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
@@ -725,7 +906,7 @@ I sometimes applied principles within them to the site, after fully understandin
 1. [Crispy Forms Documentation](https://django-crispy-forms.readthedocs.io/en/latest/) - referenced during development.
 
 1. [Stackoverflow](https://stackoverflow.com/) - I found myself on Stackoverflow so many times researching issues. This a fantastic place to learn and troubleshoot code.
-1. [Slack](https://slack.com/intl/en-ie/) - The slack community is great and I reached out to fellow students who had already completed their P4 for their advice and got some nice tips and feedback. I attending some webinars by CI staff which I found very beneficial.
+1. [Slack](https://slack.com/intl/en-ie/) - The slack community is great and I reached out to fellow students who had already completed their P5 for their advice and got some nice tips and feedback. I attending some webinars by CI staff which I found very beneficial.
 
 1. [unsplash](https://unsplash.com/s/photos/Sauce) - Graphics used on the page
 1. [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder/) - tool to help generating some parts of the Markdown files
@@ -735,6 +916,6 @@ I sometimes applied principles within them to the site, after fully understandin
 
 As always, big thank you to [Harry Dhillon](https://github.com/Harry-Leepz), my mentor who provided me with guide and excellent feedback throughout the project
 
-Shemmylicious Food was developed for educational purpouses and as part of my Diploma in Software Development with [Code Institute](https://codeinstitute.net/). 
+GamerOnBoard was developed for educational purpouses and as part of my Diploma in Software Development with [Code Institute](https://codeinstitute.net/). 
 
 [Back to top &uarr;](#contents)
