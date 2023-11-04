@@ -335,6 +335,119 @@ A 500 error page has been displayed to alert users when an internal server error
 
 ***
 
+## Ecommerce Business Model
+
+GamerOnBoard is a B2C (business-to-consumer) as it sells goods to individual customers.
+
+B2C model, the success of board game, online business will depend on ability to connect with individual consumers, offer a compelling product, and deliver exceptional customer service. Adapting and evolving business strategy based on consumer feedback and market trends will be crucial for long-term success.
+
+### Web Marketing
+
+GamerOnBoard has links for social media marketing, contact and newsletter model linked.
+
+#### Social Media:
+Social Media can potentially build a community of users around the business, and boost site visitor numbers,
+especially when using larger platforms such a Facebook.
+
+#### Newsletter:
+A newsletter list can be used by the business to send regular messages to site users.
+For example, what items are on special offer, new items in stock,
+updates to business hours, notifications of events, and much more!
+
+#### Other Google services available to boost business awareness:
+
+- Google My Business - registering business address 
+- Google Ads - powerfull advertising tool
+- Google Analytics - visual analytics on clicks, track etc
+
+#### GDPR:
+ The European Union introduced the  General Data Protection Regulation, known as GDPR in May 2018. GDPR is the toughest privacy and security law in the world and even though it was passed by the European Union, it imposes obligations onto organizations anywhere in the world, as long as they target or collect data related to people in the EU.
+
+ GamerOnBoard [Privacy Policy](https://www.privacypolicygenerator.info/live.php?token=IAqA6K5oi5wyOB0Wrs3XHhpYfMa3PMyi) has been generated and inluded in the footer of the page.
+
+**Businesses and organizations that violate GDPR privacy and security standards**
+
+[Back to top &uarr;](#contents)
+
+***
+
+### Search Engine Optimization (SEO)
+
+#### Keywords
+
+I've identified some appropriate keywords to align with my site, that should help users
+when searching online to find my page easily from a search engine.
+This included a series of the following keyword types
+
+- Short-tail (head terms) keywords
+- Long-tail keywords
+
+I also played around with [Word Tracker](https://www.wordtracker.com) a bit
+to check the frequency of some of my site's primary keywords (only until the free trial expired).
+
+#### Sitemap
+
+I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
+This was generated using my deployed site URL: https://retro-reboot.herokuapp.com
+
+After it finished crawling the entire site, it created a
+[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
+
+### Robots
+
+I've created the [robots.txt](robots.txt) file at the root-level.
+Inside, I've included the default settings:
+
+```
+User-agent: *
+Disallow:
+Sitemap: https://retro-reboot.herokuapp.com/sitemap.xml
+```
+
+Further links for future implementation:
+- [Google search console](https://search.google.com/search-console)
+- [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
+- [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
+- [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
+
+### Social Media Marketing
+
+Creating a strong social base (with participation) and linking that to the business site can help drive sales.
+Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
+
+I've created a mockup Facebook business account using the
+[Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
+provided by Code Institute.
+
+![screenshot](documentation/facebook-mockup.png)
+
+### Newsletter Marketing
+
+I have incorporate a newsletter sign-up form on my application, to allow users to supply their
+email address if they are interested in learning more about what the business has to offer.
+
+I created a custom newsletter app in my project with a custom NewsletterSignup model and added a form to the site's footer to collect user email addresses 
+
+Newsletter model:
+
+```python
+class NewsletterSignup(models.Model):
+    email = models.EmailField(unique=True, null=False, blank=False)
+
+def __str__(self):
+    return self.email
+```
+
+I set the email address to be unique to avoid users signing up multiple times with the same email address. If a user tries to sign up twice with the same address they will be shown a message letting them know they've already signed up.
+
+Once a user signs up, I used the `send_mail()` functionality in the `webhook_handler.py` file to trigger a welcome email for the user to acknowledge that they've successfully signed up for the newsletter.
+
+In this welcome newsletter, I've included a special discount code to entice sign ups to purchase on the site.
+
+## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
 ## Tools & technologies used
 
 ### Languages Used
