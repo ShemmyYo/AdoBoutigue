@@ -845,7 +845,7 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | [EPIC 2](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/3) | User Authentication & Page Admin | Completed |
 | ADMIN STORY | AllAuth Setup  `MUST HAVE` | Pass | 
 | ADMIN STORY | AllAuth Login Templates `MUST HAVE`  | Pass |
-| ADMIN STORY | Connect Google Social Account to AllAuth `COULD HAVE ` | Failed |
+| ADMIN STORY | Connect Google Social Account to AllAuth `COULD HAVE ` | Pass |
 | USER STORY | Account Registration `SHOULD HAVE`  | Pass | 
 | USER STORY | Personalised User Profile `SHOULD HAVE`  | Pass | 
 | USER STORY | Login and Logout `SHOULD HAVE`  | Pass | 
@@ -865,7 +865,8 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | USER STORY | Sorting Products `MUST HAVE` | Pass | 
 | USER STORY | Product Card details `COULD HAVE` | Pass | 
 | USER STORY | Carousel on home page `COULD HAVE` | Pass | 
-
+| USER STORY | Like Product `SHOULD HAVE` | xxx |
+| USER STORY | View Liked Products `SHOULD HAVE` | xxx |
 
 |     |                                   Story                      | Result |
 | --- | :----------------------------------------------------------: | :-------------: |
@@ -877,7 +878,6 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | USER STORY | Payment `MUST HAVE`  | Pass | 
 | USER STORY | Safe and Secure Payment `MUST HAVE`  | Pass | 
 | USER STORY | Email Confirmation after Purchase `MUST HAVE`  | Pass | 
-| USER STORY | Discount `WONT HAVE` | Failed | 
 
 
 |     |                                   Story                      | Result |
@@ -889,7 +889,10 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 |     |                                   Story                      | Result |
 | --- | :----------------------------------------------------------: | :-------------: |
 | [EPIC 6](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/6) | Reviews and Blog | Not Completed |
-
+| USER STORY | View Blog `COULD HAVE` | xxx | 
+| USER STORY | Create Blog Posts `COULD HAVE` | xxx | 
+| USER STORY | Edit Post `COULD HAVE` | xxx | 
+| USER STORY | Deleted Blog Posts `COULD HAVE` | xxx | 
 
 |     |                                   Story                      | Result |
 | --- | :----------------------------------------------------------: | :-------------: |
@@ -898,6 +901,11 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | ADMIN STORY | Social Media `MUST HAVE`  | Pass | 
 | ADMIN STORY | Social Media Extra `SHOULD HAVE`  | Pass | 
 
+
+
+|     |                          Story that have not been finished       | Result |
+| --- | :----------------------------------------------------------: | :-------------: |
+| USER STORY | Discount `WONT HAVE` |  | 
 
 [Back to top &uarr;](#browser-compatibility)
 

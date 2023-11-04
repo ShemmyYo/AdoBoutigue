@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700;900&display=swap');
 
+root {
+  --background-col: #fff;
+  --background-accent: #7A92A5;
+  --text-black: #0F1519;
+  --text-gray: #6A92A5;
+  --accent-col: #69101E;
+  --accent-ligh: #A42435;
+  --main-font: 'Montserrat', sans-serif;
+}
+
 html {
   height: 100%;
 }
@@ -39,8 +49,7 @@ body {
  --------------------------------*/
 
 .oauthButton {
-  max-width: 320px;
-  display: flex;
+  min-width: 90%;
   padding: 0.5rem 1.4rem;
   font-size: 0.875rem;
   line-height: 1.25rem;

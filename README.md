@@ -74,7 +74,12 @@ I opted for a very minimalistic aesthetic and only apllied 3 colours (2 with add
 
 ```css
 root {
-    TBC
+    --background-col: #fff;
+    --background-accent: #7A92A5;
+    --text-black: #0F1519;
+    --text-gray: #6A92A5;
+    --accent-col: #69101E;
+    --accent-ligh: #A42435;
 }
 ```
 
@@ -96,7 +101,12 @@ The old posters and signs in the traditional Montserrat neighborhood of Buenos A
 
 ![Alt text](README/readme-files/montserrat-font.png)
 
-'sans-serif' as a addtional
+```font
+root {
+    --main-font: 'Montserrat', sans-serif;
+}
+```
+
 
 ***
 
@@ -182,6 +192,9 @@ How the Online Board Game Shop Can Appeal to GameGeek Gary:
  As a USER, I want to be able to **sort available products** so that easily identify the best rated, best priced and by category products `MUST HAVE`  
  As a USER, I want to be able to **view additional details** such as age group, play time and number of players so that I am fully aware of benefits of the product I want to buy `COULD HAVE`  
  As a USER, I want to be able to **view a carousel of images** on the home page so that I feel engaged and enticed straight away `COULD HAVE`  
+As a User, I want to be able to **like product** so that I can easily **view my liked products** `COULD HAVE`  
+ As a User, I want the have the ability **to like product count** so that I can **clearly see how many people like the same product** `COULD HAVE`  
+
 
 
  __[EPIC 4](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/4)  Bag, Checkout and Payment__
@@ -196,13 +209,17 @@ How the Online Board Game Shop Can Appeal to GameGeek Gary:
  As a USER, I want to be able to type in a **discount code** so that I can avail of a shop promo `WONT HAVE`  
 
 
- __[EPIC 5](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/5)  Subscriptions__
+ __[EPIC 5](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/5)  Subscriptions__   
 
  As a USER,  I want to be able to **subscribe to a newsletter** so that I'm being kept up to date with all things new at GamerOnBoard `SHOULD HAVE`  
 
 
- __[EPIC 6](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/6)  Reviews and Blog__
+ __[EPIC 6](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/6)  Reviews and Blog__   
 
+ As a site user, I want to be able to view blog posts on the website so that I can read any posts/comments `COULD HAVE`   
+ As a User, I want to be able to create blog posts from the front end so that I can share information with site visitors `COULD HAVE`   
+ As a User, I want to be able to edit existing blog posts so that I can ensure that posts are up to date  `COULD HAVE`   
+ As a User, I want to be able to delete existing blog posts so that I can remove any unwanted posts from the site `COULD HAVE`   
 
 
  __[EPIC 7](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/7)  Marketing and Search Engine Optimalisation__
