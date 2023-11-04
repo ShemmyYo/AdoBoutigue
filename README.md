@@ -375,15 +375,43 @@ updates to business hours, notifications of events, and much more!
 
 #### Keywords
 
-I've identified some appropriate keywords to align with my site, that should help users
+Keywords have been identified to align with my site, that should help users
 when searching online to find my page easily from a search engine.
 This included a series of the following keyword types
 
 - Short-tail (head terms) keywords
 - Long-tail keywords
 
-I also played around with [Word Tracker](https://www.wordtracker.com) a bit
-to check the frequency of some of my site's primary keywords (only until the free trial expired).
+META: 
+Board games
+Tabletop games
+Card games
+Strategy games
+Family board games
+Classic board games
+Board game store
+Board game shop
+Game night
+Board game collection
+Party games
+Role-playing games (RPGs)
+Board game accessories
+Board game reviews
+Board game recommendations
+
+
+For the Homepage:
+"Discover the Best Selection of Board Games Online. Shop Now for Family Fun, Strategy, and Classic Titles. Find Your Next Adventure!"
+
+For a Category Page (e.g., Strategy Board Games):
+"Explore a World of Strategy Board Games – From Chess to Eurogames. Upgrade Your Game Night with Our Collection of Engaging Titles."
+
+For a Product Page (e.g., "Catan: Settlers of Catan Board Game"):
+"Get Ready to Conquer Catan! Shop the Classic 'Settlers of Catan' Board Game. Build, Trade, and Win in this Award-Winning Title."
+
+For a Blog Post (e.g., "Top 10 Board Games for Family Game Night"):
+"Planning a Family Game Night? Discover Our Top 10 Board Games for Unforgettable Fun. Start the Countdown to Laughter and Memories!"
+
 
 #### Sitemap
 

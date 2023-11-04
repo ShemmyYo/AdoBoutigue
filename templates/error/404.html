@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_title %}- Forbidden{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row h-100">
+    <div class="col col-lg-6 col-md-8 col-sm-12 m-auto text-center p-3">
+      <div class="card border-0 text-center">
+        <img src="{% static 'imgages/game-on-board-logo.jpg' %}" 
+            class="card-img-top" alt="GamerOnBoard 404 logo image">
+        <div class="card-body">
+          <h1 class="card-title logo-font text-yellow">
+            Http404 - The page you're looking for can't be found!</h1>
+          <h3 class="pt-3">
+            <a class="btn-outline-black btn-lg text-uppercase py-3" 
+               href="{% url 'home' %}" role="button">Home</a>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
