@@ -23,6 +23,7 @@
   <form method="post">
     {% csrf_token %}
     <button type="submit" class="btn btn-aa">{% trans "Continue" %}</button>
+    <a href="{% url 'profile' %}" class="text-gray btn btn-aa mt-3 mb-3"><i class="fa-solid fa-rotate-left"></i> Back to Login</a>
   </form>
 </div>
 
