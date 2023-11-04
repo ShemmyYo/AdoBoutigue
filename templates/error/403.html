@@ -12,24 +12,28 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="bg-white m-6 rounded-4">
   <div class="row h-100">
-    <div class="col col-lg-6 col-md-8 col-sm-12 m-auto text-center p-3">
+    <div class="col col-lg-6 col-md-8 col-sm-12 m-auto bg-white text-center text-gray p-3">
       <hr>
-      <h3 class="logo-font text-black"><strong>Gamer</strong>OnBoard</h3>
+      <img src="{% static 'images/game-on-board-logo.jpg' %}" 
+          alt="brand icon" class="logo-icon float-left">
+      <img src="{% static 'images/game-on-board-logo.jpg' %}" 
+          alt="brand icon" class="logo-icon float-right">
+      <h3 class="logo-font text-gray"><strong>Gamer</strong>OnBoard</h3>
       <hr>
       <div class="card border-0 text-center">
-        <img src="{% static 'images/game-on-board-logo.jpg' %}" 
-            class="card-img-top" alt="GamerOnBoard 403 logo image">
         <div class="card-body">
-          <h1 class="card-title logo-font text-yellow">
-            Http 403 - You Shouldn't Be Here</h1>
-          <h3 class="pt-3">
-            <a class="btn-outline-black btn-lg text-uppercase py-3" 
-               href="{% url 'home' %}" role="button btn-aa mx-auto">Home <i class="fa-solid fa-arrow-rotate-left"></i></a>
-          </h3>
+          <h1 class="logo-font text-black-50"><strong>403 error</strong></h1>
+          <h4 class="text-white" >You Shouldn't Be Here</h4>
         </div>
       </div>
+      <br>
+      <h3 class="pt-3">
+          <a class="btn btn-aa mx-auto"  
+             href="{% url 'home' %}" role="button">Home <i class="fa-solid fa-arrow-rotate-left"></i></a>
+        </h3>
+        <br>
     </div>
   </div>
 </div>
