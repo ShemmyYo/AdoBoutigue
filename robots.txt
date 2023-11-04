@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://gamer-on-board-6fa9b306b6d7.herokuapp.com/sitemap.xml

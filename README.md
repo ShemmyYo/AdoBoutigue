@@ -382,7 +382,7 @@ when searching online to find my page easily from a search engine.
 This included a series of the following keyword types
 
 - Short-tail (head terms) keywords
-These short-tail keywords can serve as the foundation for your SEO strategy. However, keep in mind that competition for these keywords can be high, so it's also essential to consider long-tail keywords and specific game titles to reach a more targeted audience. Additionally, regularly updating your website with fresh and relevant content, optimizing your site's structure, and acquiring backlinks from reputable sources can help improve your search engine rankings.
+These short-tail keywords can serve as the foundation for your SEO strategy. However, keeping in mind that competition for these keywords can be high, it's also essential to consider long-tail keywords and specific game titles to reach a more targeted audience. Additionally, regularly updating your website with fresh and relevant content, optimizing your site's structure, and acquiring backlinks from reputable sources can help improve search engine rankings.
 
 
 | Long-tail keywords |    |              |
@@ -396,9 +396,26 @@ These short-tail keywords can serve as the foundation for your SEO strategy. How
 |  |  |  |
 
 
-#### External Link
+#### SEO Optimlisation
 
-Included links to:
+Website's content, including product descriptions, category pages, and blog posts, by incorporating chosen keywords naturally.
+High-quality, informative, and engaging content that satisfies user intent and answers common questions related to board games.
+Use header tags (H1, H2, H3, etc.) to structure your content and make it more readable:
+
+**For the Homepage:**
+ "Discover the Best Selection of Board Games Online. Shop Now for Family Fun, Strategy, and Classic Titles. Find Your Next Adventure!"
+
+**For a Category Page (e.g., Strategy Board Games):**
+ "Explore a World of Strategy Board Games – From Chess to Eurogames. Upgrade Your Game Night with Our Collection of Engaging Titles."
+
+**For a Product Page (e.g., "Catan: Settlers of Catan Board Game"):**
+ "Get Ready to Conquer Catan! Shop the Classic 'Settlers of Catan' Board Game. Build, Trade, and Win in this Award-Winning Title."
+
+**For a Blog Post (e.g., "Top 10 Board Games for Family Game Night"):**
+ "Planning a Family Game Night? Discover Our Top 10 Board Games for Unforgettable Fun. Start the Countdown to Laughter and Memories!"
+
+
+#### External Link
 
 - [The Boardgame Players Association](https://www.boardgamers.org/)
 `The Boardgame Players Association started in 1991. The gaming convention which would eventually evolve into the present WBC got its start in 1991 as Avaloncon when years of campaigning for it by Don Greenwood finally convinced Avalon Hill management that a “return to basics” gaming convention emphasizing competitive play of the games was the best way for The Avalon Hill Game Company to reverse its flagging fortunes. Having started the Origins gaming convention two decades earlier—with all of 13 tournaments—Avalon Hill had freely relinquished control of that annual gaming fest to the fledgling Game Manufacturer’s Association to concentrate on the production of its own games.`
@@ -407,22 +424,14 @@ Included links to:
 `The Irish Games Association CLG is dedicated to promoting gaming in Ireland, by running, supporting and publicising gaming events, while seeking to communicate and cooperate with others that do likewise. The IGA engages in a number of activities designed to further its stated aim of promoting gaming in Ireland and has evolved substantially over its lifespan. Originally, the IGA was a group composed of different gaming interests from around the country who came together to organise an event known as Convention: Gaelcon. Since that time, a number of changes have taken place, and the IGA has expanded into other fields. The goal of the IGA is to help the gaming community in whatever way possible, be it by organising events, providing information, or offering what assistance it can to others who are working on behalf of the gaming community in Ireland. If you are running an event and need some assistance or some friendly advice please don’t hesitate to reach out to us.`
 
 
+#### META:
 
-
-
-
-For the Homepage:
-"Discover the Best Selection of Board Games Online. Shop Now for Family Fun, Strategy, and Classic Titles. Find Your Next Adventure!"
-
-For a Category Page (e.g., Strategy Board Games):
-"Explore a World of Strategy Board Games – From Chess to Eurogames. Upgrade Your Game Night with Our Collection of Engaging Titles."
-
-For a Product Page (e.g., "Catan: Settlers of Catan Board Game"):
-"Get Ready to Conquer Catan! Shop the Classic 'Settlers of Catan' Board Game. Build, Trade, and Win in this Award-Winning Title."
-
-For a Blog Post (e.g., "Top 10 Board Games for Family Game Night"):
-"Planning a Family Game Night? Discover Our Top 10 Board Games for Unforgettable Fun. Start the Countdown to Laughter and Memories!"
-
+ | META keywords |    |              |  |  |  
+ | ---------- | ---------- | ------------ | ----------- | ----------- |   
+ | Board | Tabletop | Card | Strategy | Family board |  
+ | Board game store | Game night | Role-playing games (RPGs) | Classic board | Board game recommendations |   
+ | Board game shop  | Party games | Board game collection | Board game accessories | Board game reviews |  
+ |  |  |  |  |  |  
 
 #### Sitemap
 
@@ -432,7 +441,7 @@ This was generated using my deployed site URL: https://gamer-on-board-6fa9b306b6
 After it finished crawling the entire site, it created a
 [sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
 
-### Robots
+#### Robots
 
 I've created the [robots.txt](robots.txt) file at the root-level.
 Inside, I've included the default settings:
@@ -448,6 +457,14 @@ Further links for future implementation:
 - [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
 - [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
 - [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
+
+
+
+
+
+[Back to top &uarr;](#contents)
+
+***
 
 ### Social Media Marketing
 
