@@ -50,13 +50,11 @@ class Product(models.Model):
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
-    age = models.ForeignKey(
-        'AgeGroup', null=True, blank=True, on_delete=models.SET_NULL, default=3)
+    age = models.ForeignKey('AgeGroup', null=True, blank=True, on_delete=models.SET_NULL, default=3)
     min_players = models.CharField(max_length=1, null=False, blank=False, default=1)
     max_players = models.CharField(max_length=2, null=False, blank=False)
     game_play_time = models.CharField(max_length=3, null=False, blank=False)
-    condition = models.ForeignKey(
-        'Condition', null=True, blank=True, on_delete=models.SET_NULL)
+    condition = models.ForeignKey('Condition', null=True, blank=True, on_delete=models.SET_NULL)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
