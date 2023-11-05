@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -62,6 +62,10 @@ class Product(models.Model):
     image3 = models.ImageField(null=True, blank=True)
     video = models.URLField(null=True, blank=True)
     stock = models.IntegerField(default=1)
+    likes = models.ManyToManyField(User, related_name="product_likes", blank=True)
 
     def __str__(self):
         return self.name
+    
+    def number_of_likes(self):
+        return self.likes.count()
