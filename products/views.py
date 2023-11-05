@@ -68,11 +68,9 @@ def product_detail(request, product_id):
     A detailed view of a product
     """
     product = get_object_or_404(Product, pk=product_id)
-    age = get_object_or_404(AgeGroup, pk=product_id)
 
     context = {
         'product': product,
-        'age': age,
     }
 
     return render(request, 'products/product_detail.html', context)
