@@ -381,9 +381,116 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wirefram
 
 ***
 
-## Data Model
+## Data Models
 
-TBC
+The following are the models created for Retro Reboot.
+
+- **Allauth User Model**
+    - The User model was built using [Django's Allauth library](https://django-allauth.readthedocs.io/en/latest/overview.html)
+    - When a user is created, they're automatically assigned a profile through the Profile model.
+
+- **UserProfile**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | **FK** | user | OneToOne | FK to **User** model |
+    | | default_phone_number | CharField | |
+    | | default_street_address1 | CharField | |
+    | | default_street_address2 | CharField | |
+    | | default_town_or_city | CharField | |
+    | | default_county | CharField | |
+    | | default_postcode | CharField | |
+    | | default_country | CountryField | |
+
+- **Category**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |  
+    | | name | CharField | |  
+	| | friendly_name | CharField | |  
+	| | cat_desc | CharField | |  
+	| | cat_image | ImageField | |  
+
+- **Condition**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | | name | CharField | |
+	| | condition_desc | CharField |  
+
+- **AgeGroup**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | | name | CharField | |
+	| | restriction_name | CharField | |  
+	| | restriction_desc | CharField | |  
+	| | restriction_image | ImageField | |  
+
+- **Product**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | **FK** | category | ForeignKey | FK to **Category** model |
+	| | sku | CharField | |  
+	| | name | CharField | |
+	| | description | TextField | |  
+	| **FK** | age | ForeignKey | FK to **AgeGroup** model |
+    | | name | CharField | |
+	| | min_players | CharField | |  
+	| | max_players | CharField | |  
+	| | game_play_time | CharField | |  
+	| **FK** | condition | ForeignKey | FK to **Condition** model |
+    | | name | CharField | |
+	| | price | DecimalField | |  
+	| | rating | DecimalField | |  
+	| | image | ImageField | |  
+	| | image2 | ImageField | |  
+	| | image2 | ImageField | |  
+	| | video | URLField | |  
+	| | stock | IntegerField | |   
+	| **M2M** | likes | ManyToManyField | M2M related to **product_likes** |
+
+- **Order**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | | order_number | CharField | |
+    | **FK** | user_profile | ForeignKey | FK to **UserProfile** model |
+    | | full_name | CharField | |
+    | | email | EmailField | |
+    | | phone_number | CharField | |
+    | | country | CountryField | |
+    | | postcode | CharField | |
+    | | town_or_city | CharField | |
+    | | street_address1 | CharField | |
+    | | street_address2 | CharField | |
+    | | county | CharField | |
+	| | date | DateTimeField | |  
+    | | delivery_cost | DecimalField | |
+    | | order_total | DecimalField | |
+    | | grand_total | DecimalField | |
+    | | original_basket | TextField | |
+    | | stripe_pid | CharField | |
+
+- **OrderLineItem**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | **FK** | order | ForeignKey | FK to **Order** model |
+    | **FK** | product | ForeignKey | FK to **Product** model |
+    | | quantity | IntegerField | |
+    | | lineitem_total | DecimalField | |
+
+
+- **NewsletterSignup**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | | email | EmailField | unique=True | 
+	| | date | DateTimeField | auto_now_add=True |
+	| | date_update | DateTimeField | auto_now=True |  
+	| | gdpr | BooleanField | Default=False |
 
 [Back to top &uarr;](#contents)
 

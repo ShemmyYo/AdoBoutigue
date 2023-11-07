@@ -31,6 +31,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     'gamer-on-board-6fa9b306b6d7.herokuapp.com',
+    '8000-shemmyyo-gameonboardp5e-icarjpxt1os.ws-eu106.gitpod.io',
     '8000-shemmyyo-gameonboardp5e-icarjpxt1os.ws-eu105.gitpod.io',
     '8080-shemmyyo-gameonboardp5e-icarjpxt1os.ws-eu105.gitpod.io',
     ]
