@@ -923,6 +923,11 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 
 ![Alt text](README/tests/error/billing-info-not-showing-charges.png)
 
+***
+
+![Alt text](README/tests/error/error-agegroup-django.png)
+![Alt text](README/tests/error/error-agegroup.png)
+
 [Back to top &uarr;](#browser-compatibility)
 
 ***

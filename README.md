@@ -262,6 +262,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wirefram
 <details>
 <summary>Click to View Wireframes</summary>
 
+![Alt text](README/wireframes/landing.png) 
+
 ![Home Page](README/readme-files/game-on-board-roll-play-win–destination.png)
 </details>
 
@@ -296,6 +298,45 @@ TBC
 </details>
 
 [Back to top &uarr;](#contents)
+
+***
+
+### Product Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/product.png)
+</details>
+
+***
+
+### Product Details Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/product-detail.png) 
+</details>
+
+***
+
+### Bag Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/bag.png) 
+</details>
+
+***
+
+### Checkout Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/checkout.png) 
+</details>
+
+
+
 
 ***
 ## Features
