@@ -263,9 +263,78 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wirefram
 <summary>Click to View Wireframes</summary>
 
 ![Alt text](README/wireframes/landing.png) 
-
-![Home Page](README/readme-files/game-on-board-roll-play-win–destination.png)
 </details>
+
+### Sign Up Page Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/user-register.png)
+</details>
+
+### Login Page Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/user-login.png)
+</details>
+
+### Logout Page Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/user-logout.png)
+</details>
+
+### User Update Page Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/profile-update.png)
+</details>
+
+### Product Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/product.png)
+</details>
+
+### Product Details Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/product-detail.png) 
+</details>
+
+### Product Managment - Add Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/product-management.png)
+</details>
+
+### Product Management - Edit Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/product-edit.png)
+</details>
+
+### Bag Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/bag.png) 
+</details>
+
+### Checkout Wireframes
+<details>
+<summary>Click to View Wireframes</summary>
+
+![Alt text](README/wireframes/checkout.png) 
+</details>
+
 
 [Back to top &uarr;](#contents)
 
@@ -279,66 +348,6 @@ TBC
 
 ***
 
-### Sign Up Page Wireframes
-<details>
-<summary>Click to View Wireframes</summary>
-
-![Signup Page](README/wireframes/signup.png)
-</details>
-
-[Back to top &uarr;](#contents)
-
-***
-
-### Login Page Wireframes
-<details>
-<summary>Click to View Wireframes</summary>
-
-![Login](README/wireframes/login.png)
-</details>
-
-[Back to top &uarr;](#contents)
-
-***
-
-### Product Wireframes
-<details>
-<summary>Click to View Wireframes</summary>
-
-![Alt text](README/wireframes/product.png)
-</details>
-
-***
-
-### Product Details Wireframes
-<details>
-<summary>Click to View Wireframes</summary>
-
-![Alt text](README/wireframes/product-detail.png) 
-</details>
-
-***
-
-### Bag Wireframes
-<details>
-<summary>Click to View Wireframes</summary>
-
-![Alt text](README/wireframes/bag.png) 
-</details>
-
-***
-
-### Checkout Wireframes
-<details>
-<summary>Click to View Wireframes</summary>
-
-![Alt text](README/wireframes/checkout.png) 
-</details>
-
-
-
-
-***
 ## Features
 
 ### Existing Features
