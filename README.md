@@ -32,8 +32,46 @@ Page will have to have an authentication mechanism and provide paid access to th
 
 # Contents
 
-TBC
-
+- [Overview](#portfolio-project-4---full-stack-toolkit)
+- [Project Goal](#project-goal)
+- [UX User Experience](#ux-user-experiance)
+    - [Design](#design)
+        - [Colour Scheme](#colour-scheme)
+        - [Typography](#typography)
+        - [Imagery](#imaginary)
+    - [Agile](#agile)
+        - [The Ideal User/Persona](#the-ideal-userpersona)
+        - [Epics & Admin/User Stories](#epics--adminuser-stories)
+        - [MoSCoW Prioritization](#moscow-prioritization)
+    - [Wireframes](#wireframes)
+	- [Data Model](#data-model)
+	- [Features](#features)
+    	- [Existing Features](#existing-features)   
+    	- [Future Features](#future-features)
+	- [Ecommerce Business Model](#ecommerce-business-model)
+		- [Web Marketing](#web-marketing)
+		- [Search Engine Optimization (SEO)](#search-engine-optimization-seo)
+		- [Social Media Marketing](#social-media-marketing)
+		- [Newsletter Marketing](#newsletter-marketing)
+- [Testing](#testing)
+- [Tools & Technologies Used](#tools--technologies-used)
+    - [Languages Used](#languages-used)
+    - [Frameworks & Tools](#frameworks--tools)
+    - [Imported Libraries and Packages](#imported-libraries-and-packages)
+- [Deployment](#deployment)
+    - [ElephantSQL](#elephantsql-database)
+    - [Amazon AWS](#amazon-aws)
+		- [S3 Bucket](#s3-bucket)
+		- [IAM](#iam)
+		- [Final AWS Setup](#final-aws-setup)
+	- [Stripe API](#stripe-api)
+	- [Gmail API](#gmail-api)
+    - [Heroku Deployment](#heroku-deployment)
+    - [Local Deployment](#local-deployment)
+		- [Cloning](#cloning)
+		- [Forking](#forking)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
 ***
 
@@ -156,6 +194,7 @@ Struggles to find time to attend physical board game events or conventions.
 How the Online Board Game Shop Can Appeal to GameGeek Gary:
 
 ***
+
 ### Epics & Admin/User Stories
 
 7 Epics (milestones) were created which were then further developed into 36 User Stories. 
@@ -232,6 +271,7 @@ How the Online Board Game Shop Can Appeal to GameGeek Gary:
 [Back to top &uarr;](#contents)
 
 ***
+
 ### MoSCoW Prioritization
 
 This project was developed using agile methodologies by delivering small features (User Stories) across the project.
@@ -249,6 +289,7 @@ User Stories were assigned to Epics, prioritized under the labels:
 To ensure that all core requirements were completed I worked on the 'MUST HAVE' epics/user stories first.
 
 A few `COULD HAVE` user stories have been implemented before project due date i.e. ...
+
 
 [Back to top &uarr;](#contents)
 
@@ -340,7 +381,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wirefram
 
 ***
 
-### Data Model
+## Data Model
 
 TBC
 
@@ -358,26 +399,28 @@ TBC
 
 __Error Pages__
 
-- 404 Page not found
-A 404 page has been implemented and will display if a user navigates to a broken link.
+
+**404 Page not found** - page has been implemented and will display if a user navigates to a broken link.
 
 <details>
-<summary>Click to View Error Page</summary>
+<summary>Click to View http404 Error Page</summary>
 
 ![Error 404](README/features/404.png)
 </details>
 
-- 403 Action Forbidden
-A 403 error page has been implemented to provide feedback to the user when they try to access unauthorized content. 
+***
 
-- 500 Internal Server Error
-A 500 error page has been displayed to alert users when an internal server error occurs. 
+**500 Internal Server Error** - error page has been displayed to alert users when an internal server error occurs. 
 
 <details>
-<summary>Click to View Error Page</summary>
+<summary>Click to View http500 Error Page</summary>
 
 ![Error 500](README/features/500.png)
 </details>
+
+***
+
+**403 Action Forbidden** - error page has been implemented to provide feedback to the user when they try to access unauthorized content. 
 
 
 [Back to top &uarr;](#contents)
