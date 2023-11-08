@@ -43,16 +43,14 @@ Page will have to have an authentication mechanism and provide paid access to th
         - [The Ideal User/Persona](#the-ideal-userpersona)
         - [Epics & Admin/User Stories](#epics--adminuser-stories)
         - [MoSCoW Prioritization](#moscow-prioritization)
+	- [Ecommerce Business Model](#ecommerce-business-model)
+		- [Web Marketing](#web-marketing)
+		- [Search Engine Optimization (SEO)](#search-engine-optimization-seo)
     - [Wireframes](#wireframes)
 	- [Data Model](#data-model)
 	- [Features](#features)
     	- [Existing Features](#existing-features)   
     	- [Future Features](#future-features)
-	- [Ecommerce Business Model](#ecommerce-business-model)
-		- [Web Marketing](#web-marketing)
-		- [Search Engine Optimization (SEO)](#search-engine-optimization-seo)
-		- [Social Media Marketing](#social-media-marketing)
-		- [Newsletter Marketing](#newsletter-marketing)
 - [Testing](#testing)
 - [Tools & Technologies Used](#tools--technologies-used)
     - [Languages Used](#languages-used)
@@ -295,6 +293,176 @@ A few `COULD HAVE` user stories have been implemented before project due date i.
 
 ***
 
+## Ecommerce Business Model
+
+GamerOnBoard is a B2C (business-to-consumer) as it sells goods to individual customers.
+
+B2C model, the success of board game, online business will depend on ability to connect with individual consumers, offer a compelling product, and deliver exceptional customer service. Adapting and evolving business strategy based on consumer feedback and market trends will be crucial for long-term success.
+
+
+#### Other Google services available to boost business awareness:
+
+- Google My Business - registering business address 
+- Google Ads - powerfull advertising tool
+- Google Analytics - visual analytics on clicks, track etc
+
+### Web Marketing
+
+GamerOnBoard has links for social media marketing and Newsletter model linked.
+
+
+#### Social Media Marketing
+
+Social Media can potentially build a community of users around the business, and boost site visitor numbers,
+especially when using larger platforms such a Facebook.
+
+Social marketing in the context of online business refers to the use of social media platforms and strategies to promote products or services, build brand awareness, engage with customers, and ultimately drive sales and business growth. It's an essential component of digital marketing that leverages the vast reach and influence of social media to connect with potential customers. 
+
+Common platforms include Facebook, Instagram, Twitter, LinkedIn, Pinterest, and TikTok.
+
+Social marketing in online business is an ongoing effort that requires a deep understanding of your target audience and the ability to adapt to the ever-changing landscape of social media. It's essential to maintain a strategic and customer-focused approach to maximize your online business's success through social media channels.
+
+I've started this journey by creating a Facebook account
+
+![FB](README/readme-files/fb-marketing.png)
+
+
+[Back to top &uarr;](#contents)
+
+***
+
+#### Newsletter Marketing
+
+A newsletter list can be used by the business to send regular messages to site users.
+For example, what items are on special offer, new items in stock, updates to business hours, notifications of events, and much more!
+
+I have incorporate a newsletter sign-up form on my application, to allow users to supply their
+email address if they are interested in learning more about what the business has to offer.
+
+I created a custom newsletter app in my project with a custom NewsletterSignup model and added a form to the site's footer to collect user email addresses 
+
+Newsletter model:
+
+```python
+class NewsletterSignup(models.Model):
+    email = models.EmailField(unique=True, null=False, blank=False)
+
+    def __str__(self):
+        return self.email
+```
+
+I set the email address to be unique to avoid users signing up multiple times with the same email address. 
+If a user tries to sign up twice with the same address they will be shown a message letting them know they've already signed up.
+
+Once a user signs up, I used the `send_mail()` functionality in the `webhook_handler.py` file to trigger a welcome email for the user to acknowledge that they've successfully signed up for the newsletter.
+
+<details>
+<summary>Click to View Newsletter Form Page</summary>
+
+![Newsletter](README/features/footer.png)
+</details>
+
+[Back to top &uarr;](#contents)
+
+***
+
+### Search Engine Optimization (SEO)
+
+Keyword research is the process of finding and analyzing search terms that people enter into search engines, with the goal of using that data for SEO or general web marketing.
+
+#### Keywords
+
+Keywords have been identified to align with my site, that should help users
+when searching online to find my page easily from a search engine.
+This included a series of the following keyword types
+
+- Short-tail (head terms) keywords
+These short-tail keywords can serve as the foundation for your SEO strategy. However, keeping in mind that competition for these keywords can be high, it's also essential to consider long-tail keywords and specific game titles to reach a more targeted audience. Additionally, regularly updating your website with fresh and relevant content, optimizing your site's structure, and acquiring backlinks from reputable sources can help improve search engine rankings.
+
+
+| Long-tail keywords |    |              |
+| ---------- | ---------- | ------------ |
+| "Best board games" | "Board game collection" | "Top Game store" |
+| "Tabletop games" | "Board game store" | "Board game retailer" |
+| "Board game store near me" | "Buy board games" | "Tabletop game shop" |
+| "Game board shop" | "Board games online" | "Best board games" |
+| "Board games for sale" | "Game store online" | "Board games for adults" |
+| "Board games for kids" | "Popular board games" | "Board games to buy" |
+|  |  |  |
+
+
+#### SEO Optimlisation
+
+Website's content, including product descriptions, category pages, and blog posts, by incorporating chosen keywords naturally.
+High-quality, informative, and engaging content that satisfies user intent and answers common questions related to board games.
+Use header tags (H1, H2, H3, etc.) to structure your content and make it more readable:
+
+**For the Homepage:**
+ "Discover the Best Selection of Board Games Online. Shop Now for Family Fun, Strategy, and Classic Titles. Find Your Next Adventure!"
+
+**For a Category Page (e.g., Strategy Board Games):**
+ "Explore a World of Strategy Board Games – From Chess to Eurogames. Upgrade Your Game Night with Our Collection of Engaging Titles."
+
+**For a Product Page (e.g., "Catan: Settlers of Catan Board Game"):**
+ "Get Ready to Conquer Catan! Shop the Classic 'Settlers of Catan' Board Game. Build, Trade, and Win in this Award-Winning Title."
+
+**For a Blog Post (e.g., "Top 10 Board Games for Family Game Night"):**
+ "Planning a Family Game Night? Discover Our Top 10 Board Games for Unforgettable Fun. Start the Countdown to Laughter and Memories!"
+
+
+#### External Link
+
+- [The Boardgame Players Association](https://www.boardgamers.org/)
+`The Boardgame Players Association started in 1991. The gaming convention which would eventually evolve into the present WBC got its start in 1991 as Avaloncon when years of campaigning for it by Don Greenwood finally convinced Avalon Hill management that a “return to basics” gaming convention emphasizing competitive play of the games was the best way for The Avalon Hill Game Company to reverse its flagging fortunes. Having started the Origins gaming convention two decades earlier—with all of 13 tournaments—Avalon Hill had freely relinquished control of that annual gaming fest to the fledgling Game Manufacturer’s Association to concentrate on the production of its own games.`
+
+- [The Irish Games Association](https://iga.ie/)
+`The Irish Games Association CLG is dedicated to promoting gaming in Ireland, by running, supporting and publicising gaming events, while seeking to communicate and cooperate with others that do likewise. The IGA engages in a number of activities designed to further its stated aim of promoting gaming in Ireland and has evolved substantially over its lifespan. Originally, the IGA was a group composed of different gaming interests from around the country who came together to organise an event known as Convention: Gaelcon. Since that time, a number of changes have taken place, and the IGA has expanded into other fields. The goal of the IGA is to help the gaming community in whatever way possible, be it by organising events, providing information, or offering what assistance it can to others who are working on behalf of the gaming community in Ireland. If you are running an event and need some assistance or some friendly advice please don’t hesitate to reach out to us.`
+
+
+#### GDPR:
+ The European Union introduced the  General Data Protection Regulation, known as GDPR in May 2018. GDPR is the toughest privacy and security law in the world and even though it was passed by the European Union, it imposes obligations onto organizations anywhere in the world, as long as they target or collect data related to people in the EU.
+
+ GamerOnBoard [Privacy Policy](https://www.privacypolicygenerator.info/live.php?token=IAqA6K5oi5wyOB0Wrs3XHhpYfMa3PMyi) has been generated and inluded in the footer of the page.
+
+<details>
+<summary>Click to View Privacy Policy Page</summary>
+
+![privacy-policy](README/features/privacy-policy.png)
+</details>
+
+
+#### META:
+
+ | META keywords |    |              |  |  |  
+ | ---------- | ---------- | ------------ | ----------- | ----------- |   
+ | Board | Tabletop | Card | Strategy | Family board |  
+ | Board game store | Game night | Role-playing games (RPGs) | Classic board | Board game recommendations |   
+ | Board game shop  | Party games | Board game collection | Board game accessories | Board game reviews |  
+ |  |  |  |  |  |  
+
+#### Sitemap
+
+I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
+File generated using deployed site URL: https://gamer-on-board-6fa9b306b6d7.herokuapp.com/
+
+After it finished crawling the entire site, it created a
+[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository's root dir.
+
+#### Robots
+
+I've created the [robots.txt](robots.txt) file at the root-level.
+Inside, I've included the default settings:
+
+```
+User-agent: *
+Disallow:
+Sitemap: https://gamer-on-board-6fa9b306b6d7.herokuapp.com/sitemap.xml
+```
+
+[Back to top &uarr;](#contents)
+
+***
+
 ## Wireframes
 
 I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wireframes.
@@ -501,76 +669,171 @@ The following are the models created for GamerOnBoard.
 
 ### Existing Features
 
-#### Landing Page
+**Landing Page**
 
 ![landing page](README/features/game-on-board-roll-play-win%E2%80%93destination.png)
 
-#### Product Page
-	- Product Sorting
-	- Product Filtering
-	- Navigation Menu
-	- Search Bar
-	- My Account 
-	- Admin
-	- Product Managment
+***
 
-#### Product Card Page
-	- Condition Badge
-	- Availability Badge
-	- Stock count
-	- Add to Bag 
-	
+**Navigation Menu**
 
-#### Product Details Page
-	- Quantity Selectors
-	- Add to Bag 
-	- Edit Product
-	- Delete Product
+![Nav Bar](README/features/nav-bar.png)
+
+***
+
+**Product Sorting**
+
+![Sorting](README/features/sorting-1.png)
+![Sorting](README/features/sorting-2.png)
+![Sorting](README/features/sorting-3.png)
+
+![Sorting](README/features/sorting-show-results.png)
+
+***
+
+**Search Bar**
+
+![Search](README/features/search-bar.png)
+![Search](README/features/search-bar-results.png)
+
+***
+
+**My Account**
+
+![My Account](README/features/my-account.png)
+
+***
+
+**Sign Up Page**
+
+![Sign Up](README/features/sign-out.png)
+
+***
+
+**Sign In Page**
+
+![Sign In](README/features/sign-in.png)
+
+***
+
+**Log Out Page**
+
+![Sign Out](README/features/sign-out.png)
+
+***
+
+**Password Reset Page**
+
+![Pass Reset](README/features/password-reset.png)
+
+***
+
+**User Profile / Deliver Information / Order History Page**
+
+![User Profile](README/features/user-profile-update.png)
+
+***
+
+**Admin**
+
+![Admin](README/features/admin-menu.png)
+
+***
+
+**Product management**
+
+![Product Add](README/features/product-managment.png)
+
+***
+
+**Product Page**
+
+![Product All](README/features/product-page.png)
+
+***
+
+**Product Filtering**
+
+![Filtering](README/features/filtering.png)
+
+***
+
+**Product Card Page / Product Card Admin View**
+
+![Product Card](README/features/product-card.png)
+![Product Card Admin](README/features/product-card-super.png)
+
+***
+
+**Product Card Page - Add to Bag - Stock Availability Badges**
+
+![Sold Out](README/features/add-to-bag-sold-out.png)
+![Limited Stock](README/features/add-to-bag-limited.png)
+![In Stock](README/features/add-to-bag-in-stock.png)
+
+***
+
+**Product Details Page** - Quantity Selectors, Add to Bag, Edit Product, Delete Product
+
+![Product Details](README/features/product-details.png)
+![Product Details](README/features/product-details-additional-info.png)
+
+***
 
 
+**Product Card Page - Add to Bag**
+
+![Add](README/features/add-to-basket.png)
+
+***
+
+**Bag Empty Page**
+
+[Empty Bag](README/features/empty-bag.png)
+
+***
+
+**Bag Page** - Quantity Selector, Bag Total, Delivery Costs, Grand Total, Pay Button
+
+![Bag](README/features/bag.png)
+
+![Alert](README/features/bag-alert-updated.png)
+![Alert](README/features/bag-alert-removed.png)
+![Alert](README/features/bag-alert-stock-not-available.png)
+
+***
+
+**Checkout Page** - Customer Details Form, Order Summary, Checkout Buttons, Order Confirmation Email, Order Confirmation Page
+
+![Checkout](README/features/checkout.png)
+
+![payment](README/features/checkout-payment.png)
+
+![Order Confirmation](README/features/checkout-confirmation.png)
+
+![Confirmation Order Email](README/features/confirmation-order-email.png)
+
+***
+
+**Footer Page**
+
+![Footer](README/features/footer.png)
+
+***
+
+**Newsletter Page**
 
 
-#### Sign Up Page
-
-#### Sign In Page
-
-#### Log Out Page
-
-#### Password Reset Page
-
-#### User Profile Page
-
-#### User Deliver Information Page
-
-#### User Order History Page
+[Back to top &uarr;](#contents)
 
 
-
-
-#### Footer Page
-
-#### Newsletter Page
-
-#### Bag Page
-	- Quantity Selector
-	- Bag Total
-	- Delivery Costs
-	- Grand Total
-	- Pay Button
-
-#### Checkout Page
-	- Customer Details Form
-	- Order Summary
-	- Checkout Buttons
-	- Order Confirmation Email
-	- Order Confirmation Page
-
+***
 
 ### Future Features
 
-- 1
-- 2
-- 3
+- 1 Blog
+- 2 Discount
+- 3 
 
 
 [Back to top &uarr;](#contents)
@@ -609,169 +872,6 @@ __Error Pages__
 
 ### Future Features
 
-
-[Back to top &uarr;](#contents)
-
-***
-
-## Ecommerce Business Model
-
-GamerOnBoard is a B2C (business-to-consumer) as it sells goods to individual customers.
-
-B2C model, the success of board game, online business will depend on ability to connect with individual consumers, offer a compelling product, and deliver exceptional customer service. Adapting and evolving business strategy based on consumer feedback and market trends will be crucial for long-term success.
-
-### Web Marketing
-
-GamerOnBoard has links for social media marketing, contact and newsletter model linked.
-
-#### Social Media:
-Social Media can potentially build a community of users around the business, and boost site visitor numbers,
-especially when using larger platforms such a Facebook.
-
-#### Newsletter:
-A newsletter list can be used by the business to send regular messages to site users.
-For example, what items are on special offer, new items in stock,
-updates to business hours, notifications of events, and much more!
-
-#### Other Google services available to boost business awareness:
-
-- Google My Business - registering business address 
-- Google Ads - powerfull advertising tool
-- Google Analytics - visual analytics on clicks, track etc
-
-#### GDPR:
- The European Union introduced the  General Data Protection Regulation, known as GDPR in May 2018. GDPR is the toughest privacy and security law in the world and even though it was passed by the European Union, it imposes obligations onto organizations anywhere in the world, as long as they target or collect data related to people in the EU.
-
- GamerOnBoard [Privacy Policy](https://www.privacypolicygenerator.info/live.php?token=IAqA6K5oi5wyOB0Wrs3XHhpYfMa3PMyi) has been generated and inluded in the footer of the page.
-
-**Businesses and organizations that violate GDPR privacy and security standards**
-
-[Back to top &uarr;](#contents)
-
-***
-
-### Search Engine Optimization (SEO)
-
-Keyword research is the process of finding and analyzing search terms that people enter into search engines, with the goal of using that data for SEO or general web marketing.
-
-#### Keywords
-
-Keywords have been identified to align with my site, that should help users
-when searching online to find my page easily from a search engine.
-This included a series of the following keyword types
-
-- Short-tail (head terms) keywords
-These short-tail keywords can serve as the foundation for your SEO strategy. However, keeping in mind that competition for these keywords can be high, it's also essential to consider long-tail keywords and specific game titles to reach a more targeted audience. Additionally, regularly updating your website with fresh and relevant content, optimizing your site's structure, and acquiring backlinks from reputable sources can help improve search engine rankings.
-
-
-| Long-tail keywords |    |              |
-| ---------- | ---------- | ------------ |
-| "Best board games" | "Board game collection" | "Top Game store" |
-| "Tabletop games" | "Board game store" | "Board game retailer" |
-| "Board game store near me" | "Buy board games" | "Tabletop game shop" |
-| "Game board shop" | "Board games online" | "Best board games" |
-| "Board games for sale" | "Game store online" | "Board games for adults" |
-| "Board games for kids" | "Popular board games" | "Board games to buy" |
-|  |  |  |
-
-
-#### SEO Optimlisation
-
-Website's content, including product descriptions, category pages, and blog posts, by incorporating chosen keywords naturally.
-High-quality, informative, and engaging content that satisfies user intent and answers common questions related to board games.
-Use header tags (H1, H2, H3, etc.) to structure your content and make it more readable:
-
-**For the Homepage:**
- "Discover the Best Selection of Board Games Online. Shop Now for Family Fun, Strategy, and Classic Titles. Find Your Next Adventure!"
-
-**For a Category Page (e.g., Strategy Board Games):**
- "Explore a World of Strategy Board Games – From Chess to Eurogames. Upgrade Your Game Night with Our Collection of Engaging Titles."
-
-**For a Product Page (e.g., "Catan: Settlers of Catan Board Game"):**
- "Get Ready to Conquer Catan! Shop the Classic 'Settlers of Catan' Board Game. Build, Trade, and Win in this Award-Winning Title."
-
-**For a Blog Post (e.g., "Top 10 Board Games for Family Game Night"):**
- "Planning a Family Game Night? Discover Our Top 10 Board Games for Unforgettable Fun. Start the Countdown to Laughter and Memories!"
-
-
-#### External Link
-
-- [The Boardgame Players Association](https://www.boardgamers.org/)
-`The Boardgame Players Association started in 1991. The gaming convention which would eventually evolve into the present WBC got its start in 1991 as Avaloncon when years of campaigning for it by Don Greenwood finally convinced Avalon Hill management that a “return to basics” gaming convention emphasizing competitive play of the games was the best way for The Avalon Hill Game Company to reverse its flagging fortunes. Having started the Origins gaming convention two decades earlier—with all of 13 tournaments—Avalon Hill had freely relinquished control of that annual gaming fest to the fledgling Game Manufacturer’s Association to concentrate on the production of its own games.`
-
-- [The Irish Games Association](https://iga.ie/)
-`The Irish Games Association CLG is dedicated to promoting gaming in Ireland, by running, supporting and publicising gaming events, while seeking to communicate and cooperate with others that do likewise. The IGA engages in a number of activities designed to further its stated aim of promoting gaming in Ireland and has evolved substantially over its lifespan. Originally, the IGA was a group composed of different gaming interests from around the country who came together to organise an event known as Convention: Gaelcon. Since that time, a number of changes have taken place, and the IGA has expanded into other fields. The goal of the IGA is to help the gaming community in whatever way possible, be it by organising events, providing information, or offering what assistance it can to others who are working on behalf of the gaming community in Ireland. If you are running an event and need some assistance or some friendly advice please don’t hesitate to reach out to us.`
-
-
-#### META:
-
- | META keywords |    |              |  |  |  
- | ---------- | ---------- | ------------ | ----------- | ----------- |   
- | Board | Tabletop | Card | Strategy | Family board |  
- | Board game store | Game night | Role-playing games (RPGs) | Classic board | Board game recommendations |   
- | Board game shop  | Party games | Board game collection | Board game accessories | Board game reviews |  
- |  |  |  |  |  |  
-
-#### Sitemap
-
-I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
-File generated using deployed site URL: https://gamer-on-board-6fa9b306b6d7.herokuapp.com/
-
-After it finished crawling the entire site, it created a
-[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository's root dir.
-
-#### Robots
-
-I've created the [robots.txt](robots.txt) file at the root-level.
-Inside, I've included the default settings:
-
-```
-User-agent: *
-Disallow:
-Sitemap: https://gamer-on-board-6fa9b306b6d7.herokuapp.com/sitemap.xml
-```
-
-[Back to top &uarr;](#contents)
-
-***
-
-### Social Media Marketing
-
-Social marketing in the context of online business refers to the use of social media platforms and strategies to promote products or services, build brand awareness, engage with customers, and ultimately drive sales and business growth. It's an essential component of digital marketing that leverages the vast reach and influence of social media to connect with potential customers. 
-
-Common platforms include Facebook, Instagram, Twitter, LinkedIn, Pinterest, and TikTok.
-
-Social marketing in online business is an ongoing effort that requires a deep understanding of your target audience and the ability to adapt to the ever-changing landscape of social media. It's essential to maintain a strategic and customer-focused approach to maximize your online business's success through social media channels.
-
-I've started this journey by creating a Facebook account
-
-![FB](README/readme-files/fb-marketing.png)
-
-[Back to top &uarr;](#contents)
-
-***
-
-### Newsletter Marketing
-
-I have incorporate a newsletter sign-up form on my application, to allow users to supply their
-email address if they are interested in learning more about what the business has to offer.
-
-I created a custom newsletter app in my project with a custom NewsletterSignup model and added a form to the site's footer to collect user email addresses 
-
-Newsletter model:
-
-```python
-class NewsletterSignup(models.Model):
-    email = models.EmailField(unique=True, null=False, blank=False)
-
-    def __str__(self):
-        return self.email
-```
-
-I set the email address to be unique to avoid users signing up multiple times with the same email address. 
-If a user tries to sign up twice with the same address they will be shown a message letting them know they've already signed up.
-
-Once a user signs up, I used the `send_mail()` functionality in the `webhook_handler.py` file to trigger a welcome email for the user to acknowledge that they've successfully signed up for the newsletter.
 
 [Back to top &uarr;](#contents)
 

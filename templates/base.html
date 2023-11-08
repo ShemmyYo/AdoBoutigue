@@ -92,14 +92,16 @@
                     {% if request.user.is_superuser %}
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                                <a href="{% url 'add_product' %}" class="dropdown-item">
-                                    Product Management</a>
-                                <a href="https://gamer-on-board-6fa9b306b6d7.herokuapp.com/admin" class="dropdown-item">
-                                    Admin Panel</a>
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center">
+                                <div><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                                <p class="my-0">Admin</p>
                             </div>
                         </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            <a href="https://gamer-on-board-6fa9b306b6d7.herokuapp.com/admin" class="dropdown-item">Admin Panel</a>
+                        </div>
                     </li>
                     {% endif %}               
                     <li class="list-inline-item dropdown">
