@@ -211,6 +211,7 @@ a.category-badge>span.badge:hover {
   height: 40px;
   background-color: #A42435;
   color: #fff;
+  font-size: 1.8rem;
 }
 
 .card-body {

@@ -383,24 +383,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wirefram
 
 ## Data Models
 
-The following are the models created for Retro Reboot.
-
-- **Allauth User Model**
-    - The User model was built using [Django's Allauth library](https://django-allauth.readthedocs.io/en/latest/overview.html)
-    - When a user is created, they're automatically assigned a profile through the Profile model.
-
-- **UserProfile**
-
-    | **PK** | **id** (unique) | Type | Notes |
-    | --- | --- | --- | --- |
-    | **FK** | user | OneToOne | FK to **User** model |
-    | | default_phone_number | CharField | |
-    | | default_street_address1 | CharField | |
-    | | default_street_address2 | CharField | |
-    | | default_town_or_city | CharField | |
-    | | default_county | CharField | |
-    | | default_postcode | CharField | |
-    | | default_country | CountryField | |
+The following are the models created for GamerOnBoard.
 
 - **Category**
 
@@ -492,6 +475,24 @@ The following are the models created for Retro Reboot.
 	| | date_update | DateTimeField | auto_now=True |  
 	| | gdpr | BooleanField | Default=False |
 
+- **Allauth User Model**
+    - The User model was built using [Django's Allauth library](https://django-allauth.readthedocs.io/en/latest/overview.html)
+    - When a user is created, they're automatically assigned a profile through the Profile model.
+
+- **UserProfile**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | **FK** | user | OneToOne | FK to **User** model |
+    | | default_phone_number | CharField | |
+    | | default_street_address1 | CharField | |
+    | | default_street_address2 | CharField | |
+    | | default_town_or_city | CharField | |
+    | | default_county | CharField | |
+    | | default_postcode | CharField | |
+    | | default_country | CountryField | |
+
+
 [Back to top &uarr;](#contents)
 
 ***
@@ -499,6 +500,78 @@ The following are the models created for Retro Reboot.
 ## Features
 
 ### Existing Features
+
+#### Landing Page
+
+![landing page](README/features/game-on-board-roll-play-win%E2%80%93destination.png)
+
+#### Product Page
+	- Product Sorting
+	- Product Filtering
+	- Navigation Menu
+	- Search Bar
+	- My Account 
+	- Admin
+	- Product Managment
+
+#### Product Card Page
+	- Condition Badge
+	- Availability Badge
+	- Stock count
+	- Add to Bag 
+	
+
+#### Product Details Page
+	- Quantity Selectors
+	- Add to Bag 
+	- Edit Product
+	- Delete Product
+
+
+
+
+#### Sign Up Page
+
+#### Sign In Page
+
+#### Log Out Page
+
+#### Password Reset Page
+
+#### User Profile Page
+
+#### User Deliver Information Page
+
+#### User Order History Page
+
+
+
+
+#### Footer Page
+
+#### Newsletter Page
+
+#### Bag Page
+	- Quantity Selector
+	- Bag Total
+	- Delivery Costs
+	- Grand Total
+	- Pay Button
+
+#### Checkout Page
+	- Customer Details Form
+	- Order Summary
+	- Checkout Buttons
+	- Order Confirmation Email
+	- Order Confirmation Page
+
+
+### Future Features
+
+- 1
+- 2
+- 3
+
 
 [Back to top &uarr;](#contents)
 
