@@ -780,16 +780,16 @@ The following are the models created for GamerOnBoard.
 
 ***
 
-
 **Product Card Page - Add to Bag**
 
 ![Add](README/features/add-to-basket.png)
+![Add text](README/features/add-to-basket-update.png)
 
 ***
 
 **Bag Empty Page**
 
-[Empty Bag](README/features/empty-bag.png)
+![Empty Bag](README/features/empty-bag.png)
 
 ***
 
@@ -799,6 +799,7 @@ The following are the models created for GamerOnBoard.
 
 ![Alert](README/features/bag-alert-updated.png)
 ![Alert](README/features/bag-alert-removed.png)
+![Alert](README/features/err-add-to-bag-no-stock.png)
 ![Alert](README/features/bag-alert-stock-not-available.png)
 
 ***
