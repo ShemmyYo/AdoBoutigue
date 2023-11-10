@@ -669,19 +669,21 @@ The following are the models created for GamerOnBoard.
 
 ### Existing Features
 
-**Landing Page**
+**Landing Page** is where a user lands on arrivial to the page. 
+ It welcomes them to the site and gives them an idea of what the site sells. 
+ A 'SHOP NOW' button invites users to enter and show around the site's product page. My intention was to keep it simple but enhance it to grab the attention of the users and invite them to shop.
 
 ![landing page](README/features/game-on-board-roll-play-win%E2%80%93destination.png)
 
 ***
 
-**Navigation Menu**
+**Navigation Menu** Features include a search bar, profile access, bag and its total (showing the value of products currently in the bag), and links to filter products by different categories. When loggen in as a super user, one gets access to additional menu 'Admin' 
 
 ![Nav Bar](README/features/nav-bar.png)
 
 ***
 
-**Product Sorting**
+**Product Sorting and Filtering** User can sort and filter products in a number of ways. Products can be sorted by: Price (low to high), Price (high to low), Age (low to high),Age (high to low), Rating (low to high), Rating (high to low),Name (A-Z), Name (Z-A), Category (A-Z), Categoty(Z-A). If the user chooses to filter product by category, relevant category is also shown on top of the page (as a link).
 
 ![Sorting](README/features/sorting-1.png)
 ![Sorting](README/features/sorting-2.png)
@@ -691,14 +693,16 @@ The following are the models created for GamerOnBoard.
 
 ***
 
-**Search Bar**
+**Search Bar** The 'Search GamerOnBoard' bar gives the user the possibility to search product data by keyword which is matched up with the products' name and description.
+The user can also see how many results were returned for their search term and the exact fraze they were looking for.
+If the user hits the search button without entering anything, an error message is shown.
 
 ![Search](README/features/search-bar.png)
 ![Search](README/features/search-bar-results.png)
 
 ***
 
-**My Account**
+**My Account** a user has the option to either purchase the product without creating an account or create one in the 'My Account' menu. If the user is logged in, the same menu will provide a link to log out from the App.
 
 ![My Account](README/features/my-account.png)
 
@@ -731,6 +735,7 @@ The following are the models created for GamerOnBoard.
 **User Profile / Deliver Information / Order History Page**
 
 ![User Profile](README/features/user-profile-update.png)
+![history](README/features/order-history.png)
 
 ***
 
@@ -746,7 +751,7 @@ The following are the models created for GamerOnBoard.
 
 ***
 
-**Product Page**
+**Product Page** !Each product also has its own individual page for the user to see more information about the product including a description for every game and console on the site. Similar to the all products page, the product's image, name, release year and price appear on the individual page along with buttons to add the product to the user's basket or to return to the all products page and keep shopping.
 
 ![Product All](README/features/product-page.png)
 
