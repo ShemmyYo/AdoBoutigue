@@ -609,8 +609,13 @@ input[name='q']::placeholder {
 }
 
 .btn-clear {
-  background-color: #fff;
-  border: #fff;
+  background-color: #ffffff00;
+  border: #ffffff00;
+}
+
+.btn-like-sold-out {
+  color: #7a92a5;
+  margin-top: 8px;
 }
 
 /* -------------------------------- 

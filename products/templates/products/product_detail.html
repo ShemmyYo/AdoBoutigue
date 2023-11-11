@@ -168,13 +168,13 @@
                                 {% csrf_token %}
                                 {% if user in product.likes.all %}
                                 <button type="submit" name="product_id" value="{{product.pk}}" 
-                                class="btn-clear">
+                                class="btn-clear btn-like-sold-out">
                                     <i class="fa-solid fa-heart cat-badge-icon"></i>
                                     <p class="mb-0 text-black text-center card-info">{{ product.number_of_likes }}</p>                                
                                 </button>
                                 {% else %}
                                 <button type="submit" name="productt_id" value="{{product.pk}}" 
-                                class="btn-clear">
+                                class="btn-clear btn-like-sold-out">
                                     <i class="fa-regular fa-heart cat-badge-icon"></i>
                                     <p class="mb-0 text-black text-center card-info">{{ product.number_of_likes }}</p>
                                 </button>
