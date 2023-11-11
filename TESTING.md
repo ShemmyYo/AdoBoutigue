@@ -50,7 +50,7 @@ Initially, there were some errors however all errors have been rectified.
 
 <details><summary> >>> Click for Profile Update validation img</summary>
 
-![Profile Update]()
+![Register](README/tests/html/sign-up.png)
 </details>
 
 
@@ -839,6 +839,7 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | ADMIN STORY | Heroku Deployment `MUST HAVE` | Pass | 
 | USER STORY | Home Page `MUST HAVE`  | Pass | 
 
+***
 
 |     |                                   Story                      | Result |
 | --- | :----------------------------------------------------------: | :-------------: |
@@ -851,6 +852,7 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | USER STORY | Login and Logout `SHOULD HAVE`  | Pass | 
 | USER STORY | Email Confirmation after Registration `SHOULD HAVE`  | Pass | 
 
+***
 
 |     |                                   Story                      | Result |
 | --- | :----------------------------------------------------------: | :-------------: |
@@ -865,8 +867,8 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | USER STORY | Sorting Products `MUST HAVE` | Pass | 
 | USER STORY | Product Card details `COULD HAVE` | Pass | 
 | USER STORY | Carousel on home page `COULD HAVE` | Pass | 
-| USER STORY | Like Product `SHOULD HAVE` | xxx |
-| USER STORY | View Liked Products `SHOULD HAVE` | xxx |
+
+***
 
 |     |                                   Story                      | Result |
 | --- | :----------------------------------------------------------: | :-------------: |
@@ -879,20 +881,14 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | USER STORY | Safe and Secure Payment `MUST HAVE`  | Pass | 
 | USER STORY | Email Confirmation after Purchase `MUST HAVE`  | Pass | 
 
+***
 
 |     |                                   Story                      | Result |
 | --- | :----------------------------------------------------------: | :-------------: |
 | [EPIC 5](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/5) | Subscriptions | Completed |
 | USER STORY | Subscribtion to newsletter `SHOULD HAVE`  | Pass |
 
-
-|     |                                   Story                      | Result |
-| --- | :----------------------------------------------------------: | :-------------: |
-| [EPIC 6](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/6) | Reviews and Blog | Not Completed |
-| USER STORY | View Blog `COULD HAVE` | xxx | 
-| USER STORY | Create Blog Posts `COULD HAVE` | xxx | 
-| USER STORY | Edit Post `COULD HAVE` | xxx | 
-| USER STORY | Deleted Blog Posts `COULD HAVE` | xxx | 
+***
 
 |     |                                   Story                      | Result |
 | --- | :----------------------------------------------------------: | :-------------: |
@@ -901,11 +897,18 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 | ADMIN STORY | Social Media `MUST HAVE`  | Pass | 
 | ADMIN STORY | Social Media Extra `SHOULD HAVE`  | Pass | 
 
-
+***
 
 |     |                          Story that have not been finished       | Result |
 | --- | :----------------------------------------------------------: | :-------------: |
 | USER STORY | Discount `WONT HAVE` |  | 
+| USER STORY | Like Product `SHOULD HAVE` |  |
+| USER STORY | View Liked Products `SHOULD HAVE` |  |
+| [EPIC 6](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/6) | Reviews and Blog | Not Completed |
+| USER STORY | View Blog `COULD HAVE` |  | 
+| USER STORY | Create Blog Posts `COULD HAVE` |  | 
+| USER STORY | Edit Post `COULD HAVE` |  | 
+| USER STORY | Deleted Blog Posts `COULD HAVE` |  | 
 
 [Back to top &uarr;](#browser-compatibility)
 
@@ -913,20 +916,46 @@ Some functionality like 'Product Managment'is restricted to Superusers only.
 
 # <img height="50" src="README/tests/error/bugs.png"> __Bugs:__
 
-![Alt text](README/tests/error/atribute-error-oject-has-no-attribute-original_bag-error-fixed.png) 
+**Order Total, Delivery and Grand Total are not loading after Checkout**
 
-![Alt text](README/tests/error/atribute-error-oject-has-no-attribute-original_bag.png) 
-
-![Alt text](README/tests/error/atribute-error-oject-has-no-attribute-original_bag-error-found.png) 
-
-*** 
+**ISSUE**: After checkout button is pressed the order total, delivery and grand total are not showing correctly. 
 
 ![Alt text](README/tests/error/billing-info-not-showing-charges.png)
 
+**FIX**: https://code-institute-room.slack.com/archives/C026VTHQDNY/p1698226453705119
+
 ***
+**Python No AgeGroup matches the iven query error while adding products**
+
+**ISSUE**: `No AgeGroup matches the given query` shows up everytime I add a new product either via Admin panel or Product Management page.
 
 ![Alt text](README/tests/error/error-agegroup-django.png)
+
+**FIX**: model 'product_detail' incorrectly included
+`age = get_object_or_404(Product, pk=product_id)` which caused the system to search for product id within id of category model.  
 ![Alt text](README/tests/error/error-agegroup.png)
+
+***
+
+**Deployment to Heroku now showing as it does in local**
+
+**ISSUE**: The previous setup I had works fine for connecting to the database on Heroku because the project is able to find the DATABASE_URL in your config vars. On Gitpod it seems to be having difficulty finding the DATABASE_URL in the Gitpod variables. I would consider setting up an env.py file and storing DATABASE_URL (and stripe keys and secret key, etc) in there, and using the if/else setup for the databases like you have been doing.
+
+**FIX**: Added variables to GitPod. For security, it's best not to have elephantSQL URLs etc. directly in settings.py
+
+***
+
+**Python AtributeError at Checkout error**
+
+**ISSUE**: The below error come us everytime user clicks on checkout.
+
+![Alt text](README/tests/error/atribute-error-oject-has-no-attribute-original_bag.png) 
+![Alt text](README/tests/error/atribute-error-oject-has-no-attribute-original_bag-error-fixed.png) 
+
+**FIX**: `order = stripe_pid = pid ` line in the checkout view had been written incorrectly and contained a `.` instead of `=`
+
+![Alt text](README/tests/error/atribute-error-oject-has-no-attribute-original_bag-error-found.png) 
+
 
 [Back to top &uarr;](#browser-compatibility)
 
