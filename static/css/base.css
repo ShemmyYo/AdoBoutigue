@@ -608,6 +608,11 @@ input[name='q']::placeholder {
   box-shadow: inset 0px 0px 25px #7A92A5;
 }
 
+.btn-clear {
+  background-color: #fff;
+  border: #fff;
+}
+
 /* -------------------------------- 
         Category Badge 
  --------------------------------*/

@@ -947,6 +947,7 @@ After clicking the icon, the admin will be promped with a popup message and aske
 
 ### Future Features
 
+- Ranking - as a future development step, I'd like incorporate Ranking functionality. t the moment rakning onthe page doesn not work correctly and its missing functionality to calculate ranking. 
 - Blog - as a future development step, I'd like incorporate a Blog which would build and gather the like-minded, board-games focused enhusiasts.
 - Discount - as a future development step, I'd like incorporate discounts so that I can reward existing users as well as invite new mambers over the Social Media.
 

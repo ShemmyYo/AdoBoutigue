@@ -1,6 +1,7 @@
 from django.shortcuts import (render, redirect, reverse, get_object_or_404)
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category, AgeGroup, SpecialCategory
@@ -155,3 +156,18 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def product_likes(request, pk):
+    product = get_object_or_404(Product, id=pk)
+
+    if product.likes.filter(id=request.user.id).exists():
+        product.likes.remove(request.user)
+        messages.info(request, "We are sorry you don't like it!")
+    else:
+        product.likes.add(request.user)
+        messages.info(request, "We are happy you like it!")
+    
+    return HttpResponseRedirect(reverse('product_detail'), args=pk)
+    # return redirect('home')
