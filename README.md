@@ -677,139 +677,233 @@ The following are the models created for GamerOnBoard.
 
 ***
 
-**Navigation Menu** Features include a search bar, profile access, bag and its total (showing the value of products currently in the bag), and links to filter products by different categories. When loggen in as a super user, one gets access to additional menu 'Admin' 
+**Navigation Menu** features include a search bar, profile access, bag and its total (showing the value of products currently in the bag), and links to filter products by different categories. When logged in as a super user, one gets access to the additional menu 'Admin'. Nav bar also includes the Delivery threshold info which is set to 50 Euro.
+
+<details>
+<summary>>>> Click to View Navigation Menu Picture</summary>
 
 ![Nav Bar](README/features/nav-bar.png)
+</details>
 
 ***
 
-**Product Sorting and Filtering** User can sort and filter products in a number of ways. Products can be sorted by: Price (low to high), Price (high to low), Age (low to high),Age (high to low), Rating (low to high), Rating (high to low),Name (A-Z), Name (Z-A), Category (A-Z), Categoty(Z-A). If the user chooses to filter product by category, relevant category is also shown on top of the page (as a link).
+**Product Sorting and Filtering** - User can sort and filter products in a number of ways. Products can be sorted by: Price (low to high), Price (high to low), Age (low to high),Age (high to low), Rating (low to high), Rating (high to low),Name (A-Z), Name (Z-A), Category (A-Z), Categoty(Z-A). If the user chooses to filter product by category, relevant category is also shown on top of the page (as a link).
 
+<details>
+<summary>>>> Click to View Sorting and Filtering Pictures</summary>
+
+![Filtering](README/features/filtering.png)
 ![Sorting](README/features/sorting-1.png)
 ![Sorting](README/features/sorting-2.png)
 ![Sorting](README/features/sorting-3.png)
 
 ![Sorting](README/features/sorting-show-results.png)
 
+</details>
+
 ***
 
-**Search Bar** The 'Search GamerOnBoard' bar gives the user the possibility to search product data by keyword which is matched up with the products' name and description.
+**Search Bar** - the 'Search GamerOnBoard' bar gives the user the possibility to search product data by keyword which is matched up with the products' name and description.
 The user can also see how many results were returned for their search term and the exact fraze they were looking for.
 If the user hits the search button without entering anything, an error message is shown.
 
+<details>
+<summary>>>> Click to View Search Bar Pictures</summary>
+
 ![Search](README/features/search-bar.png)
 ![Search](README/features/search-bar-results.png)
+</details>
 
 ***
 
-**My Account** a user has the option to either purchase the product without creating an account or create one in the 'My Account' menu. If the user is logged in, the same menu will provide a link to log out from the App.
+**My Account** - A user has the option to either purchase the product without creating an account or create one in the 'My Account' menu. If the user is logged in, and has admin permissions, they will see an admin icon in the main nav menu. Clicking this will give the admin options to add a new product or open Admin Panel. Both, Admin and regular user, have access to 'My Account' menu which provides links to 'My Profile' or log out from the App. 
+
+<details>
+<summary>>>> Click to View My Account Link Picture</summary>
 
 ![My Account](README/features/my-account.png)
+</details>
 
 ***
 
-**Sign Up Page**
+**Sign Up Page** - A User has an option to create their account traditionally with their email/password combination or by useing Google SSO. User is asked to confirm their email via email.
 
-![Sign Up](README/features/sign-out.png)
+<details>
+<summary>>>> Click to View Sign Up Page</summary>
+
+![Sign Up](README/features/sign-up.png)
+![Confirmation](README/features/confirmation-email.png)
+</details>
 
 ***
 
-**Sign In Page**
+**Sign In Page** - A User has an option to login with their traditional email/password combination or by useing Google SSO. There's also a checkbox to let the user be remembered on their current device to avoid having to log in every time they visit the site.
+
+<details>
+<summary>>>> Click to View Sign In Picture</summary>
 
 ![Sign In](README/features/sign-in.png)
+</details>
 
 ***
 
 **Log Out Page**
 
+<details>
+<summary>>>> Click to View Sign Out Picture</summary>
+
 ![Sign Out](README/features/sign-out.png)
+</details>
 
 ***
 
 **Password Reset Page**
 
+<details>
+<summary>>>> Click to View Password Reset Pictures</summary>
+
 ![Pass Reset](README/features/password-reset.png)
+![Pass Reset](README/features/password-reset-done.png)
+![Pass Reset](README/features/password-reset-email.png)
+</details>
 
 ***
 
-**User Profile / Deliver Information / Order History Page**
+**User Profile / Deliver Information / Order History Page** - Fully registered users get a profile which contains the user's default delivery information if set and a list of the user's previous orders. The form on the user's profile contains the default delivery information if the user has saved it. The user can update this information from their profile by altering the form and clicking the update information button. This information will be automatically used for the user's next purchase to make the site easier to use for customers. Logged in users can view their list of order history on their profiles. The order number contains a link which when the user clicks on it, are brought to the order confirmation page for that specific order which contains all the details for that order and a link to return to the user's profile. User can also reset their password from their Profile view.
+
+<details>
+<summary>>>> Click to View User Profile / Deliver Information / Order History Page</summary>
 
 ![User Profile](README/features/user-profile-update.png)
 ![history](README/features/order-history.png)
+</details>
 
 ***
 
-**Admin**
+**Admin** - Superusers can access extra menu with links to 'Product Management' and 'Admin Panel' 
+
+<details>
+<summary>>>> Click to View Admin Picture</summary>
 
 ![Admin](README/features/admin-menu.png)
+</details>
 
 ***
 
-**Product management**
+**Product Management** - Superusers can add new products to the webstore. The add product contains a form for the admin to fill out with the details of the new product.
+
+<details>
+<summary>>>> Click to View Product Management Picture</summary>
 
 ![Product Add](README/features/product-managment.png)
+</details>
 
 ***
 
-**Product Page** !Each product also has its own individual page for the user to see more information about the product including a description for every game and console on the site. Similar to the all products page, the product's image, name, release year and price appear on the individual page along with buttons to add the product to the user's basket or to return to the all products page and keep shopping.
+**Products Page** have their own pages for the user to view more information about the product including a description for every game, category, age restrictions etc. Similar to the all products page, the product's images (max 3 plus a video), name, condition and availability badges and price appear on the individual page along with buttons to add the product to the user's basket or to return to the all products page and keep shopping.
 
 ![Product All](README/features/product-page.png)
 
 ***
 
-**Product Filtering**
-
-![Filtering](README/features/filtering.png)
-
-***
-
 **Product Card Page / Product Card Admin View**
+
+<details>
+<summary>>>> Click to View Product Cards Pictures</summary>
 
 ![Product Card](README/features/product-card.png)
 ![Product Card Admin](README/features/product-card-super.png)
+</details>
 
 ***
 
-**Product Card Page - Add to Bag - Stock Availability Badges**
+**Product Card Page - Add to Bag - Stock Availability Badges** Products have a stock availability badges which show stock left for each product so that the user is informed whether the product is in stock (>3 items), how many are left in stock (<3 items) or 'Out of Stock' (cannot be added to bag).
+
+- Products with more than 3 items left in stock have a teal badge with the 'in stock' info displayed.
+- If the product has less than 3 items left in stock then the badge displays the item count and is turned yellow.
+- A Red 'Out of Stock' badge and locked 'Add to Bag' button is shown for products stock even 0.
+- When a product is purchased, the stock will automatically decrease by the number of units of each product the customer purchases.
+
+<details>
+<summary>>>> Click to View Card Page - Add to Bag - Stock Availability Badges</summary>
 
 ![Sold Out](README/features/add-to-bag-sold-out.png)
 ![Limited Stock](README/features/add-to-bag-limited.png)
 ![In Stock](README/features/add-to-bag-in-stock.png)
 
+</details>
+
 ***
 
-**Product Details Page** - Quantity Selectors, Add to Bag, Edit Product, Delete Product
+**Product Card Page - Condition Badges** Products may have a condition badge attached to let the user know whether the product is new, like new, user or collectable.
+
+***
+
+**Product Details Page** Users can use a quantity selector to select how many items they want to purchase. The selector lets the user add a minimum of 1 and a maximum of whatever the product's current stock is to their bag. After setting the quantity, a user can click the add to bag button to add that number of the product to their bag. If the user already has an item in their bag and tries to add more than the stock, an error message will be shown. 
 
 ![Product Details](README/features/product-details.png)
 ![Product Details](README/features/product-details-additional-info.png)
 
 ***
 
-**Product Card Page - Add to Bag**
+**Editing Product** A Superusers can edit products by clicking the edit icon on either the product card on the all products page or the individual product page.The edit product page contains the same form as the add product page but the fields are already populated with the product's current data. 
+
+<details>
+<summary>>>> Click to View Edit Product Page</summary>
+
+![Edit](README/features/product-edit.png)
+</details>
+
+***
+
+**Deleting Product** A Superusers can delete products by clicking the delete icon on either the product card on the all products page or the individual product page.
+After clicking the icon, the admin will be promped with a popup message and asked to confirmation deletione to avoid products being deleted accidentally.
+
+<details>
+<summary>>>> Click to View Delete Page Confirmation Picture</summary>
+
+![Delete](README/features/product-delete-conf.png)
+</details>
+
+***
+
+**Product Card Page - Add to Bag** Every product has a button that lets the user add to bag when viewing it both on the products page or the individual product page. By clicking the 'Add to Bag' button, one unit of the product is added to the user's bag. A user is shown a message confirming when an item has been added, removed or updated in their bag.
+
+<details>
+<summary>>>> Click to View Product Card Page - Add to Bag Pictures</summary>
 
 ![Add](README/features/add-to-basket.png)
 ![Add text](README/features/add-to-basket-update.png)
-
-***
-
-**Bag Empty Page**
-
-![Empty Bag](README/features/empty-bag.png)
-
-***
-
-**Bag Page** - Quantity Selector, Bag Total, Delivery Costs, Grand Total, Pay Button
-
-![Bag](README/features/bag.png)
 
 ![Alert](README/features/bag-alert-updated.png)
 ![Alert](README/features/bag-alert-removed.png)
 ![Alert](README/features/err-add-to-bag-no-stock.png)
 ![Alert](README/features/bag-alert-stock-not-available.png)
 
+</details>
+
 ***
 
-**Checkout Page** - Customer Details Form, Order Summary, Checkout Buttons, Order Confirmation Email, Order Confirmation Page
+**Bag Empty Page**
+
+<details>
+<summary>>>> Click to View Empty Bag Picture</summary>
+
+![Empty Bag](README/features/empty-bag.png)
+</details>
+
+***
+
+**Bag Page** - Users can use a quantity selector to select, update or delete items they wish to purchase. The selector lets the user add a minimum of 1 and a maximum of whatever the product's current stock is to their bag. After setting the quantity, a user can click the add to bag button to add that number of the product to their bag. If the user already has an item in their bag and tries to add more than the stock, an error message will be shown.  User is also presented with Bag Total, Delivery Costs, Grand Total and is encuraged to buy by pressing 'Pay Stripe' button which brings the User to Stripe payments page.
+
+![Bag](README/features/bag.png)
+
+***
+
+**Checkout Page** - The user is asked to complete the customer details form if not logged in or if a previous profile with details has been saved form is pre-populated with delivery details. Order Summary is shown with all products sitting in the bag and the 'Complete Order' button lets the User complete the transaction using Stripe Payments. Upon successful transaction completion, an order confirmation email is sent to the user's email address and an order confirmation page is shown. Users have the option to 'Go back to Your Profile' if logged in or the 'View Our Deals' button is purchase made incognito.
+
+<details>
+<summary>>>> Click to View Checkout Page</summary>
 
 ![Checkout](README/features/checkout.png)
 
@@ -818,17 +912,25 @@ If the user hits the search button without entering anything, an error message i
 ![Order Confirmation](README/features/checkout-confirmation.png)
 
 ![Confirmation Order Email](README/features/confirmation-order-email.png)
+</details>
 
 ***
 
-**Footer Page**
+**Footer Page** is always shown through each page and contains links to the blog (future function), privacy policy and social media. Also, quick links to games by category are presented in the centre section. On the right side, users can use a form to submit to the Newsletter as well as view the links for the Association we are working with/are members of. 
 
 ![Footer](README/features/footer.png)
 
 ***
 
-**Newsletter Page**
+**Newsletter Page** - Users can sign up for the GamerOnBoard newsletter where on submission, they will be sent a welcome email. Users can only sign up to the newsletter once and if they try to sign up with an already registered email address, they will see a message letting them know.
 
+<details>
+<summary>>>> Click to View Newsletter Pictures</summary>
+
+![Newsletter](README/features/newsletter-aler-created.png)
+![Newsletter](README/features/newsletter-aler-duplicate.png)
+![Newsletter](README/features/newsletter-email.png)
+</details>
 
 [Back to top &uarr;](#contents)
 
@@ -837,10 +939,8 @@ If the user hits the search button without entering anything, an error message i
 
 ### Future Features
 
-- 1 Blog
-- 2 Discount
-- 3 
-
+- Blog - as a future development step, I'd like incorporate a Blog which would build and gather the like-minded, board-games focused enhusiasts.
+- Discount - as a future development step, I'd like incorporate discounts so that I can reward existing users as well as invite new mambers over the Social Media.
 
 [Back to top &uarr;](#contents)
 
