@@ -578,11 +578,19 @@ The following are the models created for GamerOnBoard.
 	| | restriction_desc | CharField | |  
 	| | restriction_image | ImageField | |  
 
+- **SpecialCategory**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |  
+    | | name | CharField | |  
+	| | sp_cat_desc | CharField | |  
+
 - **Product**
 
     | **PK** | **id** (unique) | Type | Notes |
     | --- | --- | --- | --- |
     | **FK** | category | ForeignKey | FK to **Category** model |
+	| **FK** | special_cat | ForeignKey | FK to **SpecialCategory** model |
 	| | sku | CharField | |  
 	| | name | CharField | |
 	| | description | TextField | |  
