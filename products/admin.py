@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, Condition, AgeGroup
+from .models import Product, Category, Condition, AgeGroup, SpecialCategory
 
 # Register your models here.
 
@@ -20,3 +20,4 @@ admin.site.register(Product, ProductAdmin)
 admin.site.register(Category)
 admin.site.register(Condition)
 admin.site.register(AgeGroup)
+admin.site.register(SpecialCategory)

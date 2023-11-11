@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, AgeGroup
+from .models import Product, Category, AgeGroup, SpecialCategory
 from .forms import ProductForm
 
 # Create your views here.
@@ -38,6 +38,11 @@ def all_products(request):
                 categories = request.GET['category'].split(',')
                 products = products.filter(category__name__in=categories)
                 category = Category.objects.filter(name__in=categories)
+
+        if 'special_category' in request.GET:
+                sp_categories = request.GET['special_category'].split(',')
+                products = products.filter(special_cat__name__in=sp_categories)
+                sp_category = SpecialCategory.objects.filter(name__in=sp_categories)
                 
         if 'q' in request.GET:
             query = request.GET['q']
