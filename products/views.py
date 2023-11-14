@@ -169,5 +169,4 @@ def product_likes(request, pk):
         product.likes.add(request.user)
         messages.info(request, "We are happy you like it!")
     
-    return HttpResponseRedirect(reverse('product_detail'), args=pk)
-    # return redirect('home')
+    return HttpResponseRedirect(reverse('product_detail', args=[pk]))
