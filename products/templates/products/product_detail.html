@@ -130,17 +130,17 @@
                     <div class="row">
                         <div class="col-4 col-md-2">
                             <i class="card-info-icon fa-solid fa-user-lock "></i>
-                            <p class="mb-0 text-black text-center card-info">Age {{ product.age }}+</p>
+                            <p class="mb-0 mt-2 text-black text-center card-info">Age {{ product.age }}+</p>
                         </div>
                         <div class="col-4 col-md-2">
                             <i class="card-info-icon fa-solid fa-people-arrows"></i>
-                            <p class="mb-0 text-black text-center card-info">{{ product.min_players }} 
+                            <p class="mb-0 mt-2 text-black text-center card-info">{{ product.min_players }} 
                                 {% if product.max_players %} - {{ product.max_players }} Players {% else %} Player {% endif %}
                             </p>
                         </div>
                         <div class="col-4 col-md-2">
                             <i class="card-info-icon fa-solid fa-clock-rotate-left"></i>
-                            <p class="mb-0 text-black text-center card-info">{{ product.game_play_time }} Min</p>
+                            <p class="mb-0 mt-2 text-black text-center card-info">{{ product.game_play_time }} Min</p>
                         </div>
                         <!-- Second row -->
                         <div class="col-4 col-md-2 mt-4 mt-md-0">
@@ -175,8 +175,8 @@
                                 {% else %}
                                 <button type="submit" name="productt_id" value="{{product.pk}}" 
                                 class="btn-clear">
-                                    <i class="fa-regular fa-heart mt-0 cat-badge-icon"></i>
-                                    <p class="mb-0 text-black text-center card-info">{{ product.number_of_likes }}</p>
+                                    <i class="fa-regular fa-heart mt-0 cat-badge-icon hvr-bounce-in hvr-bob"></i>
+                                    <p class="mb-0 text-black text-center card-info hvr-bounce-in">Like Me!</p>
                                 </button>
                                 {% endif %}
                             </form>
