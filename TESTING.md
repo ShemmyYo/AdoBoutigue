@@ -978,14 +978,20 @@ In order to run the tests, I ran the following command in the terminal each time
 
 | No | Test | Results |
 | :---: | :---: | :---: |
-| 1 | 
-| 2 | 
-| 3 | 
-| 4 | 
-| 5 | 
-| 6 | 
-| 7 | 
-| 8 | 
-| 9 | 
+| 1 | ![Testing Order Form](README/tests/automated/order-form-test-1.png) | Pass |  
+| 2 | ![Testing Order Form](README/tests/automated/order-form-test-2.png) | Pass |  
+| 3 | ![Testing Order Form](README/tests/automated/order-form-test-3.png) | Pass |  
+| 4 | ![Testing Order Form](README/tests/automated/order-form-test-4.png) | Pass |  
+| 5 | ![Testing Order Form](README/tests/automated/order-form-test-5.png) | Pass |  
+| 6 | ![Testing Order Form](README/tests/automated/order-form-test-6.png) | Pass |  
+| 7 | ![Access to Product page](README/tests/automated/access-to-product-page-1.png) | Pass |  
+| 8 | ![Product Form testing](README/tests/automated/product-form-test-1.png) | Pass |  
+| 9 | ![Product Form testing](README/tests/automated/product-form-test-2.png) | Pass |  
+| 10 | ![Product Form testing](README/tests/automated/product-form-test-3.png) | Pass |  
+| 11 | ![Product Form testing](README/tests/automated/product-form-test-4.png) | Pass |  
+| 12 | ![Product Form testing](README/tests/automated/product-form-test-5.png) | Pass |  
+| 13 | ![Product Form testing](README/tests/automated/product-form-test-6.png) | Pass |  
+| 14 | ![Product Form testing](README/tests/automated/product-form-test-7.png) | Pass |  
+
 
 Back to [README.md](README.md) file.
