@@ -8,12 +8,13 @@ GamerOnBoard is a B2C (business-to-consumer) board game web store which aims to 
 When designing GamerOnBoard store, I focused on creating a user-friendly, visually appealing e-commerce website with a responsive design and focused on implementing a secure and easy-to-navigate online shopping experience. One of my prorities was also to be able to optimise website for search engines (SEO) to improve organic visibility.
 
 I ensured to include high-quality backlinks from reputable websites in the board game industry, gaming communities, and related niches.
-The Customer is encourage to leave reviews and ratings, which can enhance GamerOnBoard visibility in local and product-specific search results.
+The Customer is encourage to buy, like product and as a future function, reviews and rate, which can enhance GamerOnBoard visibility in local and product-specific search results.
 
 # Project Goal
 
 The goal of this project was to build a Full-Stack site based on business logic used to control a centrally-owned dataset. 
-Page will have to have an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service. It is also a goal to implement SEO and create a dummy social media product page.
+Page has an authentication mechanism and provides paid access to the site's data and allows the user to purchase a product. 
+It was also my goal to implement SEO and create a dummy social media product page on FB.
 
 ## __Tech Stack__
 
@@ -51,7 +52,8 @@ Page will have to have an authentication mechanism and provide paid access to th
 	- [Features](#features)
     	- [Existing Features](#existing-features)   
     	- [Future Features](#future-features)
-- [Testing](#testing)
+		- [Errors](#error-pages)
+- [Testing](TESTING.md)
 - [Tools & Technologies Used](#tools--technologies-used)
     - [Languages Used](#languages-used)
     - [Frameworks & Tools](#frameworks--tools)
@@ -75,7 +77,7 @@ Page will have to have an authentication mechanism and provide paid access to th
 
 # UX User Experiance
 
-**Creating a user-friendly e-commerce web store is essential to attract and retain customers hencethe below are some ofthe key UX (User Experience) characteristics I ensured to be used:** 
+**Creating a user-friendly e-commerce web store is essential to attract and retain customers hencethe below are some of the key UX (User Experience) characteristics I ensured to be used in my Project are as follow:** 
 
 - **Intuitive Navigation:** Ensured that the website has a clear and logical navigation structure. Users should be able to easily find product categories, search for specific items, and navigate to their shopping cart or checkout page without confusion.
 
@@ -195,7 +197,7 @@ How the Online Board Game Shop Can Appeal to GameGeek Gary:
 
 ### Epics & Admin/User Stories
 
-7 Epics (milestones) were created which were then further developed into 36 User Stories. 
+7 Epics (milestones) were created which were then further developed into 41 User Stories. 
 
  __[EPIC 1](https://github.com/ShemmyYo/game-on-board-p5-ecommerce-app/milestone/1)  Django & Project Basic Setup__
 
@@ -297,7 +299,7 @@ A few `COULD HAVE` user stories have been implemented before project due date i.
 
 GamerOnBoard is a B2C (business-to-consumer) as it sells goods to individual customers.
 
-B2C model, the success of board game, online business will depend on ability to connect with individual consumers, offer a compelling product, and deliver exceptional customer service. Adapting and evolving business strategy based on consumer feedback and market trends will be crucial for long-term success.
+In B2C model, the success of board game online business will depend on ability to connect with individual consumers, offer a compelling product, and deliver exceptional customer service. Adapting and evolving business strategy based on consumer feedback and market trends will be crucial for long-term success.
 
 
 #### Other Google services available to boost business awareness:
@@ -308,7 +310,7 @@ B2C model, the success of board game, online business will depend on ability to 
 
 ### Web Marketing
 
-GamerOnBoard has links for social media marketing and Newsletter model linked.
+GamerOnBoard has links for social media marketing and a Newsletter model is linked to the form on the page.
 
 
 #### Social Media Marketing
@@ -380,7 +382,7 @@ This included a series of the following keyword types
 These short-tail keywords can serve as the foundation for your SEO strategy. However, keeping in mind that competition for these keywords can be high, it's also essential to consider long-tail keywords and specific game titles to reach a more targeted audience. Additionally, regularly updating your website with fresh and relevant content, optimizing your site's structure, and acquiring backlinks from reputable sources can help improve search engine rankings.
 
 
-| Long-tail keywords |    |              |
+**Long-tail keywords:**
 | ---------- | ---------- | ------------ |
 | "Best board games" | "Board game collection" | "Top Game store" |
 | "Tabletop games" | "Board game store" | "Board game retailer" |
@@ -388,7 +390,6 @@ These short-tail keywords can serve as the foundation for your SEO strategy. How
 | "Game board shop" | "Board games online" | "Best board games" |
 | "Board games for sale" | "Game store online" | "Board games for adults" |
 | "Board games for kids" | "Popular board games" | "Board games to buy" |
-|  |  |  |
 
 
 #### SEO Optimlisation
@@ -406,7 +407,7 @@ Use header tags (H1, H2, H3, etc.) to structure your content and make it more re
 **For a Product Page (e.g., "Catan: Settlers of Catan Board Game"):**
  "Get Ready to Conquer Catan! Shop the Classic 'Settlers of Catan' Board Game. Build, Trade, and Win in this Award-Winning Title."
 
-**For a Blog Post (e.g., "Top 10 Board Games for Family Game Night"):**
+**For a Blog Post (future function, e.g., "Top 10 Board Games for Family Game Night"):**
  "Planning a Family Game Night? Discover Our Top 10 Board Games for Unforgettable Fun. Start the Countdown to Laughter and Memories!"
 
 
@@ -433,12 +434,12 @@ Use header tags (H1, H2, H3, etc.) to structure your content and make it more re
 
 #### META:
 
- | META keywords |    |              |  |  |  
- | ---------- | ---------- | ------------ | ----------- | ----------- |   
- | Board | Tabletop | Card | Strategy | Family board |  
- | Board game store | Game night | Role-playing games (RPGs) | Classic board | Board game recommendations |   
- | Board game shop  | Party games | Board game collection | Board game accessories | Board game reviews |  
- |  |  |  |  |  |  
+**META keywords:**
+| ---------- | ---------- | ------------ | ----------- | ----------- |   
+| Board | Tabletop | Card | Strategy | Family board |  
+| Board game store | Game night | Role-playing games (RPGs) | Classic board | Board game recommendations |   
+| Board game shop  | Party games | Board game collection | Board game accessories | Board game reviews |  
+ 
 
 #### Sitemap
 
@@ -550,6 +551,10 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to create my page wirefram
 ***
 
 ## Data Models
+The below is the Data Schema created for GamerOnBoard
+
+![Schema](README/readme-files/schema.png)
+
 
 The following are the models created for GamerOnBoard.
 
@@ -595,12 +600,10 @@ The following are the models created for GamerOnBoard.
 	| | name | CharField | |
 	| | description | TextField | |  
 	| **FK** | age | ForeignKey | FK to **AgeGroup** model |
-    | | name | CharField | |
 	| | min_players | CharField | |  
 	| | max_players | CharField | |  
 	| | game_play_time | CharField | |  
 	| **FK** | condition | ForeignKey | FK to **Condition** model |
-    | | name | CharField | |
 	| | price | DecimalField | |  
 	| | rating | DecimalField | |  
 	| | image | ImageField | |  
@@ -955,7 +958,7 @@ After clicking the icon, the admin will be promped with a popup message and aske
 
 ***
 
-__Error Pages__
+### Error Pages
 
 
 **404 Page not found** - page has been implemented and will display if a user navigates to a broken link.
@@ -979,13 +982,6 @@ __Error Pages__
 ***
 
 **403 Action Forbidden** - error page has been implemented to provide feedback to the user when they try to access unauthorized content. 
-
-
-[Back to top &uarr;](#contents)
-
-***
-
-### Future Features
 
 
 [Back to top &uarr;](#contents)
@@ -1026,17 +1022,31 @@ __Error Pages__
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
 - [Grammarly](https://www.grammarly.com/) used to check typography
 - [Am I Responsive](https://amiresponsive.co.uk/) mockup image of the home page on various devices 
-- [ChatGPT](chat.openai.com) - which is a very usefull tool and helped with many questions related to the code itself.
+- [LucidChart](https://lucid.app/) - Data Schema
+- [ChatGPT](chat.openai.com) - which is a very usefull tool and helped with many questions related to the code itself
 
 ### Imported Libraries and Packages
 
 - [gunicorn]() - Python WSGI HTTP Server for UNIX
 - [psycopg2]() - PostgreSQL database adapter for Python
-- [cloudinary]() - Python package allowing integration between the application and Cloudinary
 - [dj-database-url]() - Django utility to utilise the DATABASE_URL environment variable to configure the Django application. Used with PostgreSQL
 - [Django]() - Python package for the Django framework
 - [django-allauth]() - Django user authentication, registration and account management
 - [django-crispy-forms]() - Django package that provides tags and filters to control the rendering behaviour of Django forms
+- [django-countries] - A Django application that provides country choices for use with forms
+- [django-storages] - provides a variety of storage backends in a single library
+- [sqlparse] - is a non-validating SQL parser for Python. It provides support for parsing, splitting and formatting SQL statements
+- [stripe] - Stripe Payments webhook
+- [boto3] -  to create, configure, and manage AWS services
+- [s3transfer] - a Python library for managing Amazon S3 transfers
+- [botocore] - A low-level interface to a growing number of Amazon Web Services
+- [jmespath] - allows you to declaratively specify how to extract elements from a JSON document.
+- [oauthlib] - is a framework which implements the logic of OAuth1 or OAuth2 without assuming a specific HTTP request object or web framework
+- [asgiref] -  Provides an optional template to start ASGI channel layers from with the two exceptions you need provided and all APIs
+- [Pillow] -  adds image processing capabilities to your Python interpreter
+- [PyJWT] - A library which allows you to encode and decode JSON Web Tokens 
+- [pytz] - This library allows accurate and cross platform timezone calculations using Python
+
 
 [Back to top &uarr;](#contents)
 
