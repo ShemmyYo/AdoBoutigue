@@ -164,18 +164,18 @@
                         </div>
                         <div class="col-4 col-md-2 mt-4 mt-md-0">
                             {% if user.is_authenticated %}
-                            <form class="" action="{% url 'product_like' product.id %}" method="POST">
+                            <form class="h-100 w-100" action="{% url 'product_like' product.id %}" method="POST">
                                 {% csrf_token %}
                                 {% if user in product.likes.all %}
                                 <button type="submit" name="product_id" value="{{product.pk}}" 
-                                class="btn-clear btn-like-sold-out">
-                                    <i class="fa-solid fa-heart cat-badge-icon"></i>
+                                class="btn-clear">
+                                    <i class="fa-solid fa-heart mt-0 cat-badge-icon"></i>
                                     <p class="mb-0 text-black text-center card-info">{{ product.number_of_likes }}</p>                                
                                 </button>
                                 {% else %}
                                 <button type="submit" name="productt_id" value="{{product.pk}}" 
-                                class="btn-clear btn-like-sold-out">
-                                    <i class="fa-regular fa-heart cat-badge-icon"></i>
+                                class="btn-clear">
+                                    <i class="fa-regular fa-heart mt-0 cat-badge-icon"></i>
                                     <p class="mb-0 text-black text-center card-info">{{ product.number_of_likes }}</p>
                                 </button>
                                 {% endif %}

@@ -629,6 +629,18 @@ input[name='q']::placeholder {
 }
 
 /* -------------------------------- 
+        Like  
+ --------------------------------*/
+ .heart-badge-icon {
+  margin: 0 0;
+  padding: 0 0 ;
+  /* height: 24px;
+  width: 24px; */
+  font-size: 24px;
+  /* margin-bottom: 12px; */
+}
+
+/* -------------------------------- 
         Footer 
  --------------------------------*/
 footer {
