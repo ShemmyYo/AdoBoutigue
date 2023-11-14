@@ -1026,6 +1026,7 @@ __Error Pages__
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
 - [Grammarly](https://www.grammarly.com/) used to check typography
 - [Am I Responsive](https://amiresponsive.co.uk/) mockup image of the home page on various devices 
+- [ChatGPT](chat.openai.com) - which is a very usefull tool and helped with many questions related to the code itself.
 
 ### Imported Libraries and Packages
 
@@ -1380,6 +1381,7 @@ Alternatively, if using Gitpod, you can click below to create your workspace usi
 [Back to top &uarr;](#contents)
 
 ***
+
 ## Credits
 
 Throughout the building process I found many helpful tutorials online.
@@ -1392,17 +1394,29 @@ I sometimes applied principles within them to the site, after fully understandin
 1. [Cloudinary Documentation](https://cloudinary.com) - referenced during development.
 1. [Summernote Documentation](https://summernote.org/) and [Git](https://github.com/summernote/django-summernote) - referenced during development.
 1. [Crispy Forms Documentation](https://django-crispy-forms.readthedocs.io/en/latest/) - referenced during development.
+1. [Privacy Policy Generator](https://www.privacypolicygenerator.info/) - The fastest free Privacy Policy generator.
 
 1. [Stackoverflow](https://stackoverflow.com/) - I found myself on Stackoverflow so many times researching issues. This a fantastic place to learn and troubleshoot code.
 1. [Slack](https://slack.com/intl/en-ie/) - The slack community is great and I reached out to fellow students who had already completed their P5 for their advice and got some nice tips and feedback. I attending some webinars by CI staff which I found very beneficial.
 
 1. [unsplash](https://unsplash.com/s/photos/Sauce) - Graphics used on the page
 1. [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder/) - tool to help generating some parts of the Markdown files
+1. [GitHub - Ian Lunn](https://github.com/IanLunn) - GitHub repo with awsome CSS codes 
+1. [GitHub - Bootstrap](https://github.com/twbs/bootstrap) - bootstrap repo
+1. [CSS effects](https://css-tricks.com/snippets/css/css-triangle/) - some awsome CSS-tricks.com 
+1. [uiverse.io](https://uiverse.io/) - some awsome CSS
+
+1. [BPA World Boardgaming](https://www.boardgamers.org/index.html) - which I lineked on my page.
+1. [BPA World Boardgaming](https://www.boardgamers.org/index.html) - which I lineked on my page.
+1. [Wikipedia](https://en.wikipedia.org/) - PEGI classification and description and other.
+1. [bordgamer.ie](https://www.boardgamer.ie/) - for inspiration
 
 ***
+
 ## Acknowledgements
 
-As always, big thank you to [Harry Dhillon](https://github.com/Harry-Leepz), my mentor who provided me with guide and excellent feedback throughout the project
+As always, big thank you to [Harry Dhillon](https://github.com/Harry-Leepz), my mentor who provided me with guide and excellent feedback throughout the project.
+I'd like to thank my fellow coders from my group but not limiting, for advise, support and sharing their knowledge over the last one year.
 
 GamerOnBoard was developed for educational purpouses and as part of my Diploma in Software Development with [Code Institute](https://codeinstitute.net/). 
 

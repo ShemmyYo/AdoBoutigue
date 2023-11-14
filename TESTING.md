@@ -1047,4 +1047,9 @@ In order to run the tests, I ran the following command in the terminal each time
 ![Product Form testing](README/tests/automated/product-form-test-7.png)
 </details>
 
+
+
+
+[Back to top &uarr;](#browser-compatibility)
+
 Back to [README.md](README.md) file.
