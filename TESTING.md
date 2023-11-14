@@ -976,22 +976,75 @@ In order to run the tests, I ran the following command in the terminal each time
 
 `python3 manage.py test `
 
-| No | Test | Results |
-| :---: | :---: | :---: |
-| 1 | ![Testing Order Form](README/tests/automated/order-form-test-1.png) | Pass |  
-| 2 | ![Testing Order Form](README/tests/automated/order-form-test-2.png) | Pass |  
-| 3 | ![Testing Order Form](README/tests/automated/order-form-test-3.png) | Pass |  
-| 4 | ![Testing Order Form](README/tests/automated/order-form-test-4.png) | Pass |  
-| 5 | ![Testing Order Form](README/tests/automated/order-form-test-5.png) | Pass |  
-| 6 | ![Testing Order Form](README/tests/automated/order-form-test-6.png) | Pass |  
-| 7 | ![Access to Product page](README/tests/automated/access-to-product-page-1.png) | Pass |  
-| 8 | ![Product Form testing](README/tests/automated/product-form-test-1.png) | Pass |  
-| 9 | ![Product Form testing](README/tests/automated/product-form-test-2.png) | Pass |  
-| 10 | ![Product Form testing](README/tests/automated/product-form-test-3.png) | Pass |  
-| 11 | ![Product Form testing](README/tests/automated/product-form-test-4.png) | Pass |  
-| 12 | ![Product Form testing](README/tests/automated/product-form-test-5.png) | Pass |  
-| 13 | ![Product Form testing](README/tests/automated/product-form-test-6.png) | Pass |  
-| 14 | ![Product Form testing](README/tests/automated/product-form-test-7.png) | Pass |  
 
+<details><summary> >>> Click for Bag - User Access</summary>
+
+![Access to Product page](README/tests/automated/access-to-product-page-1.png)
+</details>
+
+<details><summary> >>> Click for Order Form Test - full_name</summary>
+
+![Testing Order Form](README/tests/automated/order-form-test-1.png)
+</details>
+
+<details><summary> >>> Click for Order Form Test - email</summary>
+
+![Testing Order Form](README/tests/automated/order-form-test-2.png)
+</details>
+
+<details><summary> >>> Click for Order Form Test - phone_number </summary>
+
+![Testing Order Form](README/tests/automated/order-form-test-3.png)
+</details>
+
+<details><summary> >>> Click for Order Form Test - street_address_1</summary>
+
+![Testing Order Form](README/tests/automated/order-form-test-4.png)
+</details>
+
+<details><summary> >>> Click for Order Form Test - town_or_city</summary>
+
+![Testing Order Form](README/tests/automated/order-form-test-5.png)
+</details>
+
+<details><summary> >>> Click for Order Form Test - country</summary>
+
+![Testing Order Form](README/tests/automated/order-form-test-6.png)
+</details>
+
+<details><summary> >>> Click for Product Form Test - name</summary>
+
+![Product Form testing](README/tests/automated/product-form-test-1.png)
+</details>
+
+<details><summary> >>> Click for Product Form Test - min_players</summary>
+
+![Product Form testing](README/tests/automated/product-form-test-2.png)
+</details>
+
+<details><summary> >>> Click for Product Form Test - max_players</summary>
+
+![Product Form testing](README/tests/automated/product-form-test-3.png)
+</details>
+
+<details><summary> >>> Click for Product Form Test - description</summary>
+
+![Product Form testing](README/tests/automated/product-form-test-4.png)
+</details>
+
+<details><summary> >>> Click for Product Form Test - game_play_time</summary>
+
+![Product Form testing](README/tests/automated/product-form-test-5.png)
+</details>
+
+<details><summary> >>> Click for Product Form Test - price</summary>
+
+![Product Form testing](README/tests/automated/product-form-test-6.png)
+</details>
+
+<details><summary> >>> Click for Product Form Test - stock</summary>
+
+![Product Form testing](README/tests/automated/product-form-test-7.png)
+</details>
 
 Back to [README.md](README.md) file.
